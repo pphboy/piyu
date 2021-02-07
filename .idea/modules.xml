@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/piyu-api/piyu-api.iml" filepath="$PROJECT_DIR$/piyu-api/piyu-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/piyu-background/piyu-background.iml" filepath="$PROJECT_DIR$/piyu-background/piyu-background.iml" />
+    </modules>
+  </component>
+</project>
