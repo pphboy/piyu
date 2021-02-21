@@ -1,0 +1,94 @@
+2021-02-21 11:16:23.978  INFO 6540 --- [main] c.p.p.p.service.TestUserService          : Starting TestUserService using Java 1.8.0_191 on IBM with PID 6540 (started by pipihao in D:\Projects\PiYU\piyu\piyu-background)
+2021-02-21 11:16:23.987  INFO 6540 --- [main] c.p.p.p.service.TestUserService          : No active profile set, falling back to default profiles: default
+2021-02-21 11:16:27.191  INFO 6540 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2021-02-21 11:16:27.632  INFO 6540 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2021-02-21 11:16:31.552  INFO 6540 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-21 11:16:31.925  INFO 6540 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-02-21 11:16:33.014  INFO 6540 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/js/**'] with []
+2021-02-21 11:16:33.015  INFO 6540 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/css/**'] with []
+2021-02-21 11:16:33.016  INFO 6540 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/fonts/**'] with []
+2021-02-21 11:16:33.017  INFO 6540 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/images/**'] with []
+2021-02-21 11:16:33.018  INFO 6540 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/lib/**'] with []
+2021-02-21 11:16:33.900  INFO 6540 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@594d9f07, org.springframework.security.web.context.SecurityContextPersistenceFilter@360e9c06, org.springframework.security.web.header.HeaderWriterFilter@4232b34a, org.springframework.security.web.csrf.CsrfFilter@1192b58e, org.springframework.security.web.authentication.logout.LogoutFilter@53c1179a, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@3a4ab7f7, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@311ff287, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1220ef43, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@3c6c4689, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5befbac1, org.springframework.security.web.session.SessionManagementFilter@f5ce0bb, org.springframework.security.web.access.ExceptionTranslationFilter@751ae8a4, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4548d254]
+2021-02-21 11:16:34.199  INFO 6540 --- [main] c.p.p.p.service.TestUserService          : Started TestUserService in 11.627 seconds (JVM running for 13.751)
+2021-02-21 11:16:35.190  INFO 6540 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-02-21 11:16:35.210  INFO 6540 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2021-02-21 11:17:31.768  INFO 13628 --- [main] c.p.p.p.service.TestUserService          : Starting TestUserService using Java 1.8.0_191 on IBM with PID 13628 (started by pipihao in D:\Projects\PiYU\piyu\piyu-background)
+2021-02-21 11:17:31.774  INFO 13628 --- [main] c.p.p.p.service.TestUserService          : No active profile set, falling back to default profiles: default
+2021-02-21 11:17:34.341 DEBUG 13628 --- [main] org.apache.ibatis.logging.LogFactory     : Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2021-02-21 11:17:34.901  INFO 13628 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2021-02-21 11:17:35.293  INFO 13628 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2021-02-21 11:17:37.345  INFO 13628 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-21 11:17:37.662  INFO 13628 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-02-21 11:17:38.814  INFO 13628 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/js/**'] with []
+2021-02-21 11:17:38.815  INFO 13628 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/css/**'] with []
+2021-02-21 11:17:38.815  INFO 13628 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/fonts/**'] with []
+2021-02-21 11:17:38.816  INFO 13628 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/images/**'] with []
+2021-02-21 11:17:38.816  INFO 13628 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/lib/**'] with []
+2021-02-21 11:17:39.673  INFO 13628 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5e9f73b, org.springframework.security.web.context.SecurityContextPersistenceFilter@311ff287, org.springframework.security.web.header.HeaderWriterFilter@f5ce0bb, org.springframework.security.web.csrf.CsrfFilter@5f631ca0, org.springframework.security.web.authentication.logout.LogoutFilter@5034f5dd, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2b7e8044, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@31db34da, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@234cff57, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@594d9f07, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1a565afb, org.springframework.security.web.session.SessionManagementFilter@101a461c, org.springframework.security.web.access.ExceptionTranslationFilter@4232b34a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@208f0007]
+2021-02-21 11:17:40.094  INFO 13628 --- [main] c.p.p.p.service.TestUserService          : Started TestUserService in 9.425 seconds (JVM running for 11.546)
+2021-02-21 11:17:40.974  INFO 13628 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-02-21 11:17:40.999  INFO 13628 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2021-02-21 11:18:13.907  INFO 12668 --- [main] c.p.p.p.service.TestUserService          : Starting TestUserService using Java 1.8.0_191 on IBM with PID 12668 (started by pipihao in D:\Projects\PiYU\piyu\piyu-background)
+2021-02-21 11:18:13.910  INFO 12668 --- [main] c.p.p.p.service.TestUserService          : No active profile set, falling back to default profiles: default
+2021-02-21 11:18:16.356  INFO 12668 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2021-02-21 11:18:16.767  INFO 12668 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2021-02-21 11:18:18.755  INFO 12668 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-21 11:18:18.958  INFO 12668 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-02-21 11:18:19.623  INFO 12668 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/js/**'] with []
+2021-02-21 11:18:19.623  INFO 12668 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/css/**'] with []
+2021-02-21 11:18:19.623  INFO 12668 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/fonts/**'] with []
+2021-02-21 11:18:19.623  INFO 12668 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/images/**'] with []
+2021-02-21 11:18:19.624  INFO 12668 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/lib/**'] with []
+2021-02-21 11:18:20.358  INFO 12668 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@365cdacf, org.springframework.security.web.context.SecurityContextPersistenceFilter@d08edc5, org.springframework.security.web.header.HeaderWriterFilter@1220ef43, org.springframework.security.web.csrf.CsrfFilter@2f4b98f6, org.springframework.security.web.authentication.logout.LogoutFilter@2a43e0ac, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6bfaa0a6, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3f362135, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7650ded6, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@688a2c09, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@303c55fa, org.springframework.security.web.session.SessionManagementFilter@234cff57, org.springframework.security.web.access.ExceptionTranslationFilter@16a5eb6d, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3c6c4689]
+2021-02-21 11:18:20.534  INFO 12668 --- [main] c.p.p.p.service.TestUserService          : Started TestUserService in 7.78 seconds (JVM running for 10.109)
+2021-02-21 11:18:21.247 DEBUG 12668 --- [main] c.p.p.p.m.U.getAdministrators_mpCount    : ==>  Preparing: SELECT COUNT(*) FROM bg_user
+2021-02-21 11:18:21.277 DEBUG 12668 --- [main] c.p.p.p.m.U.getAdministrators_mpCount    : ==> Parameters: 
+2021-02-21 11:18:21.313 DEBUG 12668 --- [main] c.p.p.p.m.U.getAdministrators_mpCount    : <==      Total: 1
+2021-02-21 11:18:21.328 DEBUG 12668 --- [main] c.p.p.p.m.UserMapper.getAdministrators   : ==>  Preparing: select * from bg_user LIMIT ?
+2021-02-21 11:18:21.330 DEBUG 12668 --- [main] c.p.p.p.m.UserMapper.getAdministrators   : ==> Parameters: 1(Long)
+2021-02-21 11:18:21.334 DEBUG 12668 --- [main] c.p.p.p.m.UserMapper.getAdministrators   : <==      Total: 1
+2021-02-21 11:18:21.358  INFO 12668 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-02-21 11:18:21.364  INFO 12668 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2021-02-21 11:21:31.270  INFO 13448 --- [main] c.p.p.p.service.TestUserService          : Starting TestUserService using Java 1.8.0_191 on IBM with PID 13448 (started by pipihao in D:\Projects\PiYU\piyu\piyu-background)
+2021-02-21 11:21:31.278  INFO 13448 --- [main] c.p.p.p.service.TestUserService          : No active profile set, falling back to default profiles: default
+2021-02-21 11:21:34.204  INFO 13448 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2021-02-21 11:21:34.579  INFO 13448 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2021-02-21 11:21:36.549  INFO 13448 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-21 11:21:36.762  INFO 13448 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-02-21 11:21:37.476  INFO 13448 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/js/**'] with []
+2021-02-21 11:21:37.476  INFO 13448 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/css/**'] with []
+2021-02-21 11:21:37.477  INFO 13448 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/fonts/**'] with []
+2021-02-21 11:21:37.477  INFO 13448 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/images/**'] with []
+2021-02-21 11:21:37.477  INFO 13448 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/lib/**'] with []
+2021-02-21 11:21:38.040  INFO 13448 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@365cdacf, org.springframework.security.web.context.SecurityContextPersistenceFilter@d08edc5, org.springframework.security.web.header.HeaderWriterFilter@1220ef43, org.springframework.security.web.csrf.CsrfFilter@2f4b98f6, org.springframework.security.web.authentication.logout.LogoutFilter@2a43e0ac, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6bfaa0a6, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3f362135, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7650ded6, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@688a2c09, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@303c55fa, org.springframework.security.web.session.SessionManagementFilter@234cff57, org.springframework.security.web.access.ExceptionTranslationFilter@16a5eb6d, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3c6c4689]
+2021-02-21 11:21:38.207  INFO 13448 --- [main] c.p.p.p.service.TestUserService          : Started TestUserService in 8.011 seconds (JVM running for 9.785)
+2021-02-21 11:21:38.918 DEBUG 13448 --- [main] c.p.p.p.m.U.getAdministrators_mpCount    : ==>  Preparing: SELECT COUNT(*) FROM bg_user
+2021-02-21 11:21:38.957 DEBUG 13448 --- [main] c.p.p.p.m.U.getAdministrators_mpCount    : ==> Parameters: 
+2021-02-21 11:21:38.987 DEBUG 13448 --- [main] c.p.p.p.m.U.getAdministrators_mpCount    : <==      Total: 1
+2021-02-21 11:21:39.000 DEBUG 13448 --- [main] c.p.p.p.m.UserMapper.getAdministrators   : ==>  Preparing: select * from bg_user LIMIT ?
+2021-02-21 11:21:39.002 DEBUG 13448 --- [main] c.p.p.p.m.UserMapper.getAdministrators   : ==> Parameters: 3(Long)
+2021-02-21 11:21:39.008 DEBUG 13448 --- [main] c.p.p.p.m.UserMapper.getAdministrators   : <==      Total: 3
+2021-02-21 11:21:39.032  INFO 13448 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-02-21 11:21:39.044  INFO 13448 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2021-02-21 11:22:59.628  INFO 13868 --- [main] c.p.p.p.service.TestUserService          : Starting TestUserService using Java 1.8.0_191 on IBM with PID 13868 (started by pipihao in D:\Projects\PiYU\piyu\piyu-background)
+2021-02-21 11:22:59.640  INFO 13868 --- [main] c.p.p.p.service.TestUserService          : No active profile set, falling back to default profiles: default
+2021-02-21 11:23:02.690  INFO 13868 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2021-02-21 11:23:03.112  INFO 13868 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2021-02-21 11:23:05.101  INFO 13868 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-21 11:23:05.291  INFO 13868 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-02-21 11:23:05.936  INFO 13868 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/js/**'] with []
+2021-02-21 11:23:05.937  INFO 13868 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/css/**'] with []
+2021-02-21 11:23:05.937  INFO 13868 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/fonts/**'] with []
+2021-02-21 11:23:05.937  INFO 13868 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/images/**'] with []
+2021-02-21 11:23:05.938  INFO 13868 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/lib/**'] with []
+2021-02-21 11:23:06.580  INFO 13868 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@9efcd90, org.springframework.security.web.context.SecurityContextPersistenceFilter@3f362135, org.springframework.security.web.header.HeaderWriterFilter@234cff57, org.springframework.security.web.csrf.CsrfFilter@58c1da09, org.springframework.security.web.authentication.logout.LogoutFilter@346f41a9, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@314b9e4b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6bc24e72, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@31b7d869, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@365cdacf, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7eb200ce, org.springframework.security.web.session.SessionManagementFilter@4bcaa195, org.springframework.security.web.access.ExceptionTranslationFilter@1220ef43, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@594d9f07]
+2021-02-21 11:23:06.746  INFO 13868 --- [main] c.p.p.p.service.TestUserService          : Started TestUserService in 8.662 seconds (JVM running for 10.728)
+2021-02-21 11:23:07.374 DEBUG 13868 --- [main] c.p.p.p.m.U.getAdministrators_mpCount    : ==>  Preparing: SELECT COUNT(*) FROM bg_user
+2021-02-21 11:23:07.401 DEBUG 13868 --- [main] c.p.p.p.m.U.getAdministrators_mpCount    : ==> Parameters: 
+2021-02-21 11:23:07.433 DEBUG 13868 --- [main] c.p.p.p.m.U.getAdministrators_mpCount    : <==      Total: 1
+2021-02-21 11:23:07.446 DEBUG 13868 --- [main] c.p.p.p.m.UserMapper.getAdministrators   : ==>  Preparing: select * from bg_user LIMIT ?,?
+2021-02-21 11:23:07.448 DEBUG 13868 --- [main] c.p.p.p.m.UserMapper.getAdministrators   : ==> Parameters: 3(Long), 3(Long)
+2021-02-21 11:23:07.453 DEBUG 13868 --- [main] c.p.p.p.m.UserMapper.getAdministrators   : <==      Total: 3
+2021-02-21 11:23:07.473  INFO 13868 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-02-21 11:23:07.479  INFO 13868 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed

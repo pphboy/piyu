@@ -2,29 +2,25 @@ server:
   port: 8082
 
 spring:
+  thymeleaf:
+    cache: false
   datasource:
     url: jdbc:mysql://localhost:3306/piyu?useUnicode=true&characterEncoding=utf-8&serverTimezone=UTC
     username: root
     password: root
     type: com.alibaba.druid.pool.DruidDataSource
-    driver-class-name: com.mysql.jdbc.Driver
+    driver-class-name: com.mysql.cj.jdbc.Driver
   servlet:
     multipart:
       max-file-size: 50MB
       max-request-size: 50MB
-  security:
-    user:
-      name: piyu
-      password: 123123
-
-
 
 mybatis:
   mapper-locations: classpath:mybatis/mapper/*.xml
   #  config-location: classpath:mybatis/mybatis-config.xml
   type-aliases-package: com.pipihao.piyu.pojo
   configuration:
-    map-underscore-to-camel-case: true
+    map-underscore-to-camel-case: true # 开启驼峰命名
     cache-enabled: true
 
 pagehelper:
@@ -33,3 +29,11 @@ pagehelper:
   supportMethodsArguments: true
   params: count=countSql
 
+logging:
+  level:
+    root: INFO
+    org.springframework.web: INFO
+    org.springframework.security: INFO
+    com.pipihao.piyu.piyubackground.mapper: DEBUG
+  file:
+    path: log/myspringboot.log

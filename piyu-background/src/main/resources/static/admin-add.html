@@ -34,18 +34,6 @@
                       </div>
                   </div>
                   <div class="layui-form-item">
-                      <label for="phone" class="layui-form-label">
-                          <span class="x-red">*</span>手机
-                      </label>
-                      <div class="layui-input-inline">
-                          <input type="text" id="phone" name="phone" required="" lay-verify="phone"
-                          autocomplete="off" class="layui-input">
-                      </div>
-                      <div class="layui-form-mid layui-word-aux">
-                          <span class="x-red">*</span>将会成为您唯一的登入名
-                      </div>
-                  </div>
-                  <div class="layui-form-item">
                       <label for="L_email" class="layui-form-label">
                           <span class="x-red">*</span>邮箱
                       </label>
@@ -104,11 +92,6 @@
 
                 //自定义验证规则
                 form.verify({
-                    nikename: function(value) {
-                        if (value.length < 5) {
-                            return '昵称至少得5个字符啊';
-                        }
-                    },
                     pass: [/(.+){6,12}$/, '密码必须6到12位'],
                     repass: function(value) {
                         if ($('#L_pass').val() != $('#L_repass').val()) {
@@ -117,10 +100,13 @@
                     }
                 });
 
+
                 //监听提交
                 form.on('submit(add)',
                 function(data) {
-                    console.log(data);
+                    // console.log(data);
+                    console.log(data.field);
+
                     //发异步，把数据提交给php
                     layer.alert("增加成功", {
                         icon: 6
