@@ -48,7 +48,7 @@
                         </div>
                         <div class="layui-card-header">
 <!--                            <button class="layui-btn layui-btn-danger" onclick="delAll()"><i class="layui-icon"></i>批量删除</button>-->
-                            <button class="layui-btn" onclick="xadmin.open('添加用户','/admin-add.html',600,400)"><i class="layui-icon"></i>添加</button>
+                            <button class="layui-btn" onclick="xadmin.open('添加用户','/admin/adminAdd',600,400)"><i class="layui-icon"></i>添加</button>
                         </div>
                         <div class="layui-card-body ">
                             <table class="layui-table layui-form">
@@ -78,7 +78,7 @@
                                   <td id="id" th:text="${user.id}"></td>
                                   <td th:text="${user.username}">admin</td>
                                   <td th:text="${user.email}">113664000@qq.com</td>
-                                  <td>超级管理员</td>
+                                  <td th:text="${user.roleList.get(0).remark}">超级管理员</td>
                                   <td th:text="${#dates.format(user.registerDate,'yyyy年MM月dd日 HH:mm')}">2017-01-01 11:11:42</td>
                                   <td class="td-status">
                                       <span th:if="${!user.state}" class="layui-btn layui-btn-normal layui-btn-mini layui-btn-disabled">已停用</span>
@@ -87,7 +87,7 @@
                                     <a th:onclick="'member_stop(this,'+${user.id}+')'" href="javascript:;"  th:title="${user.state ? '停用' : '启用'}">
                                       <i class="layui-icon">&#xe601;</i>
                                     </a>
-                                    <a title="编辑"  onclick="xadmin.open('编辑','/admin-edit.html')" href="javascript:;">
+                                    <a title="编辑"  th:onclick="'xadmin.open(\'编辑\',\'/admin/adminEdit/'+${user.id}+'\')'" href="javascript:;">
                                       <i class="layui-icon">&#xe642;</i>
                                     </a>
                                     <a title="删除" th:onclick="'member_del(this,'+${user.id}+')'"  href="javascript:;">
@@ -287,10 +287,4 @@
 
 
     </script>
-    <script>var _hmt = _hmt || []; (function() {
-        var hm = document.createElement("script");
-        hm.src = "https://hm.baidu.com/hm.js?b393d153aeb26b46e9431fabaf0f6190";
-        var s = document.getElementsByTagName("script")[0];
-        s.parentNode.insertBefore(hm, s);
-      })();</script>
 </html>

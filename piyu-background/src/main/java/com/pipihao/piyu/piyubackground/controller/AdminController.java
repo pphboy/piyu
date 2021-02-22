@@ -3,6 +3,7 @@ package com.pipihao.piyu.piyubackground.controller;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.pipihao.piyu.piyubackground.common.R;
 import com.pipihao.piyu.piyubackground.pojo.IUser;
+import com.pipihao.piyu.piyubackground.service.RoleService;
 import com.pipihao.piyu.piyubackground.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.prepost.PostFilter;
@@ -26,6 +27,9 @@ public class AdminController {
     @Autowired
     private UserService userService;
 
+    @Autowired
+    private RoleService roleService;
+
     @GetMapping("adminList")
     public String adminList(@RequestParam(name = "page",required = false,defaultValue = "1") Long page,
                             @RequestParam(name = "size",required = false,defaultValue = "10") Long size,
@@ -47,18 +51,56 @@ public class AdminController {
     }
 
 
-
+    /**
+     * 设置管理员的状态
+     * @param map
+     * @return
+     */
     @ResponseBody
     @PostMapping("setState")
     public R setState(@RequestBody Map<String,Object> map){
         return userService.setState(map);
     }
 
+    /**
+     * 删除管理员
+     * @param map
+     * @return
+     */
     @ResponseBody
     @PostMapping("deleteAdmin")
     public R deleteAdmin(@RequestBody Map<String,Object> map){
         return userService.deleteAdmin(map);
     }
 
+    /**
+     * 添加用户 界面
+     */
+    @GetMapping("adminAdd")
+    public String adminAdd(ModelMap map){
+        map.addAttribute("roles",roleService.getAllRole());
+        return "admin-add";
+    }
 
+    /**
+     * 编辑用户界面
+     */
+    @GetMapping("adminEdit/{id}")
+    public String adminEdit(@PathVariable("id") Integer id,ModelMap model){
+        model.addAttribute("roles",roleService.getAllRole());
+        model.addAttribute("user",userService.getUserById(id));
+        return "admin-edit";
+    }
+
+    /**
+     * 新增和编辑用户的接口<br>
+     * 判断有没有id
+     * @param  iUser
+     * @return
+     */
+    @ResponseBody
+    @PostMapping("adminPut")
+    public R adminPut(@RequestBody IUser iUser){
+        return userService.putAdmin(iUser);
+    }
 }

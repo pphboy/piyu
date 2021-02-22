@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.pipihao.piyu.piyubackground.mapper.UserMapper">
+
+    <insert id="sendAdmin" keyProperty="id" keyColumn="id" useGeneratedKeys="true">
+        INSERT INTO `bg_user`(`username`, `password`, `register_date`, `state`, `email`) VALUES (#{username}, #{password}, now(), 0, #{email})
+    </insert>
+
+    <update id="updateAdmin" parameterType="com.pipihao.piyu.piyubackground.pojo.IUser" >
+        UPDATE `bg_user` SET `username` = #{username}
+        <if test="password != null">
+            , `password` = #{password}
+        </if>
+        ,`email` = #{email} WHERE `id` = #{id};
+    </update>
+
+</mapper>

@@ -16,7 +16,13 @@ import java.util.Map;
 @Mapper
 public interface UserMapper extends BaseMapper<IUser> {
 
-    @Select("select * from bg_user where register_date > #{map.start} and register_date < #{map.end} and username like '%${map.keywords}%' and username <> 'admin' ")
+    @Results(
+            id = "iuser",
+            value = {
+            @Result(property = "id",column = "id"),
+            @Result(property = "roleList",column = "id",one = @One(select = "com.pipihao.piyu.piyubackground.mapper.RoleMapper.getRoleIds"))
+    })
+    @Select("select * from bg_user where register_date > #{map.start} and register_date < #{map.end} and username like '%${map.keywords}%' and username <> 'admin'  order by id asc")
     Page<IUser> getAdministrators(Page<IUser> page,@Param("map") Map<String,Object> map);
 
     @Update("update bg_user set state = #{state} where id = #{userId}")
@@ -32,4 +38,34 @@ public interface UserMapper extends BaseMapper<IUser> {
      */
     @Select("select state from bg_user where id = #{id}")
     boolean getStateByUserId(Map<String,Object> map);
+
+    /**
+     * 添加一个用户
+     * @param user
+     * @return
+     */
+    boolean sendAdmin(IUser user);
+
+    /**
+     * 查询用户名是否存在
+     * @param username
+     * @return
+     */
+    @Select("select count(*) from bg_user where username = #{username}")
+    boolean getIsExistByUserName(String username);
+
+
+    /**
+     * 通过ID查询用户
+     */
+    @ResultMap("iuser")
+    @Select("select * from bg_user where id = #{id}")
+    IUser getUserById(Integer id);
+
+    /**
+     * 编辑数据
+     * @param iUser
+     * @return
+     */
+    boolean updateAdmin(IUser iUser);
 }
