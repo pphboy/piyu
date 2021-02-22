@@ -1,0 +1,11 @@
+com\pipihao\service\LoginServiceTest.class
+com\pipihao\UtilsTest.class
+com\pipihao\service\UserServiceTest.class
+com\pipihao\service\PiProductServiceTest.class
+com\pipihao\JWTTest.class
+com\pipihao\service\CommentServiceTest.class
+com\pipihao\service\FollowsServiceTest.class
+com\pipihao\service\FootPrintServiceTest.class
+com\pipihao\service\UserAddressServiceTest.class
+com\pipihao\StateResultTest.class
+com\pipihao\utils\VerifyCodeTest.class

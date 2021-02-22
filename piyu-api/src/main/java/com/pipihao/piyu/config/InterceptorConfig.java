@@ -1,21 +1,26 @@
 package com.pipihao.piyu.config;
 
 import com.pipihao.piyu.interceptor.JWTInterceptor;
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.web.cors.CorsConfiguration;
+import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
+import org.springframework.web.filter.CorsFilter;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 @Configuration
 public class InterceptorConfig implements WebMvcConfigurer {
-
-    /**
+/**
      * 解决跨域
-     * @param registry
-     */
+//     * @param registry
+     *//*
+
     @Override
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/**")
@@ -24,6 +29,8 @@ public class InterceptorConfig implements WebMvcConfigurer {
                 .allowedMethods("GET", "POST", "DELETE", "PUT")
                 .maxAge(3600);
     }
+*/
+
 
     /**
      * 拦截器

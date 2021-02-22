@@ -10,15 +10,12 @@
         <module name="piyu-background" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="piyu-api" target="1.8" />
-      <module name="piyu-background" target="1.8" />
-      <module name="PiYuBackEdn" target="1.8" />
+    <bytecodeTargetLevel target="8">
+      <module name="wrapper" target="1.5" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="PiYuBackEdn" options="-parameters" />
       <module name="piyu-api" options="-parameters" />
       <module name="piyu-background" options="-parameters" />
     </option>

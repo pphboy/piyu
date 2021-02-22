@@ -1,0 +1,29 @@
+2021-02-20 10:01:02 [INFO]-[com.pipihao.piyu.PiYuApplication] Starting PiYuApplication on IBM with PID 13672 (D:\Projects\PiYU\piyu\piyu-api\target\classes started by pipihao in D:\Projects\PiYU\piyu)
+2021-02-20 10:01:02 [INFO]-[com.pipihao.piyu.PiYuApplication] No active profile set, falling back to default profiles: default
+2021-02-20 10:01:02 [INFO]-[org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-02-20 10:01:02 [INFO]-[org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-02-20 10:01:04 [WARN]-[org.mybatis.spring.mapper.ClassPathMapperScanner] Skipping MapperFactoryBean with name 'commentMapper' and 'com.pipihao.piyu.mapper.CommentMapper' mapperInterface. Bean already defined with the same name!
+2021-02-20 10:01:04 [WARN]-[org.mybatis.spring.mapper.ClassPathMapperScanner] Skipping MapperFactoryBean with name 'followsMapper' and 'com.pipihao.piyu.mapper.FollowsMapper' mapperInterface. Bean already defined with the same name!
+2021-02-20 10:01:04 [WARN]-[org.mybatis.spring.mapper.ClassPathMapperScanner] Skipping MapperFactoryBean with name 'footPrintMapper' and 'com.pipihao.piyu.mapper.FootPrintMapper' mapperInterface. Bean already defined with the same name!
+2021-02-20 10:01:04 [WARN]-[org.mybatis.spring.mapper.ClassPathMapperScanner] Skipping MapperFactoryBean with name 'loginMapper' and 'com.pipihao.piyu.mapper.LoginMapper' mapperInterface. Bean already defined with the same name!
+2021-02-20 10:01:04 [WARN]-[org.mybatis.spring.mapper.ClassPathMapperScanner] Skipping MapperFactoryBean with name 'piCollectMapper' and 'com.pipihao.piyu.mapper.PiCollectMapper' mapperInterface. Bean already defined with the same name!
+2021-02-20 10:01:04 [WARN]-[org.mybatis.spring.mapper.ClassPathMapperScanner] Skipping MapperFactoryBean with name 'piLikeMapper' and 'com.pipihao.piyu.mapper.PiLikeMapper' mapperInterface. Bean already defined with the same name!
+2021-02-20 10:01:04 [WARN]-[org.mybatis.spring.mapper.ClassPathMapperScanner] Skipping MapperFactoryBean with name 'piProductClassMapper' and 'com.pipihao.piyu.mapper.PiProductClassMapper' mapperInterface. Bean already defined with the same name!
+2021-02-20 10:01:04 [WARN]-[org.mybatis.spring.mapper.ClassPathMapperScanner] Skipping MapperFactoryBean with name 'piProductMapper' and 'com.pipihao.piyu.mapper.PiProductMapper' mapperInterface. Bean already defined with the same name!
+2021-02-20 10:01:04 [WARN]-[org.mybatis.spring.mapper.ClassPathMapperScanner] Skipping MapperFactoryBean with name 'tradingMapper' and 'com.pipihao.piyu.mapper.TradingMapper' mapperInterface. Bean already defined with the same name!
+2021-02-20 10:01:04 [WARN]-[org.mybatis.spring.mapper.ClassPathMapperScanner] Skipping MapperFactoryBean with name 'userAddressMapper' and 'com.pipihao.piyu.mapper.UserAddressMapper' mapperInterface. Bean already defined with the same name!
+2021-02-20 10:01:04 [WARN]-[org.mybatis.spring.mapper.ClassPathMapperScanner] Skipping MapperFactoryBean with name 'userMapper' and 'com.pipihao.piyu.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
+2021-02-20 10:01:04 [WARN]-[org.mybatis.spring.mapper.ClassPathMapperScanner] Skipping MapperFactoryBean with name 'walletMapper' and 'com.pipihao.piyu.mapper.WalletMapper' mapperInterface. Bean already defined with the same name!
+2021-02-20 10:01:04 [WARN]-[org.mybatis.spring.mapper.ClassPathMapperScanner] No MyBatis mapper was found in '[com.pipihao.piyu.mapper]' package. Please check your configuration.
+2021-02-20 10:01:05 [INFO]-[org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat initialized with port(s): 8081 (http)
+2021-02-20 10:01:05 [INFO]-[org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] Root WebApplicationContext: initialization completed in 3128 ms
+2021-02-20 10:01:05 [INFO]-[com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure] Init DruidDataSource
+2021-02-20 10:01:05 [INFO]-[com.alibaba.druid.pool.DruidDataSource] {dataSource-1} inited
+2021-02-20 10:01:06 [INFO]-[org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor] Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-20 10:01:06 [INFO]-[tk.mybatis.mapper.autoconfigure.MapperCacheDisabler] Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2021-02-20 10:01:06 [INFO]-[tk.mybatis.mapper.autoconfigure.MapperCacheDisabler] Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2021-02-20 10:01:06 [INFO]-[tk.mybatis.mapper.autoconfigure.MapperCacheDisabler] Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2021-02-20 10:01:06 [INFO]-[tk.mybatis.mapper.autoconfigure.MapperCacheDisabler] Clear EntityHelper entityTableMap cache.
+2021-02-20 10:01:07 [INFO]-[org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] LiveReload server is running on port 35729
+2021-02-20 10:01:07 [INFO]-[org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat started on port(s): 8081 (http) with context path ''
+2021-02-20 10:01:07 [INFO]-[com.pipihao.piyu.PiYuApplication] Started PiYuApplication in 5.906 seconds (JVM running for 8.135)

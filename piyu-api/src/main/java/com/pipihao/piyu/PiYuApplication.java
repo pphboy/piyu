@@ -1,6 +1,5 @@
 package com.pipihao.piyu;
 
-import com.pipihao.piyu.common.StateResult;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
