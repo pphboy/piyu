@@ -1,6 +1,8 @@
 # Build and Release Folders
 bin-debug/
 bin-release/
+piyu-api/target
+piyu-background/target
 [Oo]bj/
 [Bb]in/
 
