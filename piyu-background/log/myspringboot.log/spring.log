@@ -160,3 +160,18 @@
 2021-02-22 21:09:37.346  INFO 1740 --- [main] c.p.p.p.PiyuBackgroundApplicationTests   : Started PiyuBackgroundApplicationTests in 10.594 seconds (JVM running for 15.711)
 2021-02-22 21:09:37.816  INFO 1740 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
 2021-02-22 21:09:37.821  INFO 1740 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2021-02-22 21:18:45.299  INFO 2388 --- [main] c.p.p.p.PiyuBackgroundApplicationTests   : Starting PiyuBackgroundApplicationTests using Java 1.8.0_191 on IBM with PID 2388 (started by pipihao in D:\Projects\PiYU\piyu\piyu-background)
+2021-02-22 21:18:45.306  INFO 2388 --- [main] c.p.p.p.PiyuBackgroundApplicationTests   : No active profile set, falling back to default profiles: default
+2021-02-22 21:18:47.342  INFO 2388 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2021-02-22 21:18:47.860  INFO 2388 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2021-02-22 21:18:50.042  INFO 2388 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-22 21:18:50.330  INFO 2388 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-02-22 21:18:51.078  INFO 2388 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/js/**'] with []
+2021-02-22 21:18:51.081  INFO 2388 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/css/**'] with []
+2021-02-22 21:18:51.083  INFO 2388 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/fonts/**'] with []
+2021-02-22 21:18:51.090  INFO 2388 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/images/**'] with []
+2021-02-22 21:18:51.091  INFO 2388 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/lib/**'] with []
+2021-02-22 21:18:51.877  INFO 2388 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@220c9a63, org.springframework.security.web.context.SecurityContextPersistenceFilter@57e388c3, org.springframework.security.web.header.HeaderWriterFilter@72a2312e, org.springframework.security.web.csrf.CsrfFilter@f2a1813, org.springframework.security.web.authentication.logout.LogoutFilter@2b148329, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@76cf841, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@21bd128b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@78fe204a, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@2bc7db89, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@55b5cd2b, org.springframework.security.web.session.SessionManagementFilter@7951c3a2, org.springframework.security.web.access.ExceptionTranslationFilter@65bb6275, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2da99821]
+2021-02-22 21:18:52.090  INFO 2388 --- [main] c.p.p.p.PiyuBackgroundApplicationTests   : Started PiyuBackgroundApplicationTests in 7.379 seconds (JVM running for 9.051)
+2021-02-22 21:18:52.654  INFO 2388 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-02-22 21:18:52.659  INFO 2388 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed

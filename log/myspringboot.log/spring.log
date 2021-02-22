@@ -10399,3 +10399,57 @@ Caused by: java.lang.ClassNotFoundException: Cannot find class: iuser
 2021-02-22 15:55:54.125 DEBUG 10692 --- [http-nio-8082-exec-2] c.p.p.p.m.UserMapper.getStateByUserId    : ==>  Preparing: select state from bg_user where id = ?
 2021-02-22 15:55:54.126 DEBUG 10692 --- [http-nio-8082-exec-2] c.p.p.p.m.UserMapper.getStateByUserId    : ==> Parameters: 2(Integer)
 2021-02-22 15:55:54.128 DEBUG 10692 --- [http-nio-8082-exec-2] c.p.p.p.m.UserMapper.getStateByUserId    : <==      Total: 1
+2021-02-22 21:18:57.385  INFO 8944 --- [restartedMain] c.p.p.p.PiyuBackgroundApplication        : Starting PiyuBackgroundApplication using Java 1.8.0_191 on IBM with PID 8944 (D:\Projects\PiYU\piyu\piyu-background\target\classes started by pipihao in D:\Projects\PiYU\piyu)
+2021-02-22 21:18:57.388  INFO 8944 --- [restartedMain] c.p.p.p.PiyuBackgroundApplication        : No active profile set, falling back to default profiles: default
+2021-02-22 21:18:57.448  INFO 8944 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-02-22 21:18:57.448  INFO 8944 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-02-22 21:19:00.275  INFO 8944 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2021-02-22 21:19:00.288  INFO 8944 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-02-22 21:19:00.288  INFO 8944 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-22 21:19:00.410  INFO 8944 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-02-22 21:19:00.410  INFO 8944 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2961 ms
+2021-02-22 21:19:00.560  INFO 8944 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2021-02-22 21:19:00.694  INFO 8944 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2021-02-22 21:19:02.422  INFO 8944 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-22 21:19:02.516  INFO 8944 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-02-22 21:19:02.781  INFO 8944 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/js/**'] with []
+2021-02-22 21:19:02.781  INFO 8944 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/css/**'] with []
+2021-02-22 21:19:02.782  INFO 8944 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/fonts/**'] with []
+2021-02-22 21:19:02.782  INFO 8944 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/images/**'] with []
+2021-02-22 21:19:02.782  INFO 8944 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/lib/**'] with []
+2021-02-22 21:19:02.835  INFO 8944 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@12a32c18, org.springframework.security.web.context.SecurityContextPersistenceFilter@deb8646, org.springframework.security.web.header.HeaderWriterFilter@5f20f776, org.springframework.security.web.csrf.CsrfFilter@118aff5d, org.springframework.security.web.authentication.logout.LogoutFilter@63bcdac, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2a98845, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4420bad7, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5d4f2231, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@6fd06608, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@674b1190, org.springframework.security.web.session.SessionManagementFilter@2e34fb70, org.springframework.security.web.access.ExceptionTranslationFilter@35f8987e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@73b02160]
+2021-02-22 21:19:02.900  INFO 8944 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-02-22 21:19:02.959  INFO 8944 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2021-02-22 21:19:02.976  INFO 8944 --- [restartedMain] c.p.p.p.PiyuBackgroundApplication        : Started PiyuBackgroundApplication in 6.406 seconds (JVM running for 7.973)
+2021-02-22 21:22:16.981  INFO 8944 --- [http-nio-8082-exec-1] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [1613890845,1613950227,1613956322; remember-me=TlNZV2RMME9KNTM1RmpLJTJCbVRtNGNBJTNEJTNEOlFGemNPZEkzaCUyQkFUelQ4ZU9IRjg3QSUzRCUzRA] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2021-02-22 21:22:16.991  INFO 8944 --- [http-nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-22 21:22:16.992  INFO 8944 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-02-22 21:22:16.994  INFO 8944 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2021-02-22 21:22:17.259 DEBUG 8944 --- [http-nio-8082-exec-1] c.p.p.p.mapper.UserMapper.selectOne      : ==>  Preparing: SELECT id,username,password,state,email,register_date FROM bg_user WHERE (username = ?)
+2021-02-22 21:22:17.269 DEBUG 8944 --- [http-nio-8082-exec-1] c.p.p.p.mapper.UserMapper.selectOne      : ==> Parameters: admin(String)
+2021-02-22 21:22:17.283 DEBUG 8944 --- [http-nio-8082-exec-1] c.p.p.p.mapper.UserMapper.selectOne      : <==      Total: 1
+2021-02-22 21:22:17.286 DEBUG 8944 --- [http-nio-8082-exec-1] c.p.p.p.mapper.RoleMapper.getRoleIds     : ==>  Preparing: select * from bg_role where id in (select role_id from bg_user_role where user_id = ?) order by num desc
+2021-02-22 21:22:17.288 DEBUG 8944 --- [http-nio-8082-exec-1] c.p.p.p.mapper.RoleMapper.getRoleIds     : ==> Parameters: 1(Integer)
+2021-02-22 21:22:17.294 DEBUG 8944 --- [http-nio-8082-exec-1] c.p.p.p.mapper.RoleMapper.getRoleIds     : <==      Total: 2
+2021-02-22 21:22:18.190 DEBUG 8944 --- [http-nio-8082-exec-10] c.p.p.p.m.U.getAdministrators_mpCount    : ==>  Preparing: SELECT COUNT(*) FROM bg_user WHERE register_date > ? AND register_date < ? AND username LIKE '%%' AND username <> 'admin'
+2021-02-22 21:22:18.191 DEBUG 8944 --- [http-nio-8082-exec-10] c.p.p.p.m.U.getAdministrators_mpCount    : ==> Parameters: 1970-10-10(String), 2300-12-31(String)
+2021-02-22 21:22:18.194 DEBUG 8944 --- [http-nio-8082-exec-10] c.p.p.p.m.U.getAdministrators_mpCount    : <==      Total: 1
+2021-02-22 21:22:18.206 DEBUG 8944 --- [http-nio-8082-exec-10] c.p.p.p.m.UserMapper.getAdministrators   : ==>  Preparing: select * from bg_user where register_date > ? and register_date < ? and username like '%%' and username <> 'admin' order by id asc LIMIT ?
+2021-02-22 21:22:18.208 DEBUG 8944 --- [http-nio-8082-exec-10] c.p.p.p.m.UserMapper.getAdministrators   : ==> Parameters: 1970-10-10(String), 2300-12-31(String), 10(Long)
+2021-02-22 21:22:18.214 DEBUG 8944 --- [http-nio-8082-exec-10] c.p.p.p.mapper.RoleMapper.getRoleIds     : ====>  Preparing: select * from bg_role where id in (select role_id from bg_user_role where user_id = ?) order by num desc
+2021-02-22 21:22:18.215 DEBUG 8944 --- [http-nio-8082-exec-10] c.p.p.p.mapper.RoleMapper.getRoleIds     : ====> Parameters: 2(Integer)
+2021-02-22 21:22:18.217 DEBUG 8944 --- [http-nio-8082-exec-10] c.p.p.p.mapper.RoleMapper.getRoleIds     : <====      Total: 1
+2021-02-22 21:22:18.219 DEBUG 8944 --- [http-nio-8082-exec-10] c.p.p.p.mapper.RoleMapper.getRoleIds     : ====>  Preparing: select * from bg_role where id in (select role_id from bg_user_role where user_id = ?) order by num desc
+2021-02-22 21:22:18.220 DEBUG 8944 --- [http-nio-8082-exec-10] c.p.p.p.mapper.RoleMapper.getRoleIds     : ====> Parameters: 35(Integer)
+2021-02-22 21:22:18.223 DEBUG 8944 --- [http-nio-8082-exec-10] c.p.p.p.mapper.RoleMapper.getRoleIds     : <====      Total: 2
+2021-02-22 21:22:18.225 DEBUG 8944 --- [http-nio-8082-exec-10] c.p.p.p.mapper.RoleMapper.getRoleIds     : ====>  Preparing: select * from bg_role where id in (select role_id from bg_user_role where user_id = ?) order by num desc
+2021-02-22 21:22:18.227 DEBUG 8944 --- [http-nio-8082-exec-10] c.p.p.p.mapper.RoleMapper.getRoleIds     : ====> Parameters: 36(Integer)
+2021-02-22 21:22:18.231 DEBUG 8944 --- [http-nio-8082-exec-10] c.p.p.p.mapper.RoleMapper.getRoleIds     : <====      Total: 1
+2021-02-22 21:22:18.232 DEBUG 8944 --- [http-nio-8082-exec-10] c.p.p.p.mapper.RoleMapper.getRoleIds     : ====>  Preparing: select * from bg_role where id in (select role_id from bg_user_role where user_id = ?) order by num desc
+2021-02-22 21:22:18.233 DEBUG 8944 --- [http-nio-8082-exec-10] c.p.p.p.mapper.RoleMapper.getRoleIds     : ====> Parameters: 38(Integer)
+2021-02-22 21:22:18.235 DEBUG 8944 --- [http-nio-8082-exec-10] c.p.p.p.mapper.RoleMapper.getRoleIds     : <====      Total: 1
+2021-02-22 21:22:18.236 DEBUG 8944 --- [http-nio-8082-exec-10] c.p.p.p.mapper.RoleMapper.getRoleIds     : ====>  Preparing: select * from bg_role where id in (select role_id from bg_user_role where user_id = ?) order by num desc
+2021-02-22 21:22:18.237 DEBUG 8944 --- [http-nio-8082-exec-10] c.p.p.p.mapper.RoleMapper.getRoleIds     : ====> Parameters: 39(Integer)
+2021-02-22 21:22:18.239 DEBUG 8944 --- [http-nio-8082-exec-10] c.p.p.p.mapper.RoleMapper.getRoleIds     : <====      Total: 1
+2021-02-22 21:22:18.239 DEBUG 8944 --- [http-nio-8082-exec-10] c.p.p.p.m.UserMapper.getAdministrators   : <==      Total: 5
