@@ -37,4 +37,23 @@ public interface PiUserService {
       * @return
       */
      R banUserByIds(List<Long> ids);
+
+     /**
+      * 注销用户
+      * @return
+      */
+     R offUser(Integer userId);
+
+     /**
+      * 添加用户
+      * @return
+      */
+     R addUser(User user);
+
+     /**
+      * 获取用户信息
+      * @param id
+      * @return
+      */
+     User getUserById(Integer id);
 }

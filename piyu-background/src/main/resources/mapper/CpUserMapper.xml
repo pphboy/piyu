@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.pipihao.piyu.piyubackground.mapper.common.CpUserMapper">
+    <insert id="saveUser" keyProperty="id" useGeneratedKeys="true" parameterType="com.pipihao.piyu.pojo.User">
+        INSERT INTO `user`(`id`,`username`,`nickname`,`password`,`salt`,`register_date`, `email`,`active_status`) VALUES (null,#{username},#{username},#{password},#{salt}, now(),#{email},0)
+    </insert>
+</mapper>
+

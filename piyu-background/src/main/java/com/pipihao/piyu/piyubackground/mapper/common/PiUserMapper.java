@@ -25,13 +25,16 @@ public interface PiUserMapper {
      * @param map
      * @return
      */
-    @Results({
+    @Results(id = "puser",value = {
         @Result(property = "id",column = "id"),
             @Result(property = "money",column = "id",one = @One(select = "getUserMoneyByUserId"))
     })
-    @Select("SELECT * FROM `user` WHERE IFNULL(del,0) <> 1 AND username LIKE '%${d.keywords}%'")
+    @Select("SELECT * FROM `user` WHERE IFNULL(del,0) <> 1 AND username LIKE '%${d.keywords}%' order by id desc")
     Page<PUser> findAll(Page<PUser> page, @Param("d") Map<String,Object> map);
 
+    @Select("select * from `user` where id = #{id}")
+    @ResultMap("puser")
+    PUser getUserById(Integer id);
     /*此方法与本灰无关*/
     /**
      * 获取用户的余额
@@ -58,4 +61,12 @@ public interface PiUserMapper {
      */
     @Update("update `user` set active_status = false where id in ${sql}")
     boolean banUserByIds(String sql);
+
+    /**
+     * 注解用户
+     * @param userId
+     * @return
+     */
+    @Update("update `user` set del = 1 where id = #{userId}")
+    boolean offUser(Integer userId);
 }

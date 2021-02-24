@@ -57,7 +57,6 @@ public class UserServiceImpl implements UserService {
             /*发送验证邮件 start */
             /* ----- */
             /*发送验证邮件 end  */
-
             /*注册*/
             userMapper.saveUser(user);
             /*开通钱包*/

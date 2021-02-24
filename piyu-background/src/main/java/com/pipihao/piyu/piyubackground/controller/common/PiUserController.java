@@ -5,6 +5,7 @@ import com.pipihao.piyu.piyubackground.common.R;
 import com.pipihao.piyu.piyubackground.pojo.PUser;
 import com.pipihao.piyu.piyubackground.service.common.PiUserService;
 import com.pipihao.piyu.pojo.User;
+import org.apache.commons.lang3.ObjectUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
@@ -69,5 +70,48 @@ public class PiUserController {
         return this.piUserService.banUserByIds(ids);
     }
 
+    /**
+     * 注销用户
+     * @param id
+     * @return
+     */
+    @ResponseBody
+    @GetMapping("offUser/{id}")
+    public R offUserById(@PathVariable("id") Integer id){
+        return this.piUserService.offUser(id);
+    }
+
+    /**
+     * 添加用户的界面
+     * @return
+     */
+    @GetMapping("addUser")
+    public String addUserPage(){
+        return "addUser";
+    }
+
+    /**
+     * 编辑用户的界面
+     * @return
+     */
+    @GetMapping("editUser/{id}")
+    public String editUserPage(@PathVariable(name = "id") Integer id,ModelMap map){
+        User user = this.piUserService.getUserById(id);
+        if(ObjectUtils.isEmpty(user)){
+            map.addAttribute("r",new R().getR(null,null,"无此用户"));
+            return "error";
+        };
+        map.addAttribute("user", user);
+        return "editUser";
+    }
+
+    /**
+     * 添加用户
+     */
+    @ResponseBody
+    @PostMapping("addUser")
+    public R addUser(@RequestBody User user){
+        return this.piUserService.addUser(user);
+    }
 
 }
