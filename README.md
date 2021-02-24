@@ -23,7 +23,11 @@ SSM栈的，皮鱼后端
 软件架构说明
 SpringBoot 2.4.2 很新
 
+Pi前缀代表此类是于piyu前台的数据有关的
 
+API在设计的时候并没有想到使用MybatisPlus，所以，需要使用到API的pojo的Mapper都需要使用原生的Mybatis
+
+* 2021-02-23 刚看到了怎么拆多模块，我发现，我这个只是一个项目拆开了
 #### 安装教程
 
 1. mvn install

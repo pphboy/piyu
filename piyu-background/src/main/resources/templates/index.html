@@ -74,14 +74,14 @@
                             <cite>统计页面</cite></a>
                     </li>
                     <li>
-                        <a onclick="xadmin.add_tab('会员列表(静态表格)','member-list.html')">
+                        <a onclick="xadmin.add_tab('会员列表','/bg/userList')">
                             <i class="iconfont">&#xe6a7;</i>
-                            <cite>会员列表(静态表格)</cite></a>
+                            <cite>会员列表</cite></a>
                     </li>
                     <li>
-                        <a onclick="xadmin.add_tab('会员删除','member-del.html')">
+                        <a onclick="xadmin.add_tab('会员注销','member-del.html')">
                             <i class="iconfont">&#xe6a7;</i>
-                            <cite>会员删除</cite></a>
+                            <cite>注销列表</cite></a>
                     </li>
                 </ul>
             </li>
@@ -116,7 +116,7 @@
                     </li>
                 </ul>
             </li>
-            <li>
+            <li th:if="${#authorization.expression('hasRole(''ROLE_ADMIN'')')}">
                 <a href="javascript:;">
                     <i class="iconfont left-nav-li" lay-tips="管理员管理">&#xe726;</i>
                     <cite>管理员管理</cite>

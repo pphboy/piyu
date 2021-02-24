@@ -143,13 +143,15 @@
             <scope>true</scope>
         </dependency>
     </dependencies>
-
     <build>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
+                    <fork>true</fork>
+                    <classifier>exec</classifier>
+<!--                    <includeSystemScope>true</includeSystemScope>-->
                     <excludes>
                         <exclude>
                             <groupId>org.projectlombok</groupId>

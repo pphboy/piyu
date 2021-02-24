@@ -23,7 +23,6 @@ import javax.sql.DataSource;
 @Configuration
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
-    private static final Integer AUTO_LOGIN_TIME = 60*60*24*5;  //秒为单位 ，5天
 
     @Autowired
     private DataSource dataSource;
@@ -87,7 +86,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .permitAll()
             .and().
                 rememberMe().tokenRepository(persistentTokenRepository())
-                .tokenValiditySeconds(AUTO_LOGIN_TIME) //设置自动登录的时间
+                .tokenValiditySeconds(432000) //设置自动登录的时间 单位秒
                 .userDetailsService(userDetailsService);
 
             http.headers().frameOptions().sameOrigin(); // 关闭X-Frame-Options

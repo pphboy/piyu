@@ -113,7 +113,14 @@
             <artifactId>junit</artifactId>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>com.pipihao.piyu.api</groupId>
+            <artifactId>piyu-api</artifactId>
+            <version>1.0-SNAPSHOT</version>
+            <optional>true</optional>
+        </dependency>
     </dependencies>
+
 
     <build>
         <plugins>
@@ -121,6 +128,7 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
+                    <classifier>exec</classifier>
                     <excludes>
                         <exclude>
                             <groupId>org.projectlombok</groupId>
@@ -131,5 +139,4 @@
             </plugin>
         </plugins>
     </build>
-
 </project>
