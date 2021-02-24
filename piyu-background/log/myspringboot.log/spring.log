@@ -373,3 +373,26 @@
 2021-02-24 10:32:18.718  INFO 16068 --- [main] c.p.p.p.PiyuBackgroundApplicationTests   : Started PiyuBackgroundApplicationTests in 8.726 seconds (JVM running for 10.679)
 2021-02-24 10:32:19.296  INFO 16068 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
 2021-02-24 10:32:19.302  INFO 16068 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2021-02-24 15:34:04.166  INFO 6024 --- [main] c.p.p.p.PiyuBackgroundApplicationTests   : Starting PiyuBackgroundApplicationTests using Java 1.8.0_191 on IBM with PID 6024 (started by pipihao in D:\Projects\PiYU\piyu\piyu-background)
+2021-02-24 15:34:04.180  INFO 6024 --- [main] c.p.p.p.PiyuBackgroundApplicationTests   : No active profile set, falling back to default profiles: default
+2021-02-24 15:34:06.920  WARN 6024 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'roleMapper' and 'com.pipihao.piyu.piyubackground.mapper.RoleMapper' mapperInterface. Bean already defined with the same name!
+2021-02-24 15:34:06.931  WARN 6024 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'userMapper' and 'com.pipihao.piyu.piyubackground.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
+2021-02-24 15:34:06.933  WARN 6024 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'piUserMapper' and 'com.pipihao.piyu.piyubackground.mapper.common.PiUserMapper' mapperInterface. Bean already defined with the same name!
+2021-02-24 15:34:06.936  WARN 6024 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.pipihao.piyu.piyubackground.mapper]' package. Please check your configuration.
+2021-02-24 15:34:07.993  INFO 6024 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2021-02-24 15:34:08.647  INFO 6024 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2021-02-24 15:34:12.657  INFO 6024 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-24 15:34:12.957  INFO 6024 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-02-24 15:34:13.593  INFO 6024 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2021-02-24 15:34:13.605  INFO 6024 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2021-02-24 15:34:13.614  INFO 6024 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2021-02-24 15:34:13.618  INFO 6024 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
+2021-02-24 15:34:14.274  INFO 6024 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/js/**'] with []
+2021-02-24 15:34:14.274  INFO 6024 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/css/**'] with []
+2021-02-24 15:34:14.276  INFO 6024 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/fonts/**'] with []
+2021-02-24 15:34:14.279  INFO 6024 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/images/**'] with []
+2021-02-24 15:34:14.280  INFO 6024 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/lib/**'] with []
+2021-02-24 15:34:15.025  INFO 6024 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@306c7bf6, org.springframework.security.web.context.SecurityContextPersistenceFilter@566f1852, org.springframework.security.web.header.HeaderWriterFilter@32120956, org.springframework.security.web.csrf.CsrfFilter@4c82b5df, org.springframework.security.web.authentication.logout.LogoutFilter@51f95f0d, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5eabff6b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2e4389ed, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@468e8565, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@2001e48c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@664632e9, org.springframework.security.web.session.SessionManagementFilter@553da911, org.springframework.security.web.access.ExceptionTranslationFilter@7f287b98, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4da1f38a]
+2021-02-24 15:34:15.282  INFO 6024 --- [main] c.p.p.p.PiyuBackgroundApplicationTests   : Started PiyuBackgroundApplicationTests in 12.401 seconds (JVM running for 15.147)
+2021-02-24 15:34:15.788  INFO 6024 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-02-24 15:34:15.792  INFO 6024 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
