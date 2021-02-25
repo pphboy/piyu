@@ -2,6 +2,7 @@ package com.pipihao.piyu.piyubackground.mapper.common;
 
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.pipihao.piyu.piyubackground.pojo.PUser;
+import com.pipihao.piyu.pojo.PiProductClass;
 import com.pipihao.piyu.pojo.User;
 import org.apache.ibatis.annotations.*;
 
@@ -87,4 +88,5 @@ public interface PiUserMapper {
      */
     @Update("update `user` set del = null where id = #{userid}")
     boolean rightUser(Integer userId);
+
 }

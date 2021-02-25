@@ -40,6 +40,8 @@
                                 <div class="layui-input-inline layui-show-xs-block">
                                     <input class="layui-input" placeholder="分类名" name="className"></div>
                                 <div class="layui-input-inline layui-show-xs-block">
+                                    <input type="number" class="layui-input" placeholder="排序数" name="orderNum"></div>
+                                <div class="layui-input-inline layui-show-xs-block">
                                     <button class="layui-btn"  lay-submit="" lay-filter="add"><i class="layui-icon"></i>增加</button>
                                 </div>
                             </form>
@@ -62,7 +64,7 @@
                                   <td th:text="${pClass.className}">
                                     产品管理
                                   </td>
-                                  <td>1</td>
+                                  <td th:text="${pClass.orderNum}">1</td>
                                   <td>
                                     <input type="checkbox" name="switch"  lay-text="开启|停用" th:checked="${pClass.state ? true :false}"  lay-skin="switch">
                                   </td>
@@ -89,19 +91,27 @@
 
             form.on('submit(add)',(data)=>{
                 console.log(data.field);
-                return false;
-
+                for(var a in data.field){
+                    if(!data.field[a]){
+                        layer.msg('分类名和排序数都必须填写',{icon:5,time:1000});
+                        return false;
+                    }
+                }
+                var name = [[${_csrf.parameterName}]];
+                var token = [[${_csrf.token}]];
                 $.ajax({
                     type:"POST",
-                    url:'/bg/addClass',
+                    url:`/bg/addClass?${name}=${token}`,
                     dataType:'json',
                     contentType:'application/json',
-                    data:JSON.stringify(data),
+                    data:JSON.stringify(data.field),
                     success(data){
                         if(data.state){
-
+                            layer.alert(data.msg,{icon:1},function(index){
+                                location.reload();
+                            });
                         }else{
-
+                            layer.msg(data.msg,{icon:5,time:1500});
                         }
                     }
                 });

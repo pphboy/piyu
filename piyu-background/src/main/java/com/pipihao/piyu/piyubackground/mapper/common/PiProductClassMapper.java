@@ -2,6 +2,7 @@ package com.pipihao.piyu.piyubackground.mapper.common;
 
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.pipihao.piyu.pojo.PiProductClass;
+import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
 
@@ -20,5 +21,21 @@ public interface PiProductClassMapper extends com.pipihao.piyu.mapper.PiProductC
      */
     @Select("select * from pi_product_class")
     Page<PiProductClass> getAllPiClassByPage(Page<PiProductClass> page);
+
+    /**
+     * 添加分类
+     * @param piProductClass
+     * @return
+     */
+    @Insert("INSERT INTO `pi_product_class`(`class_name`, `create_date`, `state`, `order_num`) VALUES (#{className}, now(), 1, #{orderNum})")
+    boolean addPiClass(PiProductClass piProductClass);
+
+    /**
+     * 判断是否重名
+     * @param name
+     * @return
+     */
+    @Select("select count(*) from pi_product_class where class_name = #{name}")
+    boolean getPiClassByName(String name);
 
 }

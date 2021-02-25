@@ -1,6 +1,7 @@
 package com.pipihao.piyu.piyubackground.service.common;
 
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import com.pipihao.piyu.piyubackground.common.R;
 import com.pipihao.piyu.pojo.PiProductClass;
 
 /**
@@ -16,4 +17,13 @@ public interface PiClassService {
      * @return
      */
     Page<PiProductClass> getAllPiClass(Page<PiProductClass> page);
+
+    /**
+     * 添加分类
+     * @param piProductClass
+     * @return
+     */
+    R addPiClass(PiProductClass piProductClass);
+
 }
+
