@@ -2000,3 +2000,349 @@ Caused by: java.lang.ClassNotFoundException: Cannot find class: com.pipihao.piyu
 2021-02-25 10:42:52.255 DEBUG 13576 --- [http-nio-8082-exec-5] c.p.p.p.m.c.PiUserMapper.getUserById     : <==      Total: 1
 2021-02-25 10:50:14.974  INFO 13576 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
 2021-02-25 10:50:14.985  INFO 13576 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2021-02-25 10:51:20.854  INFO 3252 --- [restartedMain] c.p.p.p.PiyuBackgroundApplication        : Starting PiyuBackgroundApplication using Java 1.8.0_191 on IBM with PID 3252 (D:\Projects\PiYU\piyu\piyu-background\target\classes started by pipihao in D:\Projects\PiYU\piyu)
+2021-02-25 10:51:20.857  INFO 3252 --- [restartedMain] c.p.p.p.PiyuBackgroundApplication        : No active profile set, falling back to default profiles: default
+2021-02-25 10:51:20.936  INFO 3252 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-02-25 10:51:20.937  INFO 3252 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-02-25 10:51:22.118  WARN 3252 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'roleMapper' and 'com.pipihao.piyu.piyubackground.mapper.RoleMapper' mapperInterface. Bean already defined with the same name!
+2021-02-25 10:51:22.118  WARN 3252 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'userMapper' and 'com.pipihao.piyu.piyubackground.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
+2021-02-25 10:51:22.118  WARN 3252 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'cpUserMapper' and 'com.pipihao.piyu.piyubackground.mapper.common.CpUserMapper' mapperInterface. Bean already defined with the same name!
+2021-02-25 10:51:22.118  WARN 3252 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'cpWalletMapper' and 'com.pipihao.piyu.piyubackground.mapper.common.CpWalletMapper' mapperInterface. Bean already defined with the same name!
+2021-02-25 10:51:22.119  WARN 3252 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'piUserMapper' and 'com.pipihao.piyu.piyubackground.mapper.common.PiUserMapper' mapperInterface. Bean already defined with the same name!
+2021-02-25 10:51:22.119  WARN 3252 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.pipihao.piyu.piyubackground.mapper]' package. Please check your configuration.
+2021-02-25 10:51:22.729  INFO 3252 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2021-02-25 10:51:22.741  INFO 3252 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-02-25 10:51:22.742  INFO 3252 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-25 10:51:22.876  INFO 3252 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-02-25 10:51:22.877  INFO 3252 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1939 ms
+2021-02-25 10:51:23.040  INFO 3252 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2021-02-25 10:51:23.189  INFO 3252 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2021-02-25 10:51:24.763  INFO 3252 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-25 10:51:24.853  INFO 3252 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-02-25 10:51:24.944  INFO 3252 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2021-02-25 10:51:24.944  INFO 3252 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2021-02-25 10:51:24.945  INFO 3252 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2021-02-25 10:51:24.946  INFO 3252 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
+2021-02-25 10:51:25.205  INFO 3252 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/js/**'] with []
+2021-02-25 10:51:25.206  INFO 3252 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/css/**'] with []
+2021-02-25 10:51:25.206  INFO 3252 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/fonts/**'] with []
+2021-02-25 10:51:25.206  INFO 3252 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/images/**'] with []
+2021-02-25 10:51:25.206  INFO 3252 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/lib/**'] with []
+2021-02-25 10:51:25.253  INFO 3252 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@371554, org.springframework.security.web.context.SecurityContextPersistenceFilter@2fa5ee8f, org.springframework.security.web.header.HeaderWriterFilter@5cb895d9, org.springframework.security.web.csrf.CsrfFilter@6bb70ad, org.springframework.security.web.authentication.logout.LogoutFilter@49387210, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@b5e943b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@f9efa6a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@62a2b2fe, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@76ec10f4, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@18aa2b81, org.springframework.security.web.session.SessionManagementFilter@6d92c2d5, org.springframework.security.web.access.ExceptionTranslationFilter@2fca92de, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@79f82944]
+2021-02-25 10:51:25.322  INFO 3252 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-02-25 10:51:25.379  INFO 3252 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2021-02-25 10:51:25.394  INFO 3252 --- [restartedMain] c.p.p.p.PiyuBackgroundApplication        : Started PiyuBackgroundApplication in 5.207 seconds (JVM running for 6.56)
+2021-02-25 10:51:39.766  INFO 3252 --- [http-nio-8082-exec-1] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [1614218235; remember-me=T2FiOWprTnolMkZIS2NtS1k2JTJCSmNzRGclM0QlM0Q6TjNWNE4zOTBhNk51OXZLYzNtQWpRUSUzRCUzRA; JSESSIONID=417A0A4E5A887CEA2EF4FBE5E99BA679; Hm_lpvt_b393d153aeb26b46e9431fabaf0f6190=1614220972] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2021-02-25 10:51:39.775  INFO 3252 --- [http-nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-25 10:51:39.775  INFO 3252 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-02-25 10:51:39.776  INFO 3252 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-02-25 10:51:40.115 DEBUG 3252 --- [http-nio-8082-exec-1] c.p.p.p.mapper.UserMapper.selectOne      : ==>  Preparing: SELECT id,username,password,state,email,register_date FROM bg_user WHERE (username = ?)
+2021-02-25 10:51:40.125 DEBUG 3252 --- [http-nio-8082-exec-1] c.p.p.p.mapper.UserMapper.selectOne      : ==> Parameters: xiaopi(String)
+2021-02-25 10:51:40.139 DEBUG 3252 --- [http-nio-8082-exec-1] c.p.p.p.mapper.UserMapper.selectOne      : <==      Total: 1
+2021-02-25 10:51:40.145 DEBUG 3252 --- [http-nio-8082-exec-1] c.p.p.p.mapper.RoleMapper.getRoleIds     : ==>  Preparing: select * from bg_role where id in (select role_id from bg_user_role where user_id = ?) order by num desc
+2021-02-25 10:51:40.147 DEBUG 3252 --- [http-nio-8082-exec-1] c.p.p.p.mapper.RoleMapper.getRoleIds     : ==> Parameters: 2(Integer)
+2021-02-25 10:51:40.150 DEBUG 3252 --- [http-nio-8082-exec-1] c.p.p.p.mapper.RoleMapper.getRoleIds     : <==      Total: 1
+2021-02-25 10:51:41.174 DEBUG 3252 --- [http-nio-8082-exec-6] c.p.p.p.m.c.P.findAll_mpCount            : ==>  Preparing: SELECT COUNT(*) FROM `user` WHERE IFNULL(del, 0) <> 1 AND username LIKE '%%'
+2021-02-25 10:51:41.175 DEBUG 3252 --- [http-nio-8082-exec-6] c.p.p.p.m.c.P.findAll_mpCount            : ==> Parameters: 
+2021-02-25 10:51:41.178 DEBUG 3252 --- [http-nio-8082-exec-6] c.p.p.p.m.c.P.findAll_mpCount            : <==      Total: 1
+2021-02-25 10:51:41.191 DEBUG 3252 --- [http-nio-8082-exec-6] c.p.p.p.m.common.PiUserMapper.findAll    : ==>  Preparing: SELECT * FROM `user` WHERE IFNULL(del,0) <> 1 AND username LIKE '%%' order by id desc LIMIT ?
+2021-02-25 10:51:41.193 DEBUG 3252 --- [http-nio-8082-exec-6] c.p.p.p.m.common.PiUserMapper.findAll    : ==> Parameters: 10(Long)
+2021-02-25 10:51:41.200 DEBUG 3252 --- [http-nio-8082-exec-6] c.p.p.p.m.c.P.getUserMoneyByUserId       : ====>  Preparing: select balance from wallet where user_id = ?
+2021-02-25 10:51:41.201 DEBUG 3252 --- [http-nio-8082-exec-6] c.p.p.p.m.c.P.getUserMoneyByUserId       : ====> Parameters: 10010(Integer)
+2021-02-25 10:51:41.205 DEBUG 3252 --- [http-nio-8082-exec-6] c.p.p.p.m.c.P.getUserMoneyByUserId       : <====      Total: 1
+2021-02-25 10:51:41.207 DEBUG 3252 --- [http-nio-8082-exec-6] c.p.p.p.m.c.P.getUserMoneyByUserId       : ====>  Preparing: select balance from wallet where user_id = ?
+2021-02-25 10:51:41.207 DEBUG 3252 --- [http-nio-8082-exec-6] c.p.p.p.m.c.P.getUserMoneyByUserId       : ====> Parameters: 10009(Integer)
+2021-02-25 10:51:41.208 DEBUG 3252 --- [http-nio-8082-exec-6] c.p.p.p.m.c.P.getUserMoneyByUserId       : <====      Total: 1
+2021-02-25 10:51:41.210 DEBUG 3252 --- [http-nio-8082-exec-6] c.p.p.p.m.c.P.getUserMoneyByUserId       : ====>  Preparing: select balance from wallet where user_id = ?
+2021-02-25 10:51:41.211 DEBUG 3252 --- [http-nio-8082-exec-6] c.p.p.p.m.c.P.getUserMoneyByUserId       : ====> Parameters: 10008(Integer)
+2021-02-25 10:51:41.212 DEBUG 3252 --- [http-nio-8082-exec-6] c.p.p.p.m.c.P.getUserMoneyByUserId       : <====      Total: 1
+2021-02-25 10:51:41.215 DEBUG 3252 --- [http-nio-8082-exec-6] c.p.p.p.m.c.P.getUserMoneyByUserId       : ====>  Preparing: select balance from wallet where user_id = ?
+2021-02-25 10:51:41.215 DEBUG 3252 --- [http-nio-8082-exec-6] c.p.p.p.m.c.P.getUserMoneyByUserId       : ====> Parameters: 10007(Integer)
+2021-02-25 10:51:41.217 DEBUG 3252 --- [http-nio-8082-exec-6] c.p.p.p.m.c.P.getUserMoneyByUserId       : <====      Total: 1
+2021-02-25 10:51:41.220 DEBUG 3252 --- [http-nio-8082-exec-6] c.p.p.p.m.c.P.getUserMoneyByUserId       : ====>  Preparing: select balance from wallet where user_id = ?
+2021-02-25 10:51:41.221 DEBUG 3252 --- [http-nio-8082-exec-6] c.p.p.p.m.c.P.getUserMoneyByUserId       : ====> Parameters: 10006(Integer)
+2021-02-25 10:51:41.222 DEBUG 3252 --- [http-nio-8082-exec-6] c.p.p.p.m.c.P.getUserMoneyByUserId       : <====      Total: 1
+2021-02-25 10:51:41.223 DEBUG 3252 --- [http-nio-8082-exec-6] c.p.p.p.m.common.PiUserMapper.findAll    : <==      Total: 5
+2021-02-25 10:51:43.184 DEBUG 3252 --- [http-nio-8082-exec-2] c.p.p.p.m.c.PiUserMapper.getUserById     : ==>  Preparing: select * from `user` where id = ?
+2021-02-25 10:51:43.184 DEBUG 3252 --- [http-nio-8082-exec-2] c.p.p.p.m.c.PiUserMapper.getUserById     : ==> Parameters: 10006(Integer)
+2021-02-25 10:51:43.188 DEBUG 3252 --- [http-nio-8082-exec-2] c.p.p.p.m.c.P.getUserMoneyByUserId       : ====>  Preparing: select balance from wallet where user_id = ?
+2021-02-25 10:51:43.189 DEBUG 3252 --- [http-nio-8082-exec-2] c.p.p.p.m.c.P.getUserMoneyByUserId       : ====> Parameters: 10006(Integer)
+2021-02-25 10:51:43.190 DEBUG 3252 --- [http-nio-8082-exec-2] c.p.p.p.m.c.P.getUserMoneyByUserId       : <====      Total: 1
+2021-02-25 10:51:43.191 DEBUG 3252 --- [http-nio-8082-exec-2] c.p.p.p.m.c.PiUserMapper.getUserById     : <==      Total: 1
+2021-02-25 10:51:44.793 DEBUG 3252 --- [http-nio-8082-exec-3] c.p.p.p.m.c.CpUserMapper.updateUser      : ==>  Preparing: UPDATE `piyu`.`user` SET `nickname` = ?, `address` = ?, `introduction` = ?,`email` = ? WHERE `id` = ?;
+2021-02-25 10:51:44.794 DEBUG 3252 --- [http-nio-8082-exec-3] c.p.p.p.m.c.CpUserMapper.updateUser      : ==> Parameters: 牛战士(String), 湖南省(String), 志不真则心不热，心不热则功不紧(String), 87095894@qq.com(String), 10006(Integer)
+2021-02-25 10:51:44.795 DEBUG 3252 --- [http-nio-8082-exec-3] c.p.p.p.m.c.CpUserMapper.updateUser      : <==    Updates: 1
+2021-02-25 10:52:44.671 DEBUG 3252 --- [http-nio-8082-exec-10] c.p.p.p.m.c.PiUserMapper.getUserById     : ==>  Preparing: select * from `user` where id = ?
+2021-02-25 10:52:44.672 DEBUG 3252 --- [http-nio-8082-exec-10] c.p.p.p.m.c.PiUserMapper.getUserById     : ==> Parameters: 10006(Integer)
+2021-02-25 10:52:44.675 DEBUG 3252 --- [http-nio-8082-exec-10] c.p.p.p.m.c.P.getUserMoneyByUserId       : ====>  Preparing: select balance from wallet where user_id = ?
+2021-02-25 10:52:44.676 DEBUG 3252 --- [http-nio-8082-exec-10] c.p.p.p.m.c.P.getUserMoneyByUserId       : ====> Parameters: 10006(Integer)
+2021-02-25 10:52:44.678 DEBUG 3252 --- [http-nio-8082-exec-10] c.p.p.p.m.c.P.getUserMoneyByUserId       : <====      Total: 1
+2021-02-25 10:52:44.678 DEBUG 3252 --- [http-nio-8082-exec-10] c.p.p.p.m.c.PiUserMapper.getUserById     : <==      Total: 1
+2021-02-25 10:55:01.866 DEBUG 3252 --- [http-nio-8082-exec-3] c.p.p.p.m.c.P.findAll_mpCount            : ==>  Preparing: SELECT COUNT(*) FROM `user` WHERE IFNULL(del, 0) <> 1 AND username LIKE '%%'
+2021-02-25 10:55:01.867 DEBUG 3252 --- [http-nio-8082-exec-3] c.p.p.p.m.c.P.findAll_mpCount            : ==> Parameters: 
+2021-02-25 10:55:01.869 DEBUG 3252 --- [http-nio-8082-exec-3] c.p.p.p.m.c.P.findAll_mpCount            : <==      Total: 1
+2021-02-25 10:55:01.871 DEBUG 3252 --- [http-nio-8082-exec-3] c.p.p.p.m.common.PiUserMapper.findAll    : ==>  Preparing: SELECT * FROM `user` WHERE IFNULL(del,0) <> 1 AND username LIKE '%%' order by id desc LIMIT ?
+2021-02-25 10:55:01.873 DEBUG 3252 --- [http-nio-8082-exec-3] c.p.p.p.m.common.PiUserMapper.findAll    : ==> Parameters: 10(Long)
+2021-02-25 10:55:01.876 DEBUG 3252 --- [http-nio-8082-exec-3] c.p.p.p.m.c.P.getUserMoneyByUserId       : ====>  Preparing: select balance from wallet where user_id = ?
+2021-02-25 10:55:01.877 DEBUG 3252 --- [http-nio-8082-exec-3] c.p.p.p.m.c.P.getUserMoneyByUserId       : ====> Parameters: 10010(Integer)
+2021-02-25 10:55:01.880 DEBUG 3252 --- [http-nio-8082-exec-3] c.p.p.p.m.c.P.getUserMoneyByUserId       : <====      Total: 1
+2021-02-25 10:55:01.883 DEBUG 3252 --- [http-nio-8082-exec-3] c.p.p.p.m.c.P.getUserMoneyByUserId       : ====>  Preparing: select balance from wallet where user_id = ?
+2021-02-25 10:55:01.883 DEBUG 3252 --- [http-nio-8082-exec-3] c.p.p.p.m.c.P.getUserMoneyByUserId       : ====> Parameters: 10009(Integer)
+2021-02-25 10:55:01.884 DEBUG 3252 --- [http-nio-8082-exec-3] c.p.p.p.m.c.P.getUserMoneyByUserId       : <====      Total: 1
+2021-02-25 10:55:01.887 DEBUG 3252 --- [http-nio-8082-exec-3] c.p.p.p.m.c.P.getUserMoneyByUserId       : ====>  Preparing: select balance from wallet where user_id = ?
+2021-02-25 10:55:01.887 DEBUG 3252 --- [http-nio-8082-exec-3] c.p.p.p.m.c.P.getUserMoneyByUserId       : ====> Parameters: 10008(Integer)
+2021-02-25 10:55:01.888 DEBUG 3252 --- [http-nio-8082-exec-3] c.p.p.p.m.c.P.getUserMoneyByUserId       : <====      Total: 1
+2021-02-25 10:55:01.889 DEBUG 3252 --- [http-nio-8082-exec-3] c.p.p.p.m.c.P.getUserMoneyByUserId       : ====>  Preparing: select balance from wallet where user_id = ?
+2021-02-25 10:55:01.890 DEBUG 3252 --- [http-nio-8082-exec-3] c.p.p.p.m.c.P.getUserMoneyByUserId       : ====> Parameters: 10007(Integer)
+2021-02-25 10:55:01.891 DEBUG 3252 --- [http-nio-8082-exec-3] c.p.p.p.m.c.P.getUserMoneyByUserId       : <====      Total: 1
+2021-02-25 10:55:01.892 DEBUG 3252 --- [http-nio-8082-exec-3] c.p.p.p.m.c.P.getUserMoneyByUserId       : ====>  Preparing: select balance from wallet where user_id = ?
+2021-02-25 10:55:01.894 DEBUG 3252 --- [http-nio-8082-exec-3] c.p.p.p.m.c.P.getUserMoneyByUserId       : ====> Parameters: 10006(Integer)
+2021-02-25 10:55:01.896 DEBUG 3252 --- [http-nio-8082-exec-3] c.p.p.p.m.c.P.getUserMoneyByUserId       : <====      Total: 1
+2021-02-25 10:55:01.897 DEBUG 3252 --- [http-nio-8082-exec-3] c.p.p.p.m.common.PiUserMapper.findAll    : <==      Total: 5
+2021-02-25 10:55:04.073 DEBUG 3252 --- [http-nio-8082-exec-2] c.p.p.p.m.c.PiUserMapper.getUserById     : ==>  Preparing: select * from `user` where id = ?
+2021-02-25 10:55:04.074 DEBUG 3252 --- [http-nio-8082-exec-2] c.p.p.p.m.c.PiUserMapper.getUserById     : ==> Parameters: 10006(Integer)
+2021-02-25 10:55:04.078 DEBUG 3252 --- [http-nio-8082-exec-2] c.p.p.p.m.c.P.getUserMoneyByUserId       : ====>  Preparing: select balance from wallet where user_id = ?
+2021-02-25 10:55:04.078 DEBUG 3252 --- [http-nio-8082-exec-2] c.p.p.p.m.c.P.getUserMoneyByUserId       : ====> Parameters: 10006(Integer)
+2021-02-25 10:55:04.080 DEBUG 3252 --- [http-nio-8082-exec-2] c.p.p.p.m.c.P.getUserMoneyByUserId       : <====      Total: 1
+2021-02-25 10:55:04.080 DEBUG 3252 --- [http-nio-8082-exec-2] c.p.p.p.m.c.PiUserMapper.getUserById     : <==      Total: 1
+2021-02-25 10:55:05.313 DEBUG 3252 --- [http-nio-8082-exec-5] c.p.p.p.m.c.CpUserMapper.updateUser      : ==>  Preparing: UPDATE `piyu`.`user` SET `nickname` = ?, `address` = ?, `introduction` = ?,`email` = ? WHERE `id` = ?;
+2021-02-25 10:55:05.314 DEBUG 3252 --- [http-nio-8082-exec-5] c.p.p.p.m.c.CpUserMapper.updateUser      : ==> Parameters: 牛战士(String), 湖南省(String), 志不真则心不热，心不热则功不紧(String), 87095894@qq.com(String), 10006(Integer)
+2021-02-25 10:55:05.315 DEBUG 3252 --- [http-nio-8082-exec-5] c.p.p.p.m.c.CpUserMapper.updateUser      : <==    Updates: 1
+2021-02-25 10:59:25.379 DEBUG 3252 --- [http-nio-8082-exec-10] c.p.p.p.m.c.P.findAll_mpCount            : ==>  Preparing: SELECT COUNT(*) FROM `user` WHERE IFNULL(del, 0) <> 1 AND username LIKE '%%'
+2021-02-25 10:59:25.379 DEBUG 3252 --- [http-nio-8082-exec-10] c.p.p.p.m.c.P.findAll_mpCount            : ==> Parameters: 
+2021-02-25 10:59:25.381 DEBUG 3252 --- [http-nio-8082-exec-10] c.p.p.p.m.c.P.findAll_mpCount            : <==      Total: 1
+2021-02-25 10:59:25.383 DEBUG 3252 --- [http-nio-8082-exec-10] c.p.p.p.m.common.PiUserMapper.findAll    : ==>  Preparing: SELECT * FROM `user` WHERE IFNULL(del,0) <> 1 AND username LIKE '%%' order by id desc LIMIT ?
+2021-02-25 10:59:25.384 DEBUG 3252 --- [http-nio-8082-exec-10] c.p.p.p.m.common.PiUserMapper.findAll    : ==> Parameters: 10(Long)
+2021-02-25 10:59:25.387 DEBUG 3252 --- [http-nio-8082-exec-10] c.p.p.p.m.c.P.getUserMoneyByUserId       : ====>  Preparing: select balance from wallet where user_id = ?
+2021-02-25 10:59:25.388 DEBUG 3252 --- [http-nio-8082-exec-10] c.p.p.p.m.c.P.getUserMoneyByUserId       : ====> Parameters: 10010(Integer)
+2021-02-25 10:59:25.389 DEBUG 3252 --- [http-nio-8082-exec-10] c.p.p.p.m.c.P.getUserMoneyByUserId       : <====      Total: 1
+2021-02-25 10:59:25.391 DEBUG 3252 --- [http-nio-8082-exec-10] c.p.p.p.m.c.P.getUserMoneyByUserId       : ====>  Preparing: select balance from wallet where user_id = ?
+2021-02-25 10:59:25.392 DEBUG 3252 --- [http-nio-8082-exec-10] c.p.p.p.m.c.P.getUserMoneyByUserId       : ====> Parameters: 10009(Integer)
+2021-02-25 10:59:25.393 DEBUG 3252 --- [http-nio-8082-exec-10] c.p.p.p.m.c.P.getUserMoneyByUserId       : <====      Total: 1
+2021-02-25 10:59:25.397 DEBUG 3252 --- [http-nio-8082-exec-10] c.p.p.p.m.c.P.getUserMoneyByUserId       : ====>  Preparing: select balance from wallet where user_id = ?
+2021-02-25 10:59:25.398 DEBUG 3252 --- [http-nio-8082-exec-10] c.p.p.p.m.c.P.getUserMoneyByUserId       : ====> Parameters: 10008(Integer)
+2021-02-25 10:59:25.399 DEBUG 3252 --- [http-nio-8082-exec-10] c.p.p.p.m.c.P.getUserMoneyByUserId       : <====      Total: 1
+2021-02-25 10:59:25.401 DEBUG 3252 --- [http-nio-8082-exec-10] c.p.p.p.m.c.P.getUserMoneyByUserId       : ====>  Preparing: select balance from wallet where user_id = ?
+2021-02-25 10:59:25.402 DEBUG 3252 --- [http-nio-8082-exec-10] c.p.p.p.m.c.P.getUserMoneyByUserId       : ====> Parameters: 10007(Integer)
+2021-02-25 10:59:25.403 DEBUG 3252 --- [http-nio-8082-exec-10] c.p.p.p.m.c.P.getUserMoneyByUserId       : <====      Total: 1
+2021-02-25 10:59:25.406 DEBUG 3252 --- [http-nio-8082-exec-10] c.p.p.p.m.c.P.getUserMoneyByUserId       : ====>  Preparing: select balance from wallet where user_id = ?
+2021-02-25 10:59:25.409 DEBUG 3252 --- [http-nio-8082-exec-10] c.p.p.p.m.c.P.getUserMoneyByUserId       : ====> Parameters: 10006(Integer)
+2021-02-25 10:59:25.410 DEBUG 3252 --- [http-nio-8082-exec-10] c.p.p.p.m.c.P.getUserMoneyByUserId       : <====      Total: 1
+2021-02-25 10:59:25.410 DEBUG 3252 --- [http-nio-8082-exec-10] c.p.p.p.m.common.PiUserMapper.findAll    : <==      Total: 5
+2021-02-25 10:59:27.410 DEBUG 3252 --- [http-nio-8082-exec-4] c.p.p.p.m.c.PiUserMapper.getUserById     : ==>  Preparing: select * from `user` where id = ?
+2021-02-25 10:59:27.411 DEBUG 3252 --- [http-nio-8082-exec-4] c.p.p.p.m.c.PiUserMapper.getUserById     : ==> Parameters: 10006(Integer)
+2021-02-25 10:59:27.414 DEBUG 3252 --- [http-nio-8082-exec-4] c.p.p.p.m.c.P.getUserMoneyByUserId       : ====>  Preparing: select balance from wallet where user_id = ?
+2021-02-25 10:59:27.414 DEBUG 3252 --- [http-nio-8082-exec-4] c.p.p.p.m.c.P.getUserMoneyByUserId       : ====> Parameters: 10006(Integer)
+2021-02-25 10:59:27.415 DEBUG 3252 --- [http-nio-8082-exec-4] c.p.p.p.m.c.P.getUserMoneyByUserId       : <====      Total: 1
+2021-02-25 10:59:27.416 DEBUG 3252 --- [http-nio-8082-exec-4] c.p.p.p.m.c.PiUserMapper.getUserById     : <==      Total: 1
+2021-02-25 10:59:28.719 DEBUG 3252 --- [http-nio-8082-exec-9] c.p.p.p.m.c.CpUserMapper.updateUser      : ==>  Preparing: UPDATE `piyu`.`user` SET `nickname` = ?, `address` = ?, `introduction` = ?,`email` = ? WHERE `id` = ?;
+2021-02-25 10:59:28.720 DEBUG 3252 --- [http-nio-8082-exec-9] c.p.p.p.m.c.CpUserMapper.updateUser      : ==> Parameters: 牛战士(String), 湖南省(String), 志不真则心不热，心不热则功不紧(String), 87095894@qq.com(String), 10006(Integer)
+2021-02-25 10:59:28.721 DEBUG 3252 --- [http-nio-8082-exec-9] c.p.p.p.m.c.CpUserMapper.updateUser      : <==    Updates: 1
+2021-02-25 11:01:32.166 DEBUG 3252 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.findAll_mpCount            : ==>  Preparing: SELECT COUNT(*) FROM `user` WHERE IFNULL(del, 0) <> 1 AND username LIKE '%%'
+2021-02-25 11:01:32.167 DEBUG 3252 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.findAll_mpCount            : ==> Parameters: 
+2021-02-25 11:01:32.169 DEBUG 3252 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.findAll_mpCount            : <==      Total: 1
+2021-02-25 11:01:32.170 DEBUG 3252 --- [http-nio-8082-exec-1] c.p.p.p.m.common.PiUserMapper.findAll    : ==>  Preparing: SELECT * FROM `user` WHERE IFNULL(del,0) <> 1 AND username LIKE '%%' order by id desc LIMIT ?
+2021-02-25 11:01:32.170 DEBUG 3252 --- [http-nio-8082-exec-1] c.p.p.p.m.common.PiUserMapper.findAll    : ==> Parameters: 10(Long)
+2021-02-25 11:01:32.174 DEBUG 3252 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.getUserMoneyByUserId       : ====>  Preparing: select balance from wallet where user_id = ?
+2021-02-25 11:01:32.175 DEBUG 3252 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.getUserMoneyByUserId       : ====> Parameters: 10010(Integer)
+2021-02-25 11:01:32.176 DEBUG 3252 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.getUserMoneyByUserId       : <====      Total: 1
+2021-02-25 11:01:32.177 DEBUG 3252 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.getUserMoneyByUserId       : ====>  Preparing: select balance from wallet where user_id = ?
+2021-02-25 11:01:32.178 DEBUG 3252 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.getUserMoneyByUserId       : ====> Parameters: 10009(Integer)
+2021-02-25 11:01:32.179 DEBUG 3252 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.getUserMoneyByUserId       : <====      Total: 1
+2021-02-25 11:01:32.180 DEBUG 3252 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.getUserMoneyByUserId       : ====>  Preparing: select balance from wallet where user_id = ?
+2021-02-25 11:01:32.180 DEBUG 3252 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.getUserMoneyByUserId       : ====> Parameters: 10008(Integer)
+2021-02-25 11:01:32.181 DEBUG 3252 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.getUserMoneyByUserId       : <====      Total: 1
+2021-02-25 11:01:32.182 DEBUG 3252 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.getUserMoneyByUserId       : ====>  Preparing: select balance from wallet where user_id = ?
+2021-02-25 11:01:32.183 DEBUG 3252 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.getUserMoneyByUserId       : ====> Parameters: 10007(Integer)
+2021-02-25 11:01:32.184 DEBUG 3252 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.getUserMoneyByUserId       : <====      Total: 1
+2021-02-25 11:01:32.184 DEBUG 3252 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.getUserMoneyByUserId       : ====>  Preparing: select balance from wallet where user_id = ?
+2021-02-25 11:01:32.185 DEBUG 3252 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.getUserMoneyByUserId       : ====> Parameters: 10006(Integer)
+2021-02-25 11:01:32.186 DEBUG 3252 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.getUserMoneyByUserId       : <====      Total: 1
+2021-02-25 11:01:32.186 DEBUG 3252 --- [http-nio-8082-exec-1] c.p.p.p.m.common.PiUserMapper.findAll    : <==      Total: 5
+2021-02-25 11:01:33.777 DEBUG 3252 --- [http-nio-8082-exec-5] c.p.p.p.m.c.PiUserMapper.getUserById     : ==>  Preparing: select * from `user` where id = ?
+2021-02-25 11:01:33.778 DEBUG 3252 --- [http-nio-8082-exec-5] c.p.p.p.m.c.PiUserMapper.getUserById     : ==> Parameters: 10006(Integer)
+2021-02-25 11:01:33.782 DEBUG 3252 --- [http-nio-8082-exec-5] c.p.p.p.m.c.P.getUserMoneyByUserId       : ====>  Preparing: select balance from wallet where user_id = ?
+2021-02-25 11:01:33.782 DEBUG 3252 --- [http-nio-8082-exec-5] c.p.p.p.m.c.P.getUserMoneyByUserId       : ====> Parameters: 10006(Integer)
+2021-02-25 11:01:33.783 DEBUG 3252 --- [http-nio-8082-exec-5] c.p.p.p.m.c.P.getUserMoneyByUserId       : <====      Total: 1
+2021-02-25 11:01:33.784 DEBUG 3252 --- [http-nio-8082-exec-5] c.p.p.p.m.c.PiUserMapper.getUserById     : <==      Total: 1
+2021-02-25 11:13:37.429 DEBUG 3252 --- [http-nio-8082-exec-3] c.p.p.p.m.c.P.findAll_mpCount            : ==>  Preparing: SELECT COUNT(*) FROM `user` WHERE IFNULL(del, 0) <> 1 AND username LIKE '%%'
+2021-02-25 11:13:37.429 DEBUG 3252 --- [http-nio-8082-exec-3] c.p.p.p.m.c.P.findAll_mpCount            : ==> Parameters: 
+2021-02-25 11:13:37.431 DEBUG 3252 --- [http-nio-8082-exec-3] c.p.p.p.m.c.P.findAll_mpCount            : <==      Total: 1
+2021-02-25 11:13:37.433 DEBUG 3252 --- [http-nio-8082-exec-3] c.p.p.p.m.common.PiUserMapper.findAll    : ==>  Preparing: SELECT * FROM `user` WHERE IFNULL(del,0) <> 1 AND username LIKE '%%' order by id desc LIMIT ?
+2021-02-25 11:13:37.433 DEBUG 3252 --- [http-nio-8082-exec-3] c.p.p.p.m.common.PiUserMapper.findAll    : ==> Parameters: 10(Long)
+2021-02-25 11:13:37.437 DEBUG 3252 --- [http-nio-8082-exec-3] c.p.p.p.m.c.P.getUserMoneyByUserId       : ====>  Preparing: select balance from wallet where user_id = ?
+2021-02-25 11:13:37.438 DEBUG 3252 --- [http-nio-8082-exec-3] c.p.p.p.m.c.P.getUserMoneyByUserId       : ====> Parameters: 10010(Integer)
+2021-02-25 11:13:37.439 DEBUG 3252 --- [http-nio-8082-exec-3] c.p.p.p.m.c.P.getUserMoneyByUserId       : <====      Total: 1
+2021-02-25 11:13:37.440 DEBUG 3252 --- [http-nio-8082-exec-3] c.p.p.p.m.c.P.getUserMoneyByUserId       : ====>  Preparing: select balance from wallet where user_id = ?
+2021-02-25 11:13:37.440 DEBUG 3252 --- [http-nio-8082-exec-3] c.p.p.p.m.c.P.getUserMoneyByUserId       : ====> Parameters: 10009(Integer)
+2021-02-25 11:13:37.441 DEBUG 3252 --- [http-nio-8082-exec-3] c.p.p.p.m.c.P.getUserMoneyByUserId       : <====      Total: 1
+2021-02-25 11:13:37.442 DEBUG 3252 --- [http-nio-8082-exec-3] c.p.p.p.m.c.P.getUserMoneyByUserId       : ====>  Preparing: select balance from wallet where user_id = ?
+2021-02-25 11:13:37.443 DEBUG 3252 --- [http-nio-8082-exec-3] c.p.p.p.m.c.P.getUserMoneyByUserId       : ====> Parameters: 10008(Integer)
+2021-02-25 11:13:37.444 DEBUG 3252 --- [http-nio-8082-exec-3] c.p.p.p.m.c.P.getUserMoneyByUserId       : <====      Total: 1
+2021-02-25 11:13:37.445 DEBUG 3252 --- [http-nio-8082-exec-3] c.p.p.p.m.c.P.getUserMoneyByUserId       : ====>  Preparing: select balance from wallet where user_id = ?
+2021-02-25 11:13:37.445 DEBUG 3252 --- [http-nio-8082-exec-3] c.p.p.p.m.c.P.getUserMoneyByUserId       : ====> Parameters: 10007(Integer)
+2021-02-25 11:13:37.446 DEBUG 3252 --- [http-nio-8082-exec-3] c.p.p.p.m.c.P.getUserMoneyByUserId       : <====      Total: 1
+2021-02-25 11:13:37.447 DEBUG 3252 --- [http-nio-8082-exec-3] c.p.p.p.m.c.P.getUserMoneyByUserId       : ====>  Preparing: select balance from wallet where user_id = ?
+2021-02-25 11:13:37.448 DEBUG 3252 --- [http-nio-8082-exec-3] c.p.p.p.m.c.P.getUserMoneyByUserId       : ====> Parameters: 10006(Integer)
+2021-02-25 11:13:37.449 DEBUG 3252 --- [http-nio-8082-exec-3] c.p.p.p.m.c.P.getUserMoneyByUserId       : <====      Total: 1
+2021-02-25 11:13:37.449 DEBUG 3252 --- [http-nio-8082-exec-3] c.p.p.p.m.common.PiUserMapper.findAll    : <==      Total: 5
+2021-02-25 11:13:43.023 DEBUG 3252 --- [http-nio-8082-exec-9] c.p.p.p.m.c.PiUserMapper.getUserById     : ==>  Preparing: select * from `user` where id = ?
+2021-02-25 11:13:43.024 DEBUG 3252 --- [http-nio-8082-exec-9] c.p.p.p.m.c.PiUserMapper.getUserById     : ==> Parameters: 10010(Integer)
+2021-02-25 11:13:43.026 DEBUG 3252 --- [http-nio-8082-exec-9] c.p.p.p.m.c.P.getUserMoneyByUserId       : ====>  Preparing: select balance from wallet where user_id = ?
+2021-02-25 11:13:43.027 DEBUG 3252 --- [http-nio-8082-exec-9] c.p.p.p.m.c.P.getUserMoneyByUserId       : ====> Parameters: 10010(Integer)
+2021-02-25 11:13:43.028 DEBUG 3252 --- [http-nio-8082-exec-9] c.p.p.p.m.c.P.getUserMoneyByUserId       : <====      Total: 1
+2021-02-25 11:13:43.028 DEBUG 3252 --- [http-nio-8082-exec-9] c.p.p.p.m.c.PiUserMapper.getUserById     : <==      Total: 1
+2021-02-25 11:13:47.044 DEBUG 3252 --- [http-nio-8082-exec-3] c.p.p.p.m.c.CpUserMapper.updateUser      : ==>  Preparing: UPDATE `piyu`.`user` SET `nickname` = ?, `address` = ?, `introduction` = ?,`email` = ? WHERE `id` = ?;
+2021-02-25 11:13:47.045 DEBUG 3252 --- [http-nio-8082-exec-3] c.p.p.p.m.c.CpUserMapper.updateUser      : ==> Parameters: p1234(String), 123(String), 123(String), p94@qq.com(String), 10010(Integer)
+2021-02-25 11:13:47.047 DEBUG 3252 --- [http-nio-8082-exec-3] c.p.p.p.m.c.CpUserMapper.updateUser      : <==    Updates: 1
+2021-02-25 11:13:52.389 DEBUG 3252 --- [http-nio-8082-exec-5] c.p.p.p.m.c.P.findAll_mpCount            : ==>  Preparing: SELECT COUNT(*) FROM `user` WHERE IFNULL(del, 0) <> 1 AND username LIKE '%%'
+2021-02-25 11:13:52.390 DEBUG 3252 --- [http-nio-8082-exec-5] c.p.p.p.m.c.P.findAll_mpCount            : ==> Parameters: 
+2021-02-25 11:13:52.391 DEBUG 3252 --- [http-nio-8082-exec-5] c.p.p.p.m.c.P.findAll_mpCount            : <==      Total: 1
+2021-02-25 11:13:52.392 DEBUG 3252 --- [http-nio-8082-exec-5] c.p.p.p.m.common.PiUserMapper.findAll    : ==>  Preparing: SELECT * FROM `user` WHERE IFNULL(del,0) <> 1 AND username LIKE '%%' order by id desc LIMIT ?
+2021-02-25 11:13:52.392 DEBUG 3252 --- [http-nio-8082-exec-5] c.p.p.p.m.common.PiUserMapper.findAll    : ==> Parameters: 10(Long)
+2021-02-25 11:13:52.394 DEBUG 3252 --- [http-nio-8082-exec-5] c.p.p.p.m.c.P.getUserMoneyByUserId       : ====>  Preparing: select balance from wallet where user_id = ?
+2021-02-25 11:13:52.395 DEBUG 3252 --- [http-nio-8082-exec-5] c.p.p.p.m.c.P.getUserMoneyByUserId       : ====> Parameters: 10010(Integer)
+2021-02-25 11:13:52.396 DEBUG 3252 --- [http-nio-8082-exec-5] c.p.p.p.m.c.P.getUserMoneyByUserId       : <====      Total: 1
+2021-02-25 11:13:52.397 DEBUG 3252 --- [http-nio-8082-exec-5] c.p.p.p.m.c.P.getUserMoneyByUserId       : ====>  Preparing: select balance from wallet where user_id = ?
+2021-02-25 11:13:52.397 DEBUG 3252 --- [http-nio-8082-exec-5] c.p.p.p.m.c.P.getUserMoneyByUserId       : ====> Parameters: 10009(Integer)
+2021-02-25 11:13:52.398 DEBUG 3252 --- [http-nio-8082-exec-5] c.p.p.p.m.c.P.getUserMoneyByUserId       : <====      Total: 1
+2021-02-25 11:13:52.399 DEBUG 3252 --- [http-nio-8082-exec-5] c.p.p.p.m.c.P.getUserMoneyByUserId       : ====>  Preparing: select balance from wallet where user_id = ?
+2021-02-25 11:13:52.400 DEBUG 3252 --- [http-nio-8082-exec-5] c.p.p.p.m.c.P.getUserMoneyByUserId       : ====> Parameters: 10008(Integer)
+2021-02-25 11:13:52.401 DEBUG 3252 --- [http-nio-8082-exec-5] c.p.p.p.m.c.P.getUserMoneyByUserId       : <====      Total: 1
+2021-02-25 11:13:52.402 DEBUG 3252 --- [http-nio-8082-exec-5] c.p.p.p.m.c.P.getUserMoneyByUserId       : ====>  Preparing: select balance from wallet where user_id = ?
+2021-02-25 11:13:52.402 DEBUG 3252 --- [http-nio-8082-exec-5] c.p.p.p.m.c.P.getUserMoneyByUserId       : ====> Parameters: 10007(Integer)
+2021-02-25 11:13:52.403 DEBUG 3252 --- [http-nio-8082-exec-5] c.p.p.p.m.c.P.getUserMoneyByUserId       : <====      Total: 1
+2021-02-25 11:13:52.405 DEBUG 3252 --- [http-nio-8082-exec-5] c.p.p.p.m.c.P.getUserMoneyByUserId       : ====>  Preparing: select balance from wallet where user_id = ?
+2021-02-25 11:13:52.405 DEBUG 3252 --- [http-nio-8082-exec-5] c.p.p.p.m.c.P.getUserMoneyByUserId       : ====> Parameters: 10006(Integer)
+2021-02-25 11:13:52.406 DEBUG 3252 --- [http-nio-8082-exec-5] c.p.p.p.m.c.P.getUserMoneyByUserId       : <====      Total: 1
+2021-02-25 11:13:52.407 DEBUG 3252 --- [http-nio-8082-exec-5] c.p.p.p.m.common.PiUserMapper.findAll    : <==      Total: 5
+2021-02-25 11:14:49.859 DEBUG 3252 --- [http-nio-8082-exec-5] c.p.p.p.m.c.P.findAll_mpCount            : ==>  Preparing: SELECT COUNT(*) FROM `user` WHERE IFNULL(del, 0) <> 1 AND username LIKE '%%'
+2021-02-25 11:14:49.860 DEBUG 3252 --- [http-nio-8082-exec-5] c.p.p.p.m.c.P.findAll_mpCount            : ==> Parameters: 
+2021-02-25 11:14:49.861 DEBUG 3252 --- [http-nio-8082-exec-5] c.p.p.p.m.c.P.findAll_mpCount            : <==      Total: 1
+2021-02-25 11:14:49.862 DEBUG 3252 --- [http-nio-8082-exec-5] c.p.p.p.m.common.PiUserMapper.findAll    : ==>  Preparing: SELECT * FROM `user` WHERE IFNULL(del,0) <> 1 AND username LIKE '%%' order by id desc LIMIT ?
+2021-02-25 11:14:49.863 DEBUG 3252 --- [http-nio-8082-exec-5] c.p.p.p.m.common.PiUserMapper.findAll    : ==> Parameters: 10(Long)
+2021-02-25 11:14:49.865 DEBUG 3252 --- [http-nio-8082-exec-5] c.p.p.p.m.c.P.getUserMoneyByUserId       : ====>  Preparing: select balance from wallet where user_id = ?
+2021-02-25 11:14:49.866 DEBUG 3252 --- [http-nio-8082-exec-5] c.p.p.p.m.c.P.getUserMoneyByUserId       : ====> Parameters: 10010(Integer)
+2021-02-25 11:14:49.867 DEBUG 3252 --- [http-nio-8082-exec-5] c.p.p.p.m.c.P.getUserMoneyByUserId       : <====      Total: 1
+2021-02-25 11:14:49.868 DEBUG 3252 --- [http-nio-8082-exec-5] c.p.p.p.m.c.P.getUserMoneyByUserId       : ====>  Preparing: select balance from wallet where user_id = ?
+2021-02-25 11:14:49.868 DEBUG 3252 --- [http-nio-8082-exec-5] c.p.p.p.m.c.P.getUserMoneyByUserId       : ====> Parameters: 10009(Integer)
+2021-02-25 11:14:49.871 DEBUG 3252 --- [http-nio-8082-exec-5] c.p.p.p.m.c.P.getUserMoneyByUserId       : <====      Total: 1
+2021-02-25 11:14:49.872 DEBUG 3252 --- [http-nio-8082-exec-5] c.p.p.p.m.c.P.getUserMoneyByUserId       : ====>  Preparing: select balance from wallet where user_id = ?
+2021-02-25 11:14:49.872 DEBUG 3252 --- [http-nio-8082-exec-5] c.p.p.p.m.c.P.getUserMoneyByUserId       : ====> Parameters: 10008(Integer)
+2021-02-25 11:14:49.873 DEBUG 3252 --- [http-nio-8082-exec-5] c.p.p.p.m.c.P.getUserMoneyByUserId       : <====      Total: 1
+2021-02-25 11:14:49.874 DEBUG 3252 --- [http-nio-8082-exec-5] c.p.p.p.m.c.P.getUserMoneyByUserId       : ====>  Preparing: select balance from wallet where user_id = ?
+2021-02-25 11:14:49.875 DEBUG 3252 --- [http-nio-8082-exec-5] c.p.p.p.m.c.P.getUserMoneyByUserId       : ====> Parameters: 10007(Integer)
+2021-02-25 11:14:49.876 DEBUG 3252 --- [http-nio-8082-exec-5] c.p.p.p.m.c.P.getUserMoneyByUserId       : <====      Total: 1
+2021-02-25 11:14:49.877 DEBUG 3252 --- [http-nio-8082-exec-5] c.p.p.p.m.c.P.getUserMoneyByUserId       : ====>  Preparing: select balance from wallet where user_id = ?
+2021-02-25 11:14:49.877 DEBUG 3252 --- [http-nio-8082-exec-5] c.p.p.p.m.c.P.getUserMoneyByUserId       : ====> Parameters: 10006(Integer)
+2021-02-25 11:14:49.878 DEBUG 3252 --- [http-nio-8082-exec-5] c.p.p.p.m.c.P.getUserMoneyByUserId       : <====      Total: 1
+2021-02-25 11:14:49.878 DEBUG 3252 --- [http-nio-8082-exec-5] c.p.p.p.m.common.PiUserMapper.findAll    : <==      Total: 5
+2021-02-25 11:14:52.056 DEBUG 3252 --- [http-nio-8082-exec-8] c.p.p.p.m.c.PiUserMapper.getUserById     : ==>  Preparing: select * from `user` where id = ?
+2021-02-25 11:14:52.057 DEBUG 3252 --- [http-nio-8082-exec-8] c.p.p.p.m.c.PiUserMapper.getUserById     : ==> Parameters: 10010(Integer)
+2021-02-25 11:14:52.059 DEBUG 3252 --- [http-nio-8082-exec-8] c.p.p.p.m.c.P.getUserMoneyByUserId       : ====>  Preparing: select balance from wallet where user_id = ?
+2021-02-25 11:14:52.060 DEBUG 3252 --- [http-nio-8082-exec-8] c.p.p.p.m.c.P.getUserMoneyByUserId       : ====> Parameters: 10010(Integer)
+2021-02-25 11:14:52.061 DEBUG 3252 --- [http-nio-8082-exec-8] c.p.p.p.m.c.P.getUserMoneyByUserId       : <====      Total: 1
+2021-02-25 11:14:52.061 DEBUG 3252 --- [http-nio-8082-exec-8] c.p.p.p.m.c.PiUserMapper.getUserById     : <==      Total: 1
+2021-02-25 11:14:55.141 DEBUG 3252 --- [http-nio-8082-exec-6] c.p.p.p.m.c.CpUserMapper.updateUser      : ==>  Preparing: UPDATE `piyu`.`user` SET `nickname` = ?, `address` = ?, `introduction` = ?,`email` = ? WHERE `id` = ?;
+2021-02-25 11:14:55.142 DEBUG 3252 --- [http-nio-8082-exec-6] c.p.p.p.m.c.CpUserMapper.updateUser      : ==> Parameters: p1234(String), 1234(String), 123(String), p94@qq.com(String), 10010(Integer)
+2021-02-25 11:14:55.152 DEBUG 3252 --- [http-nio-8082-exec-6] c.p.p.p.m.c.CpUserMapper.updateUser      : <==    Updates: 1
+2021-02-25 11:14:56.276 DEBUG 3252 --- [http-nio-8082-exec-2] c.p.p.p.m.c.PiUserMapper.getUserById     : ==>  Preparing: select * from `user` where id = ?
+2021-02-25 11:14:56.277 DEBUG 3252 --- [http-nio-8082-exec-2] c.p.p.p.m.c.PiUserMapper.getUserById     : ==> Parameters: 10010(Integer)
+2021-02-25 11:14:56.279 DEBUG 3252 --- [http-nio-8082-exec-2] c.p.p.p.m.c.P.getUserMoneyByUserId       : ====>  Preparing: select balance from wallet where user_id = ?
+2021-02-25 11:14:56.279 DEBUG 3252 --- [http-nio-8082-exec-2] c.p.p.p.m.c.P.getUserMoneyByUserId       : ====> Parameters: 10010(Integer)
+2021-02-25 11:14:56.280 DEBUG 3252 --- [http-nio-8082-exec-2] c.p.p.p.m.c.P.getUserMoneyByUserId       : <====      Total: 1
+2021-02-25 11:14:56.280 DEBUG 3252 --- [http-nio-8082-exec-2] c.p.p.p.m.c.PiUserMapper.getUserById     : <==      Total: 1
+2021-02-25 11:18:02.848 DEBUG 3252 --- [http-nio-8082-exec-8] c.p.p.p.m.c.P.findAll_mpCount            : ==>  Preparing: SELECT COUNT(*) FROM `user` WHERE IFNULL(del, 0) <> 1 AND username LIKE '%%'
+2021-02-25 11:18:02.848 DEBUG 3252 --- [http-nio-8082-exec-8] c.p.p.p.m.c.P.findAll_mpCount            : ==> Parameters: 
+2021-02-25 11:18:02.850 DEBUG 3252 --- [http-nio-8082-exec-8] c.p.p.p.m.c.P.findAll_mpCount            : <==      Total: 1
+2021-02-25 11:18:02.852 DEBUG 3252 --- [http-nio-8082-exec-8] c.p.p.p.m.common.PiUserMapper.findAll    : ==>  Preparing: SELECT * FROM `user` WHERE IFNULL(del,0) <> 1 AND username LIKE '%%' order by id desc LIMIT ?
+2021-02-25 11:18:02.852 DEBUG 3252 --- [http-nio-8082-exec-8] c.p.p.p.m.common.PiUserMapper.findAll    : ==> Parameters: 10(Long)
+2021-02-25 11:18:02.854 DEBUG 3252 --- [http-nio-8082-exec-8] c.p.p.p.m.c.P.getUserMoneyByUserId       : ====>  Preparing: select balance from wallet where user_id = ?
+2021-02-25 11:18:02.855 DEBUG 3252 --- [http-nio-8082-exec-8] c.p.p.p.m.c.P.getUserMoneyByUserId       : ====> Parameters: 10010(Integer)
+2021-02-25 11:18:02.856 DEBUG 3252 --- [http-nio-8082-exec-8] c.p.p.p.m.c.P.getUserMoneyByUserId       : <====      Total: 1
+2021-02-25 11:18:02.857 DEBUG 3252 --- [http-nio-8082-exec-8] c.p.p.p.m.c.P.getUserMoneyByUserId       : ====>  Preparing: select balance from wallet where user_id = ?
+2021-02-25 11:18:02.857 DEBUG 3252 --- [http-nio-8082-exec-8] c.p.p.p.m.c.P.getUserMoneyByUserId       : ====> Parameters: 10009(Integer)
+2021-02-25 11:18:02.858 DEBUG 3252 --- [http-nio-8082-exec-8] c.p.p.p.m.c.P.getUserMoneyByUserId       : <====      Total: 1
+2021-02-25 11:18:02.860 DEBUG 3252 --- [http-nio-8082-exec-8] c.p.p.p.m.c.P.getUserMoneyByUserId       : ====>  Preparing: select balance from wallet where user_id = ?
+2021-02-25 11:18:02.860 DEBUG 3252 --- [http-nio-8082-exec-8] c.p.p.p.m.c.P.getUserMoneyByUserId       : ====> Parameters: 10008(Integer)
+2021-02-25 11:18:02.861 DEBUG 3252 --- [http-nio-8082-exec-8] c.p.p.p.m.c.P.getUserMoneyByUserId       : <====      Total: 1
+2021-02-25 11:18:02.862 DEBUG 3252 --- [http-nio-8082-exec-8] c.p.p.p.m.c.P.getUserMoneyByUserId       : ====>  Preparing: select balance from wallet where user_id = ?
+2021-02-25 11:18:02.862 DEBUG 3252 --- [http-nio-8082-exec-8] c.p.p.p.m.c.P.getUserMoneyByUserId       : ====> Parameters: 10007(Integer)
+2021-02-25 11:18:02.863 DEBUG 3252 --- [http-nio-8082-exec-8] c.p.p.p.m.c.P.getUserMoneyByUserId       : <====      Total: 1
+2021-02-25 11:18:02.864 DEBUG 3252 --- [http-nio-8082-exec-8] c.p.p.p.m.c.P.getUserMoneyByUserId       : ====>  Preparing: select balance from wallet where user_id = ?
+2021-02-25 11:18:02.865 DEBUG 3252 --- [http-nio-8082-exec-8] c.p.p.p.m.c.P.getUserMoneyByUserId       : ====> Parameters: 10006(Integer)
+2021-02-25 11:18:02.865 DEBUG 3252 --- [http-nio-8082-exec-8] c.p.p.p.m.c.P.getUserMoneyByUserId       : <====      Total: 1
+2021-02-25 11:18:02.866 DEBUG 3252 --- [http-nio-8082-exec-8] c.p.p.p.m.common.PiUserMapper.findAll    : <==      Total: 5
+2021-02-25 11:20:13.565 DEBUG 3252 --- [http-nio-8082-exec-9] c.p.p.p.m.c.P.findAll_mpCount            : ==>  Preparing: SELECT COUNT(*) FROM `user` WHERE IFNULL(del, 0) <> 1 AND username LIKE '%%'
+2021-02-25 11:20:13.566 DEBUG 3252 --- [http-nio-8082-exec-9] c.p.p.p.m.c.P.findAll_mpCount            : ==> Parameters: 
+2021-02-25 11:20:13.567 DEBUG 3252 --- [http-nio-8082-exec-9] c.p.p.p.m.c.P.findAll_mpCount            : <==      Total: 1
+2021-02-25 11:20:13.568 DEBUG 3252 --- [http-nio-8082-exec-9] c.p.p.p.m.common.PiUserMapper.findAll    : ==>  Preparing: SELECT * FROM `user` WHERE IFNULL(del,0) <> 1 AND username LIKE '%%' order by id desc LIMIT ?
+2021-02-25 11:20:13.569 DEBUG 3252 --- [http-nio-8082-exec-9] c.p.p.p.m.common.PiUserMapper.findAll    : ==> Parameters: 10(Long)
+2021-02-25 11:20:13.571 DEBUG 3252 --- [http-nio-8082-exec-9] c.p.p.p.m.c.P.getUserMoneyByUserId       : ====>  Preparing: select balance from wallet where user_id = ?
+2021-02-25 11:20:13.572 DEBUG 3252 --- [http-nio-8082-exec-9] c.p.p.p.m.c.P.getUserMoneyByUserId       : ====> Parameters: 10010(Integer)
+2021-02-25 11:20:13.573 DEBUG 3252 --- [http-nio-8082-exec-9] c.p.p.p.m.c.P.getUserMoneyByUserId       : <====      Total: 1
+2021-02-25 11:20:13.574 DEBUG 3252 --- [http-nio-8082-exec-9] c.p.p.p.m.c.P.getUserMoneyByUserId       : ====>  Preparing: select balance from wallet where user_id = ?
+2021-02-25 11:20:13.574 DEBUG 3252 --- [http-nio-8082-exec-9] c.p.p.p.m.c.P.getUserMoneyByUserId       : ====> Parameters: 10009(Integer)
+2021-02-25 11:20:13.577 DEBUG 3252 --- [http-nio-8082-exec-9] c.p.p.p.m.c.P.getUserMoneyByUserId       : <====      Total: 1
+2021-02-25 11:20:13.578 DEBUG 3252 --- [http-nio-8082-exec-9] c.p.p.p.m.c.P.getUserMoneyByUserId       : ====>  Preparing: select balance from wallet where user_id = ?
+2021-02-25 11:20:13.579 DEBUG 3252 --- [http-nio-8082-exec-9] c.p.p.p.m.c.P.getUserMoneyByUserId       : ====> Parameters: 10008(Integer)
+2021-02-25 11:20:13.579 DEBUG 3252 --- [http-nio-8082-exec-9] c.p.p.p.m.c.P.getUserMoneyByUserId       : <====      Total: 1
+2021-02-25 11:20:13.580 DEBUG 3252 --- [http-nio-8082-exec-9] c.p.p.p.m.c.P.getUserMoneyByUserId       : ====>  Preparing: select balance from wallet where user_id = ?
+2021-02-25 11:20:13.581 DEBUG 3252 --- [http-nio-8082-exec-9] c.p.p.p.m.c.P.getUserMoneyByUserId       : ====> Parameters: 10007(Integer)
+2021-02-25 11:20:13.582 DEBUG 3252 --- [http-nio-8082-exec-9] c.p.p.p.m.c.P.getUserMoneyByUserId       : <====      Total: 1
+2021-02-25 11:20:13.583 DEBUG 3252 --- [http-nio-8082-exec-9] c.p.p.p.m.c.P.getUserMoneyByUserId       : ====>  Preparing: select balance from wallet where user_id = ?
+2021-02-25 11:20:13.583 DEBUG 3252 --- [http-nio-8082-exec-9] c.p.p.p.m.c.P.getUserMoneyByUserId       : ====> Parameters: 10006(Integer)
+2021-02-25 11:20:13.584 DEBUG 3252 --- [http-nio-8082-exec-9] c.p.p.p.m.c.P.getUserMoneyByUserId       : <====      Total: 1
+2021-02-25 11:20:13.584 DEBUG 3252 --- [http-nio-8082-exec-9] c.p.p.p.m.common.PiUserMapper.findAll    : <==      Total: 5
+2021-02-25 11:20:16.774 DEBUG 3252 --- [http-nio-8082-exec-2] c.p.p.p.m.c.PiUserMapper.getUserById     : ==>  Preparing: select * from `user` where id = ?
+2021-02-25 11:20:16.774 DEBUG 3252 --- [http-nio-8082-exec-2] c.p.p.p.m.c.PiUserMapper.getUserById     : ==> Parameters: 10010(Integer)
+2021-02-25 11:20:16.777 DEBUG 3252 --- [http-nio-8082-exec-2] c.p.p.p.m.c.P.getUserMoneyByUserId       : ====>  Preparing: select balance from wallet where user_id = ?
+2021-02-25 11:20:16.777 DEBUG 3252 --- [http-nio-8082-exec-2] c.p.p.p.m.c.P.getUserMoneyByUserId       : ====> Parameters: 10010(Integer)
+2021-02-25 11:20:16.778 DEBUG 3252 --- [http-nio-8082-exec-2] c.p.p.p.m.c.P.getUserMoneyByUserId       : <====      Total: 1
+2021-02-25 11:20:16.779 DEBUG 3252 --- [http-nio-8082-exec-2] c.p.p.p.m.c.PiUserMapper.getUserById     : <==      Total: 1
+2021-02-25 11:20:23.734 DEBUG 3252 --- [http-nio-8082-exec-9] c.p.p.p.m.c.CpUserMapper.updateUser      : ==>  Preparing: UPDATE `piyu`.`user` SET `nickname` = ?, `address` = ?, `introduction` = ?,`email` = ? WHERE `id` = ?;
+2021-02-25 11:20:23.750 DEBUG 3252 --- [http-nio-8082-exec-9] c.p.p.p.m.c.CpUserMapper.updateUser      : ==> Parameters: p1234(String), 测试(String), 123(String), p94@qq.com(String), 10010(Integer)
+2021-02-25 11:20:23.751 DEBUG 3252 --- [http-nio-8082-exec-9] c.p.p.p.m.c.CpUserMapper.updateUser      : <==    Updates: 1
+2021-02-25 11:20:24.799 DEBUG 3252 --- [http-nio-8082-exec-4] c.p.p.p.m.c.P.findAll_mpCount            : ==>  Preparing: SELECT COUNT(*) FROM `user` WHERE IFNULL(del, 0) <> 1 AND username LIKE '%%'
+2021-02-25 11:20:24.800 DEBUG 3252 --- [http-nio-8082-exec-4] c.p.p.p.m.c.P.findAll_mpCount            : ==> Parameters: 
+2021-02-25 11:20:24.800 DEBUG 3252 --- [http-nio-8082-exec-4] c.p.p.p.m.c.P.findAll_mpCount            : <==      Total: 1
+2021-02-25 11:20:24.801 DEBUG 3252 --- [http-nio-8082-exec-4] c.p.p.p.m.common.PiUserMapper.findAll    : ==>  Preparing: SELECT * FROM `user` WHERE IFNULL(del,0) <> 1 AND username LIKE '%%' order by id desc LIMIT ?
+2021-02-25 11:20:24.802 DEBUG 3252 --- [http-nio-8082-exec-4] c.p.p.p.m.common.PiUserMapper.findAll    : ==> Parameters: 10(Long)
+2021-02-25 11:20:24.804 DEBUG 3252 --- [http-nio-8082-exec-4] c.p.p.p.m.c.P.getUserMoneyByUserId       : ====>  Preparing: select balance from wallet where user_id = ?
+2021-02-25 11:20:24.804 DEBUG 3252 --- [http-nio-8082-exec-4] c.p.p.p.m.c.P.getUserMoneyByUserId       : ====> Parameters: 10010(Integer)
+2021-02-25 11:20:24.805 DEBUG 3252 --- [http-nio-8082-exec-4] c.p.p.p.m.c.P.getUserMoneyByUserId       : <====      Total: 1
+2021-02-25 11:20:24.806 DEBUG 3252 --- [http-nio-8082-exec-4] c.p.p.p.m.c.P.getUserMoneyByUserId       : ====>  Preparing: select balance from wallet where user_id = ?
+2021-02-25 11:20:24.806 DEBUG 3252 --- [http-nio-8082-exec-4] c.p.p.p.m.c.P.getUserMoneyByUserId       : ====> Parameters: 10009(Integer)
+2021-02-25 11:20:24.807 DEBUG 3252 --- [http-nio-8082-exec-4] c.p.p.p.m.c.P.getUserMoneyByUserId       : <====      Total: 1
+2021-02-25 11:20:24.808 DEBUG 3252 --- [http-nio-8082-exec-4] c.p.p.p.m.c.P.getUserMoneyByUserId       : ====>  Preparing: select balance from wallet where user_id = ?
+2021-02-25 11:20:24.808 DEBUG 3252 --- [http-nio-8082-exec-4] c.p.p.p.m.c.P.getUserMoneyByUserId       : ====> Parameters: 10008(Integer)
+2021-02-25 11:20:24.809 DEBUG 3252 --- [http-nio-8082-exec-4] c.p.p.p.m.c.P.getUserMoneyByUserId       : <====      Total: 1
+2021-02-25 11:20:24.809 DEBUG 3252 --- [http-nio-8082-exec-4] c.p.p.p.m.c.P.getUserMoneyByUserId       : ====>  Preparing: select balance from wallet where user_id = ?
+2021-02-25 11:20:24.810 DEBUG 3252 --- [http-nio-8082-exec-4] c.p.p.p.m.c.P.getUserMoneyByUserId       : ====> Parameters: 10007(Integer)
+2021-02-25 11:20:24.810 DEBUG 3252 --- [http-nio-8082-exec-4] c.p.p.p.m.c.P.getUserMoneyByUserId       : <====      Total: 1
+2021-02-25 11:20:24.812 DEBUG 3252 --- [http-nio-8082-exec-4] c.p.p.p.m.c.P.getUserMoneyByUserId       : ====>  Preparing: select balance from wallet where user_id = ?
+2021-02-25 11:20:24.812 DEBUG 3252 --- [http-nio-8082-exec-4] c.p.p.p.m.c.P.getUserMoneyByUserId       : ====> Parameters: 10006(Integer)
+2021-02-25 11:20:24.813 DEBUG 3252 --- [http-nio-8082-exec-4] c.p.p.p.m.c.P.getUserMoneyByUserId       : <====      Total: 1
+2021-02-25 11:20:24.813 DEBUG 3252 --- [http-nio-8082-exec-4] c.p.p.p.m.common.PiUserMapper.findAll    : <==      Total: 5
+2021-02-25 11:24:06.314 DEBUG 3252 --- [http-nio-8082-exec-10] c.p.p.p.m.c.P.findAll_mpCount            : ==>  Preparing: SELECT COUNT(*) FROM `user` WHERE IFNULL(del, 0) <> 1 AND username LIKE '%%'
+2021-02-25 11:24:06.314 DEBUG 3252 --- [http-nio-8082-exec-10] c.p.p.p.m.c.P.findAll_mpCount            : ==> Parameters: 
+2021-02-25 11:24:06.317 DEBUG 3252 --- [http-nio-8082-exec-10] c.p.p.p.m.c.P.findAll_mpCount            : <==      Total: 1
+2021-02-25 11:24:06.318 DEBUG 3252 --- [http-nio-8082-exec-10] c.p.p.p.m.common.PiUserMapper.findAll    : ==>  Preparing: SELECT * FROM `user` WHERE IFNULL(del,0) <> 1 AND username LIKE '%%' order by id desc LIMIT ?
+2021-02-25 11:24:06.319 DEBUG 3252 --- [http-nio-8082-exec-10] c.p.p.p.m.common.PiUserMapper.findAll    : ==> Parameters: 10(Long)
+2021-02-25 11:24:06.321 DEBUG 3252 --- [http-nio-8082-exec-10] c.p.p.p.m.c.P.getUserMoneyByUserId       : ====>  Preparing: select balance from wallet where user_id = ?
+2021-02-25 11:24:06.321 DEBUG 3252 --- [http-nio-8082-exec-10] c.p.p.p.m.c.P.getUserMoneyByUserId       : ====> Parameters: 10010(Integer)
+2021-02-25 11:24:06.322 DEBUG 3252 --- [http-nio-8082-exec-10] c.p.p.p.m.c.P.getUserMoneyByUserId       : <====      Total: 1
+2021-02-25 11:24:06.324 DEBUG 3252 --- [http-nio-8082-exec-10] c.p.p.p.m.c.P.getUserMoneyByUserId       : ====>  Preparing: select balance from wallet where user_id = ?
+2021-02-25 11:24:06.324 DEBUG 3252 --- [http-nio-8082-exec-10] c.p.p.p.m.c.P.getUserMoneyByUserId       : ====> Parameters: 10009(Integer)
+2021-02-25 11:24:06.325 DEBUG 3252 --- [http-nio-8082-exec-10] c.p.p.p.m.c.P.getUserMoneyByUserId       : <====      Total: 1
+2021-02-25 11:24:06.326 DEBUG 3252 --- [http-nio-8082-exec-10] c.p.p.p.m.c.P.getUserMoneyByUserId       : ====>  Preparing: select balance from wallet where user_id = ?
+2021-02-25 11:24:06.327 DEBUG 3252 --- [http-nio-8082-exec-10] c.p.p.p.m.c.P.getUserMoneyByUserId       : ====> Parameters: 10008(Integer)
+2021-02-25 11:24:06.328 DEBUG 3252 --- [http-nio-8082-exec-10] c.p.p.p.m.c.P.getUserMoneyByUserId       : <====      Total: 1
+2021-02-25 11:24:06.328 DEBUG 3252 --- [http-nio-8082-exec-10] c.p.p.p.m.c.P.getUserMoneyByUserId       : ====>  Preparing: select balance from wallet where user_id = ?
+2021-02-25 11:24:06.329 DEBUG 3252 --- [http-nio-8082-exec-10] c.p.p.p.m.c.P.getUserMoneyByUserId       : ====> Parameters: 10007(Integer)
+2021-02-25 11:24:06.330 DEBUG 3252 --- [http-nio-8082-exec-10] c.p.p.p.m.c.P.getUserMoneyByUserId       : <====      Total: 1
+2021-02-25 11:24:06.331 DEBUG 3252 --- [http-nio-8082-exec-10] c.p.p.p.m.c.P.getUserMoneyByUserId       : ====>  Preparing: select balance from wallet where user_id = ?
+2021-02-25 11:24:06.332 DEBUG 3252 --- [http-nio-8082-exec-10] c.p.p.p.m.c.P.getUserMoneyByUserId       : ====> Parameters: 10006(Integer)
+2021-02-25 11:24:06.333 DEBUG 3252 --- [http-nio-8082-exec-10] c.p.p.p.m.c.P.getUserMoneyByUserId       : <====      Total: 1
+2021-02-25 11:24:06.333 DEBUG 3252 --- [http-nio-8082-exec-10] c.p.p.p.m.common.PiUserMapper.findAll    : <==      Total: 5

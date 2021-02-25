@@ -201,8 +201,18 @@
       function member_del(obj,id){
           layer.confirm(`<p>注销用户需要满足：无余额，已禁用</p><p>确认注销该用户吗？</p>`,function(index){
               //发异步删除数据
-              $(obj).parents("tr").remove();
-              layer.msg('已注销!',{icon:1,time:1000});
+              $.ajax({
+                  type:"GET",
+                  url:`/bg/offUser/${id}`,
+                  success(data){
+                    if(data.state){
+                        $(obj).parents("tr").remove();
+                        layer.msg('已注销!',{icon:1,time:1000});
+                    }else{
+                        layer.msg(data.msg,{icon:1,time:1000});
+                    }
+                  }
+              });
           });
       }
 
