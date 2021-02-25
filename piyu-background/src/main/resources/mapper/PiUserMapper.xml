@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.pipihao.piyu.piyubackground.mapper.common.PiUserMapper">
+
+    <select id="getAllOffUser" resultType="com.pipihao.piyu.piyubackground.pojo.PUser" parameterType="map">
+        SELECT * FROM `user` WHERE del = 1 AND username LIKE '%${d.username}%'
+        <if test="d.start != null">
+            and del_date &gt; #{d.start}
+        </if>
+        <if test="d.end != null">
+            and del_date &lt; #{d.end}
+        </if>
+        order by id desc
+    </select>
+
+</mapper>
