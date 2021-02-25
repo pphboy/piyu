@@ -20,4 +20,5 @@ public class PiProductClass implements Serializable {
     private int id;
     private String className;
     private String createDate;
+    private Boolean state;
 }
