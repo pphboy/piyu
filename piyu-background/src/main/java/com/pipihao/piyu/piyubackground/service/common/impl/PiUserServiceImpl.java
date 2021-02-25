@@ -76,7 +76,7 @@ public class PiUserServiceImpl implements PiUserService {
         if(!userById.getActiveStatus()&& userById.getMoney().compareTo(BigDecimal.valueOf(10)) < 1){
             state = piUserMapper.offUser(userId);
         }
-        return new R().getR(state,"注销成功","该用户不符合注销条件");
+        return new R().getR((Object) state,"注销成功","该用户不符合注销条件");
     }
 
     /**
