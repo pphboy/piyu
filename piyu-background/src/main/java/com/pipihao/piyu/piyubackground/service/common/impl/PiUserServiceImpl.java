@@ -89,7 +89,7 @@ public class PiUserServiceImpl implements PiUserService {
     public R addUser(PUser user) {
         if(!ObjectUtils.isEmpty(user.getId())){
             if(StringUtils.isEmpty(user.getNickname())||StringUtils.isEmpty(user.getEmail()))
-                return new R().getR(false,"无聊？",null);
+                return new R().getB(false,"无聊？",null);
             /*判断是否需要修改密码*/
             if(!StringUtils.isEmpty(user.getPassword())){
                 /*生成长度为20的盐*/
@@ -103,13 +103,13 @@ public class PiUserServiceImpl implements PiUserService {
             return new R().getR((Object)this.userMapper.updateUser(user),"修改信息成功","修改信息失败");
         }
         if(StringUtils.isEmpty(user.getUsername())||StringUtils.isEmpty(user.getPassword()) || StringUtils.isEmpty(user.getEmail()))
-            return new R().getR(false,"参数错误",null);
+            return new R().getB(false,"参数错误",null);
         /*如果userByEmail为true测说明邮箱已存在*/
         if(userMapper.getUserByEmail(user.getEmail()))
-            return new R().getR(false,"邮箱已注册",user.getEmail());
+            return new R().getB(false,"邮箱已注册",user.getEmail());
             /*为true说明用户名已注册*/
         else if(userMapper.getUserStatusByUsername(user.getUsername()))
-            return new R().getR(false,"用户名已注册",user.getUsername());
+            return new R().getB(false,"用户名已注册",user.getUsername());
         else{
             /*生成长度为20的盐*/
             String salt = UUID.randomUUID().toString().replace("-","").substring(0,20);
@@ -122,7 +122,7 @@ public class PiUserServiceImpl implements PiUserService {
             /*开通钱包*/
             walletMapper.sendNewWalletAboutUser(user.getId());
             /*返回注册用户*/
-            return new R().getR(true,"添加成功", null);
+            return new R().getB(true,"添加成功", null);
         }
     }
 
@@ -134,5 +134,26 @@ public class PiUserServiceImpl implements PiUserService {
     @Override
     public User getUserById(Integer id) {
         return this.piUserMapper.getUserById(id);
+    }
+
+    /**
+     * 获取所有注销的用户
+     * @param page
+     * @param map
+     * @return
+     */
+    @Override
+    public Page<PUser> getAllOffUser(Page<PUser> page, Map<String, Object> map) {
+        return this.piUserMapper.getAllOffUser(page,map);
+    }
+
+    /**
+     * 恢复用户
+     * @param id
+     * @return
+     */
+    @Override
+    public R rightUser(Integer id) {
+        return new R().getR(this.piUserMapper.rightUser(id),"恢复成功","恢复失败");
     }
 }

@@ -72,7 +72,7 @@ public class R {
         return this;
     }
 
-    public R getR(boolean state,String msg,Object data){
+    public R getB(boolean state,String msg,Object data){
         this.data = data;
         this.state = state;
         this.msg = msg;

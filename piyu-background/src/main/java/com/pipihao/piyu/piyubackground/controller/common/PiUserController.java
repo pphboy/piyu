@@ -114,4 +114,35 @@ public class PiUserController {
         return this.piUserService.addUser(user);
     }
 
+    /**
+     * 注销用户列表
+     * @return
+     */
+    @GetMapping("offUserList")
+    public String offUserList(
+            @RequestParam(value = "start",required = false) String start,
+            @RequestParam(value = "end",required = false) String end,
+            @RequestParam(value = "username",required = false) String username,
+            @RequestParam(value = "page",required = false,defaultValue = "1") Integer page,
+            @RequestParam(value = "size",required = false,defaultValue = "10") Integer size
+            ,ModelMap model
+    ){
+        Map<String,Object> map =new HashMap<>();
+        map.put("start",start);
+        map.put("end",end);
+        map.put("username",username);
+        Page<PUser> pages  = this.piUserService.getAllOffUser(new Page<PUser>(page,size),map);
+        model.addAttribute("s",map); // s就是search的意思
+        model.addAttribute("page",pages);//这里传的是查询的结果，而非什么类型为int的page
+        return "offUserList";
+    }
+
+    @ResponseBody
+    @PostMapping("rightUser")
+    public R rightUser(@RequestParam("id") Integer id){
+        return this.piUserService.rightUser(id);
+    }
+
+
+
 }

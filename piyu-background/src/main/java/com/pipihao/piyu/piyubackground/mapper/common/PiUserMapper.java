@@ -63,10 +63,28 @@ public interface PiUserMapper {
     boolean banUserByIds(String sql);
 
     /**
-     * 注解用户
+     * 注销用户
      * @param userId
      * @return
      */
-    @Update("update `user` set del = 1 where id = #{userId}")
+    @Update("update `user` set del = 1,del_date = now() where id = #{userId}")
     boolean offUser(Integer userId);
+
+
+    /**
+     * 分页查询所有注销用户
+     * @param page
+     * @param map
+     * @return
+     */
+    /*sql在xml*/
+    Page<PUser> getAllOffUser(Page<PUser> page, @Param("d") Map<String,Object> map);
+
+
+    /**
+     * 恢复用户
+     * @return
+     */
+    @Update("update `user` set del = null where id = #{userid}")
+    boolean rightUser(Integer userId);
 }

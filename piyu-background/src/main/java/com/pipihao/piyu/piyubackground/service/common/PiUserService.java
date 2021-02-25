@@ -56,4 +56,19 @@ public interface PiUserService {
       * @return
       */
      User getUserById(Integer id);
+
+     /**
+      * 获取所有的注销用户
+      * @param page
+      * @param map
+      * @return
+      */
+     Page<PUser> getAllOffUser(Page<PUser> page,Map<String,Object> map);
+
+     /**
+      * 恢复用户
+      * @param id
+      * @return
+      */
+     R rightUser(Integer id);
 }
