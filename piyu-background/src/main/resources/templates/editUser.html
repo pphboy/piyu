@@ -34,6 +34,18 @@
                             <input type="text" id="L_username" th:value="${user.nickname}" name="nickname" required="" lay-verify="nikename" autocomplete="off" class="layui-input"></div>
                     </div>
                     <div class="layui-form-item">
+                        <label for="L_username" class="layui-form-label">
+                            <span class="x-red">*</span>地址</label>
+                        <div class="layui-input-inline">
+                            <input type="text" id="L_address" th:value="${user.address}" name="address" required="" lay-verify="address" autocomplete="off" class="layui-input"></div>
+                    </div>
+                    <div class="layui-form-item">
+                        <label for="L_username" class="layui-form-label">
+                            <span class="x-red">*</span>简介</label>
+                        <div class="layui-input-inline">
+                            <input type="text" id="L_introduction" th:value="${user.introduction}" name="introduction" required="" lay-verify="introduction" autocomplete="off" class="layui-input"></div>
+                    </div>
+                    <div class="layui-form-item">
                         <label for="L_pass" class="layui-form-label">
                             <span class="x-red">*</span>密码</label>
                         <div class="layui-input-inline">
@@ -47,7 +59,7 @@
                     </div>
                     <div class="layui-form-item">
                         <label for="L_repass" class="layui-form-label"></label>
-                        <button class="layui-btn" lay-filter="add" lay-submit="">增加</button></div>
+                        <button class="layui-btn" lay-filter="add" lay-submit="">保存</button></div>
                 </form>
             </div>
         </div>
@@ -56,7 +68,18 @@
                 $ = layui.jquery;
                 var form = layui.form,
                 layer = layui.layer;
+                var normalObject = JSON.stringify({
+                    email: '[[${user.email}]]',
+                    nickname: '[[${user.nickname}]]',
+                    address: '[[${user.address}]]',
+                    introduction: '[[${user.introduction}]]',
+                    id: [[${user.id}]],
+                });
 
+                /**
+                 * 你现在需要完成用户信息编辑，
+                 * 需要自定义规则，如下，一样写就行了
+                 */
                 //自定义验证规则
                 form.verify({
                     nikename: function(value) {
@@ -64,7 +87,12 @@
                             return '昵称至少得3个字符啊';
                         }
                     },
-                    pass: [/(.+){6,12}$/, '密码必须6到12位'],
+                    pass: (value)=>{
+                        var reg = /(.+){6,12}$/;
+                        if(value && !reg.test(value)){
+                            return '密码必须6到12位';
+                        }
+                    },
                     repass: function(value) {
                         if ($('#L_pass').val() != $('#L_repass').val()) {
                             return '两次密码不一致';
@@ -75,17 +103,44 @@
                 //监听提交
                 form.on('submit(add)',
                 function(data) {
-                    console.log(data);
+                    if(data.field.pass){
+                        data.field.password = data.field.pass;
+                    }
+                    data.field.id = [[${user.id}]];
+                    delete data.field.pass;
+                    delete data.field.repass;
+
+                    // console.log(JSON.stringify(data.field));
+                    // console.log(normalObject);
+                    if(JSON.stringify(data.field) == normalObject){
+                        layer.alert("请修改一点数据后再点击保存",{icon:5});
+                        return false;
+                    }
+
                     //发异步，把数据提交给php
-                    layer.alert("增加成功", {
-                        icon: 6
-                    },
-                    function() {
-                        // 获得frame索引
-                        var index = parent.layer.getFrameIndex(window.name);
-                        //关闭当前frame
-                        parent.layer.close(index);
-                    });
+                    $.ajax({
+                        type:"POST",
+                        url:"/bg/addUser?[[${_csrf.parameterName}]]=[[${_csrf.token}]]",
+                        data:JSON.stringify(data.field),
+                        dataType:"json",
+                        contentType:"application/json",
+                        success(data){
+                            if(data.state){
+                                layer.alert(data.msg, {
+                                        icon: 6
+                                    },
+                                    function() {
+                                        // 获得frame索引
+                                        var index = parent.layer.getFrameIndex(window.name);
+                                        //关闭当前frame
+                                        parent.layer.close(index);
+                                        xadmin.father_reload();
+                                    });
+                            }else{
+                                layer.alert(data.msg,{icon:5})
+                            }
+                        }
+                    })
                     return false;
                 });
 

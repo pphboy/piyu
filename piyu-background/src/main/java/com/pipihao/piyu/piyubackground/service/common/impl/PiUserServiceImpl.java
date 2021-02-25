@@ -86,11 +86,21 @@ public class PiUserServiceImpl implements PiUserService {
      * @return
      */
     @Override
-    public R addUser(User user) {
+    public R addUser(PUser user) {
         if(!ObjectUtils.isEmpty(user.getId())){
-            if(StringUtils.isEmpty(user.getUsername())||StringUtils.isEmpty(user.getEmail()))
+            if(StringUtils.isEmpty(user.getNickname())||StringUtils.isEmpty(user.getEmail()))
                 return new R().getR(false,"无聊？",null);
+            /*判断是否需要修改密码*/
+            if(!StringUtils.isEmpty(user.getPassword())){
+                /*生成长度为20的盐*/
+                String salt = UUID.randomUUID().toString().replace("-","").substring(0,20);
+                /*生成盐、加密密码*/
+                user.setSalt(salt);
+                /*加密*/
+                user.setPassword(DigestUtils.sha1Hex(user.getPassword()+salt));
+            }else user.setPassword(null);
 
+            return new R().getR((Object)this.userMapper.updateUser(user),"修改信息成功","修改信息失败");
         }
         if(StringUtils.isEmpty(user.getUsername())||StringUtils.isEmpty(user.getPassword()) || StringUtils.isEmpty(user.getEmail()))
             return new R().getR(false,"参数错误",null);

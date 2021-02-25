@@ -48,7 +48,7 @@ public interface PiUserService {
       * 添加用户
       * @return
       */
-     R addUser(User user);
+     R addUser(PUser user);
 
      /**
       * 获取用户信息

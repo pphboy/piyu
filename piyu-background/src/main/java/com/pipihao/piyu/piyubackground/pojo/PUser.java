@@ -1,5 +1,6 @@
 package com.pipihao.piyu.piyubackground.pojo;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import com.pipihao.piyu.pojo.User;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -19,5 +20,7 @@ import java.math.BigDecimal;
 @NoArgsConstructor
 @Accessors(chain = true)
 public class PUser extends User {
+    @JsonProperty(access = JsonProperty.Access.WRITE_ONLY) //只写
+    private Integer id;
     private BigDecimal money; //余额
 }

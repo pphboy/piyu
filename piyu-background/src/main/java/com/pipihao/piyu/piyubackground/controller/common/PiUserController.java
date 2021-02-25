@@ -110,7 +110,7 @@ public class PiUserController {
      */
     @ResponseBody
     @PostMapping("addUser")
-    public R addUser(@RequestBody User user){
+    public R addUser(@RequestBody PUser user){
         return this.piUserService.addUser(user);
     }
 
