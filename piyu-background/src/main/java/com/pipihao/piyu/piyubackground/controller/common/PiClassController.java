@@ -44,4 +44,11 @@ public class PiClassController {
     public R offClass(@RequestBody PiProductClass piProductClass){
         return this.piClassService.offPiClass(piProductClass);
     }
+
+    @ResponseBody
+    @PostMapping("deleteClass/{id}")
+    public R deleteClass(@PathVariable("id") Integer id){
+        return this.piClassService.deletePiClass(id);
+    }
+
 }

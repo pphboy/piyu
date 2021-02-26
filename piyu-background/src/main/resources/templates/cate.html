@@ -162,10 +162,23 @@
 
            /*用户-删除*/
           function member_del(obj,id){
-              layer.confirm('确认要删除吗？',function(index){
+              layer.confirm(`<p>删除分类，需此分类下无皮物</p><p>条件符合，确认删除？</p>`,function(index){
                   //发异步删除数据
-                  $(obj).parents("tr").remove();
-                  layer.msg('已删除!',{icon:1,time:1000});
+                  $.ajax({
+                      type:'post',
+                      url:`/bg/deleteClass/${id}?${[[${_csrf.parameterName}]]}=${[[${_csrf.token}]]}`,
+                      dataType:"json",
+                      contentType:"application/json",
+                      success(data){
+                          console.log(data);
+                          if(data.state){
+                              $(obj).parents("tr").remove();
+                              layer.msg(data.msg,{icon:1,time:1000});
+                          }else{
+                              layer.msg(data.msg,{icon:5,time:1000});
+                          }
+                      }
+                  });
               });
           }
 

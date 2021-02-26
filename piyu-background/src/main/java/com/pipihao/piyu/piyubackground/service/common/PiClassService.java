@@ -31,5 +31,12 @@ public interface PiClassService {
      * @return
      */
     R offPiClass(PiProductClass piProductClass);
+
+    /**
+     * 删除分类
+     * @param id
+     * @return
+     */
+    R deletePiClass(Integer id);
 }
 

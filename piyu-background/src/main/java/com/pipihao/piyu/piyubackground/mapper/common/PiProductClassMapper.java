@@ -2,10 +2,7 @@ package com.pipihao.piyu.piyubackground.mapper.common;
 
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.pipihao.piyu.pojo.PiProductClass;
-import org.apache.ibatis.annotations.Insert;
-import org.apache.ibatis.annotations.Mapper;
-import org.apache.ibatis.annotations.Select;
-import org.apache.ibatis.annotations.Update;
+import org.apache.ibatis.annotations.*;
 
 /**
  * @author pipihao
@@ -45,5 +42,21 @@ public interface PiProductClassMapper extends com.pipihao.piyu.mapper.PiProductC
      */
     @Update(" update pi_product_class set state = #{state} where id = #{id}")
     boolean offPiClass(PiProductClass piProductClass);
+
+    /**
+     * 查询分类下是否有皮物
+     * @param id
+     * @return
+     */
+    @Select("select count(*) from pi_product where class_id = #{id}")
+    boolean getCountByPiClassId(Integer id);
+
+    /**
+     * 删除分类
+     * @param id
+     * @return
+     */
+    @Delete("delete from pi_product_class where id = #{id}")
+    boolean deletePiClass(Integer id);
 
 }

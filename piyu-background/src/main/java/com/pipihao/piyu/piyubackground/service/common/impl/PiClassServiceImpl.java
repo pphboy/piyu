@@ -53,4 +53,20 @@ public class PiClassServiceImpl implements PiClassService {
     public R offPiClass(PiProductClass piProductClass) {
         return new R().getR(this.piProductClassMapper.offPiClass(piProductClass),"修改成功","修改失败");
     }
+
+    /**
+     * 删除分类<br>
+     *     如果分类下有皮物，则无法删除
+     * @param id
+     * @return
+     */
+    @Override
+    public R deletePiClass(Integer id) {
+        /*判断当前分类下是否有皮物*/
+        if(this.piProductClassMapper.getCountByPiClassId(id)) return new R().getB(false,"无法删除有皮物分类",null);
+        /*删除分类*/
+        return new R().getR(this.piProductClassMapper.deletePiClass(id),"删除成功","删除失败");
+    }
+
+
 }
