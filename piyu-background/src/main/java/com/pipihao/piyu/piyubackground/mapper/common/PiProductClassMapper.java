@@ -29,12 +29,20 @@ public interface PiProductClassMapper extends com.pipihao.piyu.mapper.PiProductC
     boolean addPiClass(PiProductClass piProductClass);
 
     /**
+     * 更新分类
+     * @param piProductClass
+     * @return
+     */
+    @Update("update pi_product_class set class_name = #{className},order_num = #{orderNum} where id = #{id}")
+    boolean updatePiClass(PiProductClass piProductClass);
+
+    /**
      * 判断是否重名
      * @param name
      * @return
      */
-    @Select("select count(*) from pi_product_class where class_name = #{name}")
-    boolean getPiClassByName(String name);
+    @Select("select * from pi_product_class where class_name = #{name}")
+    PiProductClass getPiClassByName(String name);
 
     /**
      * 禁用皮物分类

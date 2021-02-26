@@ -28,7 +28,7 @@ public class PiClassController {
     }
 
     /**
-     * 添加分类
+     * 添加/编辑 分类
      * @param piProductClass
      * @return
      */
@@ -49,6 +49,12 @@ public class PiClassController {
     @PostMapping("deleteClass/{id}")
     public R deleteClass(@PathVariable("id") Integer id){
         return this.piClassService.deletePiClass(id);
+    }
+
+    @GetMapping("updateClass/{id}")
+    public String updateClassPage(@PathVariable("id") Integer id, ModelMap model){
+        model.addAttribute("pClass",this.piClassService.getPiClassById(id));
+        return "updateClass";
     }
 
 }

@@ -69,7 +69,7 @@
                                     <input type="checkbox" name="switch" th:value="${pClass.id}"  lay-text="开启|停用" th:checked="${pClass.state ? 'true':'false'}"  lay-skin="switch" lay-filter="ws">
                                   </td>
                                   <td class="td-manage">
-                                    <button class="layui-btn layui-btn layui-btn-xs"  onclick="xadmin.open('编辑','/admin-edit.html')" ><i class="layui-icon">&#xe642;</i>编辑</button>
+                                    <button class="layui-btn layui-btn layui-btn-xs"  th:onclick="xadmin.open('编辑','/bg/updateClass/[[${pClass.id}]]',400,280)" ><i class="layui-icon">&#xe642;</i>编辑</button>
                                     <button class="layui-btn-danger layui-btn layui-btn-xs"  th:onclick="member_del(this,[[${pClass.id}]])" href="javascript:;" ><i class="layui-icon">&#xe640;</i>删除</button>
                                   </td>
                                 </tr>
