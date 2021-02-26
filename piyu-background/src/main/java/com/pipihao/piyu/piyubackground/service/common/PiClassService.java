@@ -25,5 +25,11 @@ public interface PiClassService {
      */
     R addPiClass(PiProductClass piProductClass);
 
+    /**
+     * 禁用分类
+     * @param piProductClass
+     * @return
+     */
+    R offPiClass(PiProductClass piProductClass);
 }
 

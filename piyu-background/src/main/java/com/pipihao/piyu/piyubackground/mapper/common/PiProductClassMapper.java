@@ -5,6 +5,7 @@ import com.pipihao.piyu.pojo.PiProductClass;
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
+import org.apache.ibatis.annotations.Update;
 
 /**
  * @author pipihao
@@ -37,5 +38,12 @@ public interface PiProductClassMapper extends com.pipihao.piyu.mapper.PiProductC
      */
     @Select("select count(*) from pi_product_class where class_name = #{name}")
     boolean getPiClassByName(String name);
+
+    /**
+     * 禁用皮物分类
+     * @return
+     */
+    @Update(" update pi_product_class set state = #{state} where id = #{id}")
+    boolean offPiClass(PiProductClass piProductClass);
 
 }

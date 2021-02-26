@@ -66,7 +66,7 @@
                                   </td>
                                   <td th:text="${pClass.orderNum}">1</td>
                                   <td>
-                                    <input type="checkbox" name="switch"  lay-text="开启|停用" th:checked="${pClass.state ? true :false}"  lay-skin="switch">
+                                    <input type="checkbox" name="switch" th:value="${pClass.id}"  lay-text="开启|停用" th:checked="${pClass.state ? 'true':'false'}"  lay-skin="switch" lay-filter="ws">
                                   </td>
                                   <td class="td-manage">
                                     <button class="layui-btn layui-btn layui-btn-xs"  onclick="xadmin.open('编辑','/admin-edit.html')" ><i class="layui-icon">&#xe642;</i>编辑</button>
@@ -88,6 +88,33 @@
           layui.use(['form','laypage'], function(){
             var form = layui.form;
             var laypage = layui.laypage;
+            /*
+            * 现在你需要的是完成禁用，和删除。
+            * 然后再把编辑写了，应该很快的。加油
+            * */
+          form.on('switch(ws)', function(data){
+              console.log(data.elem.checked); //开关是否开启，true或者false
+              console.log(data.value); //放的是id
+
+              $.ajax({
+                  type:'POST',
+                  url:`/bg/offClass?${[[${_csrf.parameterName}]]}=${[[${_csrf.token}]]}`,
+                  data:JSON.stringify({
+                      state: data.elem.checked,
+                      id: data.value
+                  }),
+                  dataType:"json",
+                  contentType:"application/json",
+                  success(data){
+                      // console.log(data);
+                      if(data.state){
+                          layer.msg(data.msg,{icon:1,time:1000});
+                      }else{
+                          layer.msg(data.msg,{icon:5,time:1000});
+                      }
+                  }
+              })
+          });
 
             form.on('submit(add)',(data)=>{
                 console.log(data.field);
@@ -142,39 +169,11 @@
               });
           }
 
-          // 分类展开收起的分类的逻辑
-          // 
-          $(function(){
-            $("tbody.x-cate tr[fid!='0']").hide();
-            // 栏目多级显示效果
-            $('.x-show').click(function () {
-                if($(this).attr('status')=='true'){
-                    $(this).html('&#xe625;'); 
-                    $(this).attr('status','false');
-                    cateId = $(this).parents('tr').attr('cate-id');
-                    $("tbody tr[fid="+cateId+"]").show();
-               }else{
-                    cateIds = [];
-                    $(this).html('&#xe623;');
-                    $(this).attr('status','true');
-                    cateId = $(this).parents('tr').attr('cate-id');
-                    getCateId(cateId);
-                    for (var i in cateIds) {
-                        $("tbody tr[cate-id="+cateIds[i]+"]").hide().find('.x-show').html('&#xe623;').attr('status','true');
-                    }
-               }
-            })
-          })
-
-          var cateIds = [];
-          function getCateId(cateId) {
-              $("tbody tr[fid="+cateId+"]").each(function(index, el) {
-                  id = $(el).attr('cate-id');
-                  cateIds.push(id);
-                  getCateId(id);
-              });
+          function offPiClass(obj,id){
+              console.log(obj);
+              console.log(id);
           }
-   
+
         </script>
     </body>
 </html>

@@ -37,4 +37,11 @@ public class PiClassController {
     public R addClass(@RequestBody PiProductClass piProductClass){
         return this.piClassService.addPiClass(piProductClass);
     }
+
+
+    @ResponseBody
+    @PostMapping("offClass")
+    public R offClass(@RequestBody PiProductClass piProductClass){
+        return this.piClassService.offPiClass(piProductClass);
+    }
 }

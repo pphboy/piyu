@@ -43,4 +43,14 @@ public class PiClassServiceImpl implements PiClassService {
         if(this.piProductClassMapper.getPiClassByName(piProductClass.getClassName())) return new R().getB(false,"该分类名已被使用",null);
         return new R().getR(this.piProductClassMapper.addPiClass(piProductClass),"添加成功","添加失败");
     }
+
+    /**
+     * 禁用分类
+     * @param piProductClass
+     * @return
+     */
+    @Override
+    public R offPiClass(PiProductClass piProductClass) {
+        return new R().getR(this.piProductClassMapper.offPiClass(piProductClass),"修改成功","修改失败");
+    }
 }
