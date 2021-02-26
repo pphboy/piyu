@@ -948,3 +948,71 @@ Consider defining a bean of type 'com.pipihao.piyu.piyubackground.service.common
 2021-02-26 09:38:01.992 DEBUG 6508 --- [http-nio-8082-exec-5] c.p.p.p.m.c.P.getAllPiClassByPage        : ==>  Preparing: select * from pi_product_class LIMIT ?
 2021-02-26 09:38:01.992 DEBUG 6508 --- [http-nio-8082-exec-5] c.p.p.p.m.c.P.getAllPiClassByPage        : ==> Parameters: 10(Long)
 2021-02-26 09:38:01.996 DEBUG 6508 --- [http-nio-8082-exec-5] c.p.p.p.m.c.P.getAllPiClassByPage        : <==      Total: 8
+2021-02-26 09:41:24.741  INFO 10740 --- [restartedMain] c.p.p.p.PiyuBackgroundApplication        : Starting PiyuBackgroundApplication using Java 1.8.0_191 on IBM with PID 10740 (D:\Projects\PiYU\piyu\piyu-background\target\classes started by pipihao in D:\Projects\PiYU\piyu)
+2021-02-26 09:41:24.746  INFO 10740 --- [restartedMain] c.p.p.p.PiyuBackgroundApplication        : No active profile set, falling back to default profiles: default
+2021-02-26 09:41:24.845  INFO 10740 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-02-26 09:41:24.846  INFO 10740 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-02-26 09:41:26.431  WARN 10740 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'roleMapper' and 'com.pipihao.piyu.piyubackground.mapper.RoleMapper' mapperInterface. Bean already defined with the same name!
+2021-02-26 09:41:26.431  WARN 10740 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'userMapper' and 'com.pipihao.piyu.piyubackground.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
+2021-02-26 09:41:26.432  WARN 10740 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'cpUserMapper' and 'com.pipihao.piyu.piyubackground.mapper.common.CpUserMapper' mapperInterface. Bean already defined with the same name!
+2021-02-26 09:41:26.432  WARN 10740 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'cpWalletMapper' and 'com.pipihao.piyu.piyubackground.mapper.common.CpWalletMapper' mapperInterface. Bean already defined with the same name!
+2021-02-26 09:41:26.432  WARN 10740 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'piProductClassMapper' and 'com.pipihao.piyu.piyubackground.mapper.common.PiProductClassMapper' mapperInterface. Bean already defined with the same name!
+2021-02-26 09:41:26.432  WARN 10740 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'piUserMapper' and 'com.pipihao.piyu.piyubackground.mapper.common.PiUserMapper' mapperInterface. Bean already defined with the same name!
+2021-02-26 09:41:26.433  WARN 10740 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.pipihao.piyu.piyubackground.mapper]' package. Please check your configuration.
+2021-02-26 09:41:27.511  INFO 10740 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2021-02-26 09:41:27.545  INFO 10740 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-02-26 09:41:27.546  INFO 10740 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-26 09:41:27.740  INFO 10740 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-02-26 09:41:27.741  INFO 10740 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2894 ms
+2021-02-26 09:41:27.926  INFO 10740 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2021-02-26 09:41:28.137  INFO 10740 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2021-02-26 09:41:29.962  INFO 10740 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-26 09:41:30.098  INFO 10740 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-02-26 09:41:30.218  INFO 10740 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2021-02-26 09:41:30.220  INFO 10740 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2021-02-26 09:41:30.220  INFO 10740 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2021-02-26 09:41:30.222  INFO 10740 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
+2021-02-26 09:41:30.479  INFO 10740 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/js/**'] with []
+2021-02-26 09:41:30.479  INFO 10740 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/css/**'] with []
+2021-02-26 09:41:30.480  INFO 10740 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/fonts/**'] with []
+2021-02-26 09:41:30.480  INFO 10740 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/images/**'] with []
+2021-02-26 09:41:30.480  INFO 10740 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/lib/**'] with []
+2021-02-26 09:41:30.521  INFO 10740 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1b63e55d, org.springframework.security.web.context.SecurityContextPersistenceFilter@30f943a1, org.springframework.security.web.header.HeaderWriterFilter@3f15866e, org.springframework.security.web.csrf.CsrfFilter@7a5a8847, org.springframework.security.web.authentication.logout.LogoutFilter@27e0785, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@77137501, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@36ea460e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@580b465e, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@cddfec4, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6681a692, org.springframework.security.web.session.SessionManagementFilter@43e7d384, org.springframework.security.web.access.ExceptionTranslationFilter@1feaf0bf, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7075e4e6]
+2021-02-26 09:41:30.594  INFO 10740 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-02-26 09:41:30.650  INFO 10740 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2021-02-26 09:41:30.667  INFO 10740 --- [restartedMain] c.p.p.p.PiyuBackgroundApplication        : Started PiyuBackgroundApplication in 6.718 seconds (JVM running for 9.053)
+2021-02-26 09:41:44.539  INFO 10740 --- [http-nio-8082-exec-1] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [1614218235,1614234600; Idea-e1845a9a=ea6f104c-cae2-4639-8a9e-098f79327f52; remember-me=T2FiOWprTnolMkZIS2NtS1k2JTJCSmNzRGclM0QlM0Q6ak5GbTl2bFNSMVklMkZNdHh1czVSV0l3JTNEJTNE; JSESSIONID=9463867C571025A1A899412E249328F4] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2021-02-26 09:41:44.552  INFO 10740 --- [http-nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-26 09:41:44.552  INFO 10740 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-02-26 09:41:44.554  INFO 10740 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2021-02-26 09:41:44.869 DEBUG 10740 --- [http-nio-8082-exec-1] c.p.p.p.mapper.UserMapper.selectOne      : ==>  Preparing: SELECT id,username,password,state,email,register_date FROM bg_user WHERE (username = ?)
+2021-02-26 09:41:44.877 DEBUG 10740 --- [http-nio-8082-exec-1] c.p.p.p.mapper.UserMapper.selectOne      : ==> Parameters: xiaopi(String)
+2021-02-26 09:41:44.890 DEBUG 10740 --- [http-nio-8082-exec-1] c.p.p.p.mapper.UserMapper.selectOne      : <==      Total: 1
+2021-02-26 09:41:44.894 DEBUG 10740 --- [http-nio-8082-exec-1] c.p.p.p.mapper.RoleMapper.getRoleIds     : ==>  Preparing: select * from bg_role where id in (select role_id from bg_user_role where user_id = ?) order by num desc
+2021-02-26 09:41:44.896 DEBUG 10740 --- [http-nio-8082-exec-1] c.p.p.p.mapper.RoleMapper.getRoleIds     : ==> Parameters: 2(Integer)
+2021-02-26 09:41:44.898 DEBUG 10740 --- [http-nio-8082-exec-1] c.p.p.p.mapper.RoleMapper.getRoleIds     : <==      Total: 1
+2021-02-26 09:41:45.746 DEBUG 10740 --- [http-nio-8082-exec-1] .p.p.p.m.c.P.getAllPiClassByPage_mpCount : ==>  Preparing: SELECT COUNT(*) FROM pi_product_class
+2021-02-26 09:41:45.748 DEBUG 10740 --- [http-nio-8082-exec-1] .p.p.p.m.c.P.getAllPiClassByPage_mpCount : ==> Parameters: 
+2021-02-26 09:41:45.751 DEBUG 10740 --- [http-nio-8082-exec-1] .p.p.p.m.c.P.getAllPiClassByPage_mpCount : <==      Total: 1
+2021-02-26 09:41:45.764 DEBUG 10740 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.getAllPiClassByPage        : ==>  Preparing: select * from pi_product_class LIMIT ?
+2021-02-26 09:41:45.766 DEBUG 10740 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.getAllPiClassByPage        : ==> Parameters: 10(Long)
+2021-02-26 09:41:45.772 DEBUG 10740 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.getAllPiClassByPage        : <==      Total: 8
+2021-02-26 09:41:47.689 DEBUG 10740 --- [http-nio-8082-exec-7] c.p.p.p.m.c.P.offPiClass                 : ==>  Preparing: update pi_product_class set state = ? where id = ?
+2021-02-26 09:41:47.690 DEBUG 10740 --- [http-nio-8082-exec-7] c.p.p.p.m.c.P.offPiClass                 : ==> Parameters: true(Boolean), 1(Integer)
+2021-02-26 09:41:47.693 DEBUG 10740 --- [http-nio-8082-exec-7] c.p.p.p.m.c.P.offPiClass                 : <==    Updates: 1
+2021-02-26 09:41:50.441 DEBUG 10740 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.offPiClass                 : ==>  Preparing: update pi_product_class set state = ? where id = ?
+2021-02-26 09:41:50.442 DEBUG 10740 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.offPiClass                 : ==> Parameters: false(Boolean), 1(Integer)
+2021-02-26 09:41:50.445 DEBUG 10740 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.offPiClass                 : <==    Updates: 1
+2021-02-26 09:41:54.422 DEBUG 10740 --- [http-nio-8082-exec-9] c.p.p.p.m.c.P.offPiClass                 : ==>  Preparing: update pi_product_class set state = ? where id = ?
+2021-02-26 09:41:54.424 DEBUG 10740 --- [http-nio-8082-exec-9] c.p.p.p.m.c.P.offPiClass                 : ==> Parameters: false(Boolean), 2(Integer)
+2021-02-26 09:41:54.427 DEBUG 10740 --- [http-nio-8082-exec-9] c.p.p.p.m.c.P.offPiClass                 : <==    Updates: 1
+2021-02-26 09:41:55.817 DEBUG 10740 --- [http-nio-8082-exec-10] .p.p.p.m.c.P.getAllPiClassByPage_mpCount : ==>  Preparing: SELECT COUNT(*) FROM pi_product_class
+2021-02-26 09:41:55.817 DEBUG 10740 --- [http-nio-8082-exec-10] .p.p.p.m.c.P.getAllPiClassByPage_mpCount : ==> Parameters: 
+2021-02-26 09:41:55.819 DEBUG 10740 --- [http-nio-8082-exec-10] .p.p.p.m.c.P.getAllPiClassByPage_mpCount : <==      Total: 1
+2021-02-26 09:41:55.821 DEBUG 10740 --- [http-nio-8082-exec-10] c.p.p.p.m.c.P.getAllPiClassByPage        : ==>  Preparing: select * from pi_product_class LIMIT ?
+2021-02-26 09:41:55.822 DEBUG 10740 --- [http-nio-8082-exec-10] c.p.p.p.m.c.P.getAllPiClassByPage        : ==> Parameters: 10(Long)
+2021-02-26 09:41:55.832 DEBUG 10740 --- [http-nio-8082-exec-10] c.p.p.p.m.c.P.getAllPiClassByPage        : <==      Total: 8
+2021-02-26 09:41:59.215 DEBUG 10740 --- [http-nio-8082-exec-4] c.p.p.p.m.c.P.offPiClass                 : ==>  Preparing: update pi_product_class set state = ? where id = ?
+2021-02-26 09:41:59.216 DEBUG 10740 --- [http-nio-8082-exec-4] c.p.p.p.m.c.P.offPiClass                 : ==> Parameters: true(Boolean), 1(Integer)
+2021-02-26 09:41:59.219 DEBUG 10740 --- [http-nio-8082-exec-4] c.p.p.p.m.c.P.offPiClass                 : <==    Updates: 1
