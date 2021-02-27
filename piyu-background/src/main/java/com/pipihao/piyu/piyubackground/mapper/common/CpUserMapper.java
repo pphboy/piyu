@@ -1,7 +1,7 @@
 package com.pipihao.piyu.piyubackground.mapper.common;
 
 import com.pipihao.piyu.mapper.UserMapper;
-import com.pipihao.piyu.pojo.User;
+import com.pipihao.piyu.piyubackground.pojo.User;
 import org.apache.ibatis.annotations.Mapper;
 
 /**
@@ -12,6 +12,7 @@ import org.apache.ibatis.annotations.Mapper;
 @Mapper
 public interface CpUserMapper extends UserMapper {
 
+    public boolean saveUser(User user);
     /**
      * 修改用户
      * @param user

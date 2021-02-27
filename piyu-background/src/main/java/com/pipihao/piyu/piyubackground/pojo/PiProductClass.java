@@ -1,4 +1,4 @@
-package com.pipihao.piyu.pojo;
+package com.pipihao.piyu.piyubackground.pojo;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

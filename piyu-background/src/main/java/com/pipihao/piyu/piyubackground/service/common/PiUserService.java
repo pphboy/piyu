@@ -4,7 +4,7 @@ package com.pipihao.piyu.piyubackground.service.common;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.pipihao.piyu.piyubackground.common.R;
 import com.pipihao.piyu.piyubackground.pojo.PUser;
-import com.pipihao.piyu.pojo.User;
+import com.pipihao.piyu.piyubackground.pojo.User;
 
 import java.util.List;
 import java.util.Map;

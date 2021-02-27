@@ -2,7 +2,9 @@ package com.pipihao.piyu.piyubackground.service.common;
 
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.pipihao.piyu.piyubackground.common.R;
-import com.pipihao.piyu.pojo.PiProductClass;
+import com.pipihao.piyu.piyubackground.pojo.PiProductClass;
+
+import java.util.List;
 
 /**
  * @author pipihao
@@ -10,6 +12,12 @@ import com.pipihao.piyu.pojo.PiProductClass;
  * @date 2021/2/25 19:27
  */
 public interface PiClassService {
+
+    /**
+     * 无条件获取所有的分类
+     * @return
+     */
+    List<PiProductClass> getAllPiClass();
 
     /**
      * 分页获取皮物分类

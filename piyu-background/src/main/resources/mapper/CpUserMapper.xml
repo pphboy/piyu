@@ -3,11 +3,12 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.pipihao.piyu.piyubackground.mapper.common.CpUserMapper">
-    <insert id="saveUser" keyProperty="id" useGeneratedKeys="true" parameterType="com.pipihao.piyu.pojo.User">
+
+    <insert id="saveUser" keyProperty="id" useGeneratedKeys="true" parameterType="com.pipihao.piyu.piyubackground.pojo.User">
         INSERT INTO `user`(`id`,`username`,`nickname`,`password`,`salt`,`register_date`, `email`,`active_status`) VALUES (null,#{username},#{username},#{password},#{salt}, now(),#{email},0)
     </insert>
 
-    <update id="updateUser" parameterType="com.pipihao.piyu.pojo.User">
+    <update id="updateUser" parameterType="com.pipihao.piyu.piyubackground.pojo.User">
         UPDATE `piyu`.`user` SET
               `nickname` = #{nickname},  `address` = #{address}, `introduction` = #{introduction},`email` = #{email}
         <if test="password != null">

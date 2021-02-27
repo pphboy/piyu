@@ -32,6 +32,13 @@
             <artifactId>commons-lang3</artifactId>
             <version>3.11</version>
         </dependency>
+        <!--这里提供一个关闭Thymeleaf严格语法校验的配置方法：
+        -->
+        <dependency>
+            <groupId>net.sourceforge.nekohtml</groupId>
+            <artifactId>nekohtml</artifactId>
+            <version>1.9.21</version>
+        </dependency>
         <!--mybatis-plus-->
         <dependency>
             <groupId>org.springframework.boot</groupId>

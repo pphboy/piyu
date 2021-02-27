@@ -7,11 +7,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width,user-scalable=yes, minimum-scale=0.4, initial-scale=0.8,target-densitydpi=low-dpi" />
     <meta http-equiv="Cache-Control" content="no-siteapp" />
-    <link rel="stylesheet" href="./css/font.css">
-    <link rel="stylesheet" href="./css/xadmin.css">
+    <link rel="stylesheet" href="/css/font.css">
+    <link rel="stylesheet" href="/css/xadmin.css">
     <!-- <link rel="stylesheet" href="./css/theme5.css"> -->
-    <script src="./lib/layui/layui.js" charset="utf-8"></script>
-    <script type="text/javascript" src="./js/xadmin.js"></script>
+    <script src="/lib/layui/layui.js" charset="utf-8"></script>
+    <script type="text/javascript" src="/js/xadmin.js"></script>
     <!-- 让IE8/9支持媒体查询，从而兼容栅格 -->
     <!--[if lt IE 9]>
     <script src="https://cdn.staticfile.org/html5shiv/r29/html5.min.js"></script>
@@ -82,6 +82,24 @@
                         <a onclick="xadmin.add_tab('会员注销','/bg/offUserList')">
                             <i class="iconfont">&#xe6a7;</i>
                             <cite>注销列表</cite></a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="javascript:;">
+                    <i class="iconfont left-nav-li" lay-tips="皮物管理">&#xe723;</i>
+                    <cite>皮物管理</cite>
+                    <i class="iconfont nav_right">&#xe697;</i></a>
+                <ul class="sub-menu">
+                    <li>
+                        <a onclick="xadmin.add_tab('皮物列表','/pi/piProductList')">
+                            <i class="iconfont">&#xe6a7;</i>
+                            <cite>皮物列表</cite></a>
+                    </li>
+                    <li>
+                        <a onclick="xadmin.add_tab('皮帖列表','order-list1.html')">
+                            <i class="iconfont">&#xe6a7;</i>
+                            <cite>皮帖列表<cite></a>
                     </li>
                 </ul>
             </li>

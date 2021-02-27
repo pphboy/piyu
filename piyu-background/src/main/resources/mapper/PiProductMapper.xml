@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.pipihao.piyu.piyubackground.mapper.common.PiProductMapper">
+
+    <select id="getAllPiProduct" parameterType="map" resultType="com.pipihao.piyu.piyubackground.pojo.PiProduct">
+        select * from pi_product where price is not null and freight is not null
+        <if test="d.keywords != null">
+            and title like '%${d.keywords}%' or content like '%${d.keywords}%'
+        </if>
+        <if test="d.userId != null">
+            and user_id = #{d.userId}
+        </if>
+        <if test="d.classId != null">
+            and class_id = #{d.classId}
+        </if>
+        <if test="d.start != null">
+            and create_date  &gt;= #{d.start}
+        </if>
+        <if test="d.end != null">
+            and create_date &lt;= #{d.end}
+        </if>
+    </select>
+</mapper>
+

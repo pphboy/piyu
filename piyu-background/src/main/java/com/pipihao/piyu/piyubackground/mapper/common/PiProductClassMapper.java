@@ -1,8 +1,10 @@
 package com.pipihao.piyu.piyubackground.mapper.common;
 
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-import com.pipihao.piyu.pojo.PiProductClass;
+import com.pipihao.piyu.piyubackground.pojo.PiProductClass;
 import org.apache.ibatis.annotations.*;
+
+import java.util.List;
 
 /**
  * @author pipihao
@@ -10,8 +12,13 @@ import org.apache.ibatis.annotations.*;
  * @date 2021/2/25 19:24
  */
 @Mapper
-public interface PiProductClassMapper extends com.pipihao.piyu.mapper.PiProductClassMapper {
+public interface PiProductClassMapper  {
 
+    @Select("select * from pi_product_class")
+    List<PiProductClass> findAllPiProductClass();
+
+    @Select("select * from pi_product_class where id = #{id}")
+    PiProductClass findPiProductClassById(int id);
     /**
      * 这个与api的那个获取唯一的区别就是这个需要分页查询
      * @param page

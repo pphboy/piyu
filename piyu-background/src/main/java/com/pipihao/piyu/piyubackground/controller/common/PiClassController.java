@@ -3,7 +3,7 @@ package com.pipihao.piyu.piyubackground.controller.common;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.pipihao.piyu.piyubackground.common.R;
 import com.pipihao.piyu.piyubackground.service.common.PiClassService;
-import com.pipihao.piyu.pojo.PiProductClass;
+import com.pipihao.piyu.piyubackground.pojo.PiProductClass;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;

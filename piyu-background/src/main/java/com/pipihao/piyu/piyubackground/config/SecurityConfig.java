@@ -76,7 +76,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         http.authorizeRequests()
             .antMatchers("/about","/**.html").permitAll() //不拦截的路径
             .antMatchers("/admin/**").hasAnyRole("ADMIN")
-            .antMatchers("/bg/**").hasAnyRole("ADMIN,BGUSER")
+            .antMatchers("/bg/**","/pi/**").hasAnyRole("ADMIN,BGUSER")
                 .anyRequest().authenticated()
             .and()
                 .formLogin()

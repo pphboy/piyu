@@ -4,6 +4,9 @@ server:
 spring:
   thymeleaf:
     cache: false
+    mode: LEGACYHTML5
+    servlet:
+      content-type: text/html
   datasource:
     url: jdbc:mysql://localhost:3306/piyu?useUnicode=true&characterEncoding=utf-8&serverTimezone=UTC
     username: root

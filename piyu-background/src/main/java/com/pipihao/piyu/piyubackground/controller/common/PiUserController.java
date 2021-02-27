@@ -4,7 +4,7 @@ import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.pipihao.piyu.piyubackground.common.R;
 import com.pipihao.piyu.piyubackground.pojo.PUser;
 import com.pipihao.piyu.piyubackground.service.common.PiUserService;
-import com.pipihao.piyu.pojo.User;
+import com.pipihao.piyu.piyubackground.pojo.User;
 import org.apache.commons.lang3.ObjectUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
