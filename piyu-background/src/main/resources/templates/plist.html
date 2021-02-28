@@ -31,24 +31,27 @@
                     <div class="layui-card">
                         <div class="layui-card-body ">
                             <form class="layui-form layui-col-space5">
+                                <div class="layui-inline layui-show-xs-block">
+                                    <input class="layui-input"  autocomplete="off" placeholder="开始日" th:value="${s.start}" name="start" id="start">
+                                </div>
+                                <div class="layui-inline layui-show-xs-block">
+                                    <input class="layui-input"  autocomplete="off" th:value="${s.end}" placeholder="截止日" name="end" id="end">
+                                </div>
                                 <div class="layui-input-inline layui-show-xs-block">
-                                    <input class="layui-input" placeholder="开始日" name="start" id="start"></div>
-                                <div class="layui-input-inline layui-show-xs-block">
-                                    <input class="layui-input" placeholder="截止日" name="end" id="end"></div>
                                 <div class="layui-input-inline layui-show-xs-block">
                                     <select name="classId">
                                         <option value="">请选择皮物分类</option>
                                         <span th:each="c:${classList}">
-                                            <option th:value="${c.id}" th:text="${c.className}">123</option>
+                                            <option th:value="${c.id}" th:selected="${c.id == s.classId ? true: false}" th:text="${c.className}">123</option>
                                         </span>
                                     </select>
                                 </div>
                                 <div class="layui-input-inline layui-show-xs-block">
-                                    <input type="text" name="userId" placeholder="请输入用户ID" autocomplete="off" class="layui-input"></div>
+                                    <input type="text" name="userId" th:value="${s.userId}" placeholder="请输入用户ID" autocomplete="off" class="layui-input"></div>
                                 <div class="layui-input-inline layui-show-xs-block">
-                                    <input type="text" name="keywords" placeholder="请输入皮物内容相关关键字" autocomplete="off" class="layui-input"></div>
+                                    <input type="text" name="keywords" th:value="${s.keywords}" placeholder="请输入皮物内容相关关键字" autocomplete="off" class="layui-input"></div>
                                 <div class="layui-input-inline layui-show-xs-block">
-                                    <button class="layui-btn" lay-submit="" lay-filter="sreach">
+                                    <button class="layui-btn" lay-submit="" lay-filter="search">
                                         <i class="layui-icon">&#xe615;</i></button>
                                 </div>
                             </form>
@@ -109,6 +112,7 @@
         layui.use(['laydate', 'form','laypage'],
         function() {
             var laydate = layui.laydate;
+            var  form= layui.form;
             var laypage = layui.laypage;
             var s = [[${s}]];
 
@@ -119,13 +123,23 @@
                 groups:6,
                 limit:10,
                 jump(obj,first){
-                    console.log(s);
+                    // console.log(s);
                     if(first){
                         return;
                     }
-                    location.href = `/pi/piProductList?page=${obj.curr}&size=10`;
+                    var url = `/pi/piProductList?page=${obj.curr}&size=10`;
+
+                    for(var a in s){
+                        if(s[a]){
+                            url+= `&${a}=${s[a]}`;
+                        }
+                    }
+
+                    location.href = url;
                 }
             })
+
+            //监听搜索
 
             //执行一个laydate实例
             laydate.render({
@@ -136,7 +150,23 @@
             laydate.render({
                 elem: '#end' //指定元素
             });
+
+
+            form.on('submit(search)',(data)=>{
+                // console.log(data.field);
+                url = '/pi/piProductList?s=1';
+                for(var a in data.field){
+                    if(data.field[a]){
+                        url+=`&${a}=${data.field[a]}`;
+                    }
+                }
+                location.href = url;
+                return false;
+            });
+
         });
+
+
 
         /*用户-停用*/
         function member_stop(obj, id) {

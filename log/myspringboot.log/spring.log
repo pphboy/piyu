@@ -2349,3 +2349,364 @@ Caused by: org.springframework.expression.spel.SpelEvaluationException: EL1007E:
 2021-02-28 15:12:09.430 DEBUG 10056 --- [http-nio-8082-exec-4] c.p.p.p.m.c.P.getAllPiProduct            : <==      Total: 10
 2021-02-28 15:12:26.884  INFO 10056 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
 2021-02-28 15:12:26.891  INFO 10056 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2021-02-28 15:12:30.601  INFO 12392 --- [restartedMain] c.p.p.p.PiyuBackgroundApplication        : Starting PiyuBackgroundApplication using Java 1.8.0_191 on IBM with PID 12392 (D:\Projects\PiYU\piyu\piyu-background\target\classes started by pipihao in D:\Projects\PiYU\piyu)
+2021-02-28 15:12:30.604  INFO 12392 --- [restartedMain] c.p.p.p.PiyuBackgroundApplication        : No active profile set, falling back to default profiles: default
+2021-02-28 15:12:30.664  INFO 12392 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-02-28 15:12:30.665  INFO 12392 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-02-28 15:12:31.727  WARN 12392 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'roleMapper' and 'com.pipihao.piyu.piyubackground.mapper.RoleMapper' mapperInterface. Bean already defined with the same name!
+2021-02-28 15:12:31.728  WARN 12392 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'userMapper' and 'com.pipihao.piyu.piyubackground.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
+2021-02-28 15:12:31.728  WARN 12392 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'cpUserMapper' and 'com.pipihao.piyu.piyubackground.mapper.common.CpUserMapper' mapperInterface. Bean already defined with the same name!
+2021-02-28 15:12:31.728  WARN 12392 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'cpWalletMapper' and 'com.pipihao.piyu.piyubackground.mapper.common.CpWalletMapper' mapperInterface. Bean already defined with the same name!
+2021-02-28 15:12:31.728  WARN 12392 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'piProductClassMapper' and 'com.pipihao.piyu.piyubackground.mapper.common.PiProductClassMapper' mapperInterface. Bean already defined with the same name!
+2021-02-28 15:12:31.729  WARN 12392 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'piProductMapper' and 'com.pipihao.piyu.piyubackground.mapper.common.PiProductMapper' mapperInterface. Bean already defined with the same name!
+2021-02-28 15:12:31.729  WARN 12392 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'piUserMapper' and 'com.pipihao.piyu.piyubackground.mapper.common.PiUserMapper' mapperInterface. Bean already defined with the same name!
+2021-02-28 15:12:31.729  WARN 12392 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.pipihao.piyu.piyubackground.mapper]' package. Please check your configuration.
+2021-02-28 15:12:32.538  INFO 12392 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2021-02-28 15:12:32.561  INFO 12392 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-02-28 15:12:32.562  INFO 12392 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-28 15:12:32.827  INFO 12392 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-02-28 15:12:32.828  INFO 12392 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2162 ms
+2021-02-28 15:12:33.104  INFO 12392 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2021-02-28 15:12:33.302  INFO 12392 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2021-02-28 15:12:35.662  INFO 12392 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-28 15:12:35.824  INFO 12392 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-02-28 15:12:35.944  WARN 12392 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+2021-02-28 15:12:35.989  INFO 12392 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2021-02-28 15:12:35.992  INFO 12392 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2021-02-28 15:12:35.993  INFO 12392 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2021-02-28 15:12:35.995  INFO 12392 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
+2021-02-28 15:12:36.566  INFO 12392 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/js/**'] with []
+2021-02-28 15:12:36.567  INFO 12392 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/css/**'] with []
+2021-02-28 15:12:36.572  INFO 12392 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/fonts/**'] with []
+2021-02-28 15:12:36.573  INFO 12392 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/images/**'] with []
+2021-02-28 15:12:36.573  INFO 12392 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/lib/**'] with []
+2021-02-28 15:12:36.636  INFO 12392 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2b4dab85, org.springframework.security.web.context.SecurityContextPersistenceFilter@77e24513, org.springframework.security.web.header.HeaderWriterFilter@6c4d0ce6, org.springframework.security.web.csrf.CsrfFilter@46638b9, org.springframework.security.web.authentication.logout.LogoutFilter@49ba7255, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@72beafba, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3a5a6ce7, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1e064ef6, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@757fb873, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@700f1bc4, org.springframework.security.web.session.SessionManagementFilter@4805d733, org.springframework.security.web.access.ExceptionTranslationFilter@2b567f44, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5d673c9]
+2021-02-28 15:12:36.831  INFO 12392 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-02-28 15:12:36.999  INFO 12392 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2021-02-28 15:12:37.025  INFO 12392 --- [restartedMain] c.p.p.p.PiyuBackgroundApplication        : Started PiyuBackgroundApplication in 6.898 seconds (JVM running for 8.538)
+2021-02-28 15:12:37.234  INFO 12392 --- [http-nio-8082-exec-1] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [1614307480,1614430999,1614434243; remember-me=WlVhRGI2NFd5dk5sWU8lMkZSOU5wczdnJTNEJTNEOlNwb0diUjBBMXNja1V3QVNGNW9WOGclM0QlM0Q; JSESSIONID=5C4774435309CA80EBB8B733C437DF49] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2021-02-28 15:12:37.244  INFO 12392 --- [http-nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-28 15:12:37.245  INFO 12392 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-02-28 15:12:37.247  INFO 12392 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2021-02-28 15:12:37.626 DEBUG 12392 --- [http-nio-8082-exec-1] c.p.p.p.mapper.UserMapper.selectOne      : ==>  Preparing: SELECT id,username,password,state,email,register_date FROM bg_user WHERE (username = ?)
+2021-02-28 15:12:37.639 DEBUG 12392 --- [http-nio-8082-exec-1] c.p.p.p.mapper.UserMapper.selectOne      : ==> Parameters: admin(String)
+2021-02-28 15:12:37.653 DEBUG 12392 --- [http-nio-8082-exec-1] c.p.p.p.mapper.UserMapper.selectOne      : <==      Total: 1
+2021-02-28 15:12:37.660 DEBUG 12392 --- [http-nio-8082-exec-1] c.p.p.p.mapper.RoleMapper.getRoleIds     : ==>  Preparing: select * from bg_role where id in (select role_id from bg_user_role where user_id = ?) order by num desc
+2021-02-28 15:12:37.662 DEBUG 12392 --- [http-nio-8082-exec-1] c.p.p.p.mapper.RoleMapper.getRoleIds     : ==> Parameters: 1(Integer)
+2021-02-28 15:12:37.664 DEBUG 12392 --- [http-nio-8082-exec-1] c.p.p.p.mapper.RoleMapper.getRoleIds     : <==      Total: 2
+2021-02-28 15:12:38.958 DEBUG 12392 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.findAllPiProductClass      : ==>  Preparing: select * from pi_product_class
+2021-02-28 15:12:38.958 DEBUG 12392 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.findAllPiProductClass      : ==> Parameters: 
+2021-02-28 15:12:38.962 DEBUG 12392 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.findAllPiProductClass      : <==      Total: 5
+2021-02-28 15:12:39.039 DEBUG 12392 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.getAllPiProduct_mpCount    : ==>  Preparing: SELECT COUNT(*) FROM pi_product WHERE price IS NOT NULL AND freight IS NOT NULL
+2021-02-28 15:12:39.040 DEBUG 12392 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.getAllPiProduct_mpCount    : ==> Parameters: 
+2021-02-28 15:12:39.043 DEBUG 12392 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.getAllPiProduct_mpCount    : <==      Total: 1
+2021-02-28 15:12:39.054 DEBUG 12392 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.getAllPiProduct            : ==>  Preparing: select * from pi_product where price is not null and freight is not null LIMIT ?
+2021-02-28 15:12:39.056 DEBUG 12392 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.getAllPiProduct            : ==> Parameters: 10(Long)
+2021-02-28 15:12:39.066 DEBUG 12392 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.selectPClassById           : ====>  Preparing: Select * from pi_product_class where id = ?
+2021-02-28 15:12:39.067 DEBUG 12392 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.selectPClassById           : ====> Parameters: 1(Integer)
+2021-02-28 15:12:39.070 DEBUG 12392 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.selectPClassById           : <====      Total: 1
+2021-02-28 15:12:39.073 DEBUG 12392 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.selectUserById             : ====>  Preparing: Select * from user where id = ?
+2021-02-28 15:12:39.074 DEBUG 12392 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.selectUserById             : ====> Parameters: 10006(Integer)
+2021-02-28 15:12:39.077 DEBUG 12392 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.selectUserById             : <====      Total: 1
+2021-02-28 15:12:39.088 DEBUG 12392 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.getAllPiProduct            : <==      Total: 10
+2021-02-28 15:14:10.768 DEBUG 12392 --- [http-nio-8082-exec-2] c.p.p.p.m.c.P.findAllPiProductClass      : ==>  Preparing: select * from pi_product_class
+2021-02-28 15:14:10.769 DEBUG 12392 --- [http-nio-8082-exec-2] c.p.p.p.m.c.P.findAllPiProductClass      : ==> Parameters: 
+2021-02-28 15:14:10.771 DEBUG 12392 --- [http-nio-8082-exec-2] c.p.p.p.m.c.P.findAllPiProductClass      : <==      Total: 5
+2021-02-28 15:14:10.774 DEBUG 12392 --- [http-nio-8082-exec-2] c.p.p.p.m.c.P.getAllPiProduct_mpCount    : ==>  Preparing: SELECT COUNT(*) FROM pi_product WHERE price IS NOT NULL AND freight IS NOT NULL
+2021-02-28 15:14:10.774 DEBUG 12392 --- [http-nio-8082-exec-2] c.p.p.p.m.c.P.getAllPiProduct_mpCount    : ==> Parameters: 
+2021-02-28 15:14:10.776 DEBUG 12392 --- [http-nio-8082-exec-2] c.p.p.p.m.c.P.getAllPiProduct_mpCount    : <==      Total: 1
+2021-02-28 15:14:10.777 DEBUG 12392 --- [http-nio-8082-exec-2] c.p.p.p.m.c.P.getAllPiProduct            : ==>  Preparing: select * from pi_product where price is not null and freight is not null LIMIT ?
+2021-02-28 15:14:10.777 DEBUG 12392 --- [http-nio-8082-exec-2] c.p.p.p.m.c.P.getAllPiProduct            : ==> Parameters: 10(Long)
+2021-02-28 15:14:10.781 DEBUG 12392 --- [http-nio-8082-exec-2] c.p.p.p.m.c.P.selectPClassById           : ====>  Preparing: Select * from pi_product_class where id = ?
+2021-02-28 15:14:10.782 DEBUG 12392 --- [http-nio-8082-exec-2] c.p.p.p.m.c.P.selectPClassById           : ====> Parameters: 1(Integer)
+2021-02-28 15:14:10.783 DEBUG 12392 --- [http-nio-8082-exec-2] c.p.p.p.m.c.P.selectPClassById           : <====      Total: 1
+2021-02-28 15:14:10.784 DEBUG 12392 --- [http-nio-8082-exec-2] c.p.p.p.m.c.P.selectUserById             : ====>  Preparing: Select * from user where id = ?
+2021-02-28 15:14:10.785 DEBUG 12392 --- [http-nio-8082-exec-2] c.p.p.p.m.c.P.selectUserById             : ====> Parameters: 10006(Integer)
+2021-02-28 15:14:10.793 DEBUG 12392 --- [http-nio-8082-exec-2] c.p.p.p.m.c.P.selectUserById             : <====      Total: 1
+2021-02-28 15:14:10.804 DEBUG 12392 --- [http-nio-8082-exec-2] c.p.p.p.m.c.P.getAllPiProduct            : <==      Total: 10
+2021-02-28 15:14:38.657 DEBUG 12392 --- [http-nio-8082-exec-5] c.p.p.p.m.c.P.findAllPiProductClass      : ==>  Preparing: select * from pi_product_class
+2021-02-28 15:14:38.658 DEBUG 12392 --- [http-nio-8082-exec-5] c.p.p.p.m.c.P.findAllPiProductClass      : ==> Parameters: 
+2021-02-28 15:14:38.663 DEBUG 12392 --- [http-nio-8082-exec-5] c.p.p.p.m.c.P.findAllPiProductClass      : <==      Total: 5
+2021-02-28 15:14:38.665 DEBUG 12392 --- [http-nio-8082-exec-5] c.p.p.p.m.c.P.getAllPiProduct_mpCount    : ==>  Preparing: SELECT COUNT(*) FROM pi_product WHERE price IS NOT NULL AND freight IS NOT NULL
+2021-02-28 15:14:38.666 DEBUG 12392 --- [http-nio-8082-exec-5] c.p.p.p.m.c.P.getAllPiProduct_mpCount    : ==> Parameters: 
+2021-02-28 15:14:38.668 DEBUG 12392 --- [http-nio-8082-exec-5] c.p.p.p.m.c.P.getAllPiProduct_mpCount    : <==      Total: 1
+2021-02-28 15:14:38.670 DEBUG 12392 --- [http-nio-8082-exec-5] c.p.p.p.m.c.P.getAllPiProduct            : ==>  Preparing: select * from pi_product where price is not null and freight is not null LIMIT ?
+2021-02-28 15:14:38.671 DEBUG 12392 --- [http-nio-8082-exec-5] c.p.p.p.m.c.P.getAllPiProduct            : ==> Parameters: 10(Long)
+2021-02-28 15:14:38.675 DEBUG 12392 --- [http-nio-8082-exec-5] c.p.p.p.m.c.P.selectPClassById           : ====>  Preparing: Select * from pi_product_class where id = ?
+2021-02-28 15:14:38.677 DEBUG 12392 --- [http-nio-8082-exec-5] c.p.p.p.m.c.P.selectPClassById           : ====> Parameters: 1(Integer)
+2021-02-28 15:14:38.680 DEBUG 12392 --- [http-nio-8082-exec-5] c.p.p.p.m.c.P.selectPClassById           : <====      Total: 1
+2021-02-28 15:14:38.681 DEBUG 12392 --- [http-nio-8082-exec-5] c.p.p.p.m.c.P.selectUserById             : ====>  Preparing: Select * from user where id = ?
+2021-02-28 15:14:38.682 DEBUG 12392 --- [http-nio-8082-exec-5] c.p.p.p.m.c.P.selectUserById             : ====> Parameters: 10006(Integer)
+2021-02-28 15:14:38.684 DEBUG 12392 --- [http-nio-8082-exec-5] c.p.p.p.m.c.P.selectUserById             : <====      Total: 1
+2021-02-28 15:14:38.691 DEBUG 12392 --- [http-nio-8082-exec-5] c.p.p.p.m.c.P.getAllPiProduct            : <==      Total: 10
+2021-02-28 15:15:57.057 DEBUG 12392 --- [http-nio-8082-exec-10] c.p.p.p.m.c.P.findAllPiProductClass      : ==>  Preparing: select * from pi_product_class
+2021-02-28 15:15:57.057 DEBUG 12392 --- [http-nio-8082-exec-10] c.p.p.p.m.c.P.findAllPiProductClass      : ==> Parameters: 
+2021-02-28 15:15:57.060 DEBUG 12392 --- [http-nio-8082-exec-10] c.p.p.p.m.c.P.findAllPiProductClass      : <==      Total: 5
+2021-02-28 15:15:57.062 DEBUG 12392 --- [http-nio-8082-exec-10] c.p.p.p.m.c.P.getAllPiProduct_mpCount    : ==>  Preparing: SELECT COUNT(*) FROM pi_product WHERE price IS NOT NULL AND freight IS NOT NULL
+2021-02-28 15:15:57.062 DEBUG 12392 --- [http-nio-8082-exec-10] c.p.p.p.m.c.P.getAllPiProduct_mpCount    : ==> Parameters: 
+2021-02-28 15:15:57.064 DEBUG 12392 --- [http-nio-8082-exec-10] c.p.p.p.m.c.P.getAllPiProduct_mpCount    : <==      Total: 1
+2021-02-28 15:15:57.065 DEBUG 12392 --- [http-nio-8082-exec-10] c.p.p.p.m.c.P.getAllPiProduct            : ==>  Preparing: select * from pi_product where price is not null and freight is not null LIMIT ?
+2021-02-28 15:15:57.066 DEBUG 12392 --- [http-nio-8082-exec-10] c.p.p.p.m.c.P.getAllPiProduct            : ==> Parameters: 10(Long)
+2021-02-28 15:15:57.069 DEBUG 12392 --- [http-nio-8082-exec-10] c.p.p.p.m.c.P.selectPClassById           : ====>  Preparing: Select * from pi_product_class where id = ?
+2021-02-28 15:15:57.069 DEBUG 12392 --- [http-nio-8082-exec-10] c.p.p.p.m.c.P.selectPClassById           : ====> Parameters: 1(Integer)
+2021-02-28 15:15:57.071 DEBUG 12392 --- [http-nio-8082-exec-10] c.p.p.p.m.c.P.selectPClassById           : <====      Total: 1
+2021-02-28 15:15:57.071 DEBUG 12392 --- [http-nio-8082-exec-10] c.p.p.p.m.c.P.selectUserById             : ====>  Preparing: Select * from user where id = ?
+2021-02-28 15:15:57.072 DEBUG 12392 --- [http-nio-8082-exec-10] c.p.p.p.m.c.P.selectUserById             : ====> Parameters: 10006(Integer)
+2021-02-28 15:15:57.074 DEBUG 12392 --- [http-nio-8082-exec-10] c.p.p.p.m.c.P.selectUserById             : <====      Total: 1
+2021-02-28 15:15:57.077 DEBUG 12392 --- [http-nio-8082-exec-10] c.p.p.p.m.c.P.getAllPiProduct            : <==      Total: 10
+2021-02-28 15:17:21.193 DEBUG 12392 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.findAllPiProductClass      : ==>  Preparing: select * from pi_product_class
+2021-02-28 15:17:21.194 DEBUG 12392 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.findAllPiProductClass      : ==> Parameters: 
+2021-02-28 15:17:21.198 DEBUG 12392 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.findAllPiProductClass      : <==      Total: 5
+2021-02-28 15:17:21.200 DEBUG 12392 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.getAllPiProduct_mpCount    : ==>  Preparing: SELECT COUNT(*) FROM pi_product WHERE price IS NOT NULL AND freight IS NOT NULL
+2021-02-28 15:17:21.201 DEBUG 12392 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.getAllPiProduct_mpCount    : ==> Parameters: 
+2021-02-28 15:17:21.202 DEBUG 12392 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.getAllPiProduct_mpCount    : <==      Total: 1
+2021-02-28 15:17:21.204 DEBUG 12392 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.getAllPiProduct            : ==>  Preparing: select * from pi_product where price is not null and freight is not null LIMIT ?
+2021-02-28 15:17:21.204 DEBUG 12392 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.getAllPiProduct            : ==> Parameters: 10(Long)
+2021-02-28 15:17:21.206 DEBUG 12392 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.selectPClassById           : ====>  Preparing: Select * from pi_product_class where id = ?
+2021-02-28 15:17:21.207 DEBUG 12392 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.selectPClassById           : ====> Parameters: 1(Integer)
+2021-02-28 15:17:21.208 DEBUG 12392 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.selectPClassById           : <====      Total: 1
+2021-02-28 15:17:21.209 DEBUG 12392 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.selectUserById             : ====>  Preparing: Select * from user where id = ?
+2021-02-28 15:17:21.209 DEBUG 12392 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.selectUserById             : ====> Parameters: 10006(Integer)
+2021-02-28 15:17:21.211 DEBUG 12392 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.selectUserById             : <====      Total: 1
+2021-02-28 15:17:21.214 DEBUG 12392 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.getAllPiProduct            : <==      Total: 10
+2021-02-28 15:18:04.775 DEBUG 12392 --- [http-nio-8082-exec-8] c.p.p.p.m.c.P.findAllPiProductClass      : ==>  Preparing: select * from pi_product_class
+2021-02-28 15:18:04.776 DEBUG 12392 --- [http-nio-8082-exec-8] c.p.p.p.m.c.P.findAllPiProductClass      : ==> Parameters: 
+2021-02-28 15:18:04.778 DEBUG 12392 --- [http-nio-8082-exec-8] c.p.p.p.m.c.P.findAllPiProductClass      : <==      Total: 5
+2021-02-28 15:18:04.782 DEBUG 12392 --- [http-nio-8082-exec-8] c.p.p.p.m.c.P.getAllPiProduct_mpCount    : ==>  Preparing: SELECT COUNT(*) FROM pi_product WHERE price IS NOT NULL AND freight IS NOT NULL
+2021-02-28 15:18:04.782 DEBUG 12392 --- [http-nio-8082-exec-8] c.p.p.p.m.c.P.getAllPiProduct_mpCount    : ==> Parameters: 
+2021-02-28 15:18:04.784 DEBUG 12392 --- [http-nio-8082-exec-8] c.p.p.p.m.c.P.getAllPiProduct_mpCount    : <==      Total: 1
+2021-02-28 15:18:04.785 DEBUG 12392 --- [http-nio-8082-exec-8] c.p.p.p.m.c.P.getAllPiProduct            : ==>  Preparing: select * from pi_product where price is not null and freight is not null LIMIT ?
+2021-02-28 15:18:04.786 DEBUG 12392 --- [http-nio-8082-exec-8] c.p.p.p.m.c.P.getAllPiProduct            : ==> Parameters: 10(Long)
+2021-02-28 15:18:04.788 DEBUG 12392 --- [http-nio-8082-exec-8] c.p.p.p.m.c.P.selectPClassById           : ====>  Preparing: Select * from pi_product_class where id = ?
+2021-02-28 15:18:04.789 DEBUG 12392 --- [http-nio-8082-exec-8] c.p.p.p.m.c.P.selectPClassById           : ====> Parameters: 1(Integer)
+2021-02-28 15:18:04.790 DEBUG 12392 --- [http-nio-8082-exec-8] c.p.p.p.m.c.P.selectPClassById           : <====      Total: 1
+2021-02-28 15:18:04.791 DEBUG 12392 --- [http-nio-8082-exec-8] c.p.p.p.m.c.P.selectUserById             : ====>  Preparing: Select * from user where id = ?
+2021-02-28 15:18:04.791 DEBUG 12392 --- [http-nio-8082-exec-8] c.p.p.p.m.c.P.selectUserById             : ====> Parameters: 10006(Integer)
+2021-02-28 15:18:04.793 DEBUG 12392 --- [http-nio-8082-exec-8] c.p.p.p.m.c.P.selectUserById             : <====      Total: 1
+2021-02-28 15:18:04.798 DEBUG 12392 --- [http-nio-8082-exec-8] c.p.p.p.m.c.P.getAllPiProduct            : <==      Total: 10
+2021-02-28 15:21:19.857 DEBUG 12392 --- [http-nio-8082-exec-8] c.p.p.p.m.c.P.findAllPiProductClass      : ==>  Preparing: select * from pi_product_class
+2021-02-28 15:21:19.857 DEBUG 12392 --- [http-nio-8082-exec-8] c.p.p.p.m.c.P.findAllPiProductClass      : ==> Parameters: 
+2021-02-28 15:21:19.860 DEBUG 12392 --- [http-nio-8082-exec-8] c.p.p.p.m.c.P.findAllPiProductClass      : <==      Total: 5
+2021-02-28 15:21:19.863 DEBUG 12392 --- [http-nio-8082-exec-8] c.p.p.p.m.c.P.getAllPiProduct_mpCount    : ==>  Preparing: SELECT COUNT(*) FROM pi_product WHERE price IS NOT NULL AND freight IS NOT NULL
+2021-02-28 15:21:19.864 DEBUG 12392 --- [http-nio-8082-exec-8] c.p.p.p.m.c.P.getAllPiProduct_mpCount    : ==> Parameters: 
+2021-02-28 15:21:19.865 DEBUG 12392 --- [http-nio-8082-exec-8] c.p.p.p.m.c.P.getAllPiProduct_mpCount    : <==      Total: 1
+2021-02-28 15:21:19.866 DEBUG 12392 --- [http-nio-8082-exec-8] c.p.p.p.m.c.P.getAllPiProduct            : ==>  Preparing: select * from pi_product where price is not null and freight is not null LIMIT ?
+2021-02-28 15:21:19.867 DEBUG 12392 --- [http-nio-8082-exec-8] c.p.p.p.m.c.P.getAllPiProduct            : ==> Parameters: 10(Long)
+2021-02-28 15:21:19.869 DEBUG 12392 --- [http-nio-8082-exec-8] c.p.p.p.m.c.P.selectPClassById           : ====>  Preparing: Select * from pi_product_class where id = ?
+2021-02-28 15:21:19.870 DEBUG 12392 --- [http-nio-8082-exec-8] c.p.p.p.m.c.P.selectPClassById           : ====> Parameters: 1(Integer)
+2021-02-28 15:21:19.871 DEBUG 12392 --- [http-nio-8082-exec-8] c.p.p.p.m.c.P.selectPClassById           : <====      Total: 1
+2021-02-28 15:21:19.872 DEBUG 12392 --- [http-nio-8082-exec-8] c.p.p.p.m.c.P.selectUserById             : ====>  Preparing: Select * from user where id = ?
+2021-02-28 15:21:19.872 DEBUG 12392 --- [http-nio-8082-exec-8] c.p.p.p.m.c.P.selectUserById             : ====> Parameters: 10006(Integer)
+2021-02-28 15:21:19.875 DEBUG 12392 --- [http-nio-8082-exec-8] c.p.p.p.m.c.P.selectUserById             : <====      Total: 1
+2021-02-28 15:21:19.878 DEBUG 12392 --- [http-nio-8082-exec-8] c.p.p.p.m.c.P.getAllPiProduct            : <==      Total: 10
+2021-02-28 15:23:45.548 DEBUG 12392 --- [http-nio-8082-exec-2] c.p.p.p.m.c.P.findAllPiProductClass      : ==>  Preparing: select * from pi_product_class
+2021-02-28 15:23:45.549 DEBUG 12392 --- [http-nio-8082-exec-2] c.p.p.p.m.c.P.findAllPiProductClass      : ==> Parameters: 
+2021-02-28 15:23:45.553 DEBUG 12392 --- [http-nio-8082-exec-2] c.p.p.p.m.c.P.findAllPiProductClass      : <==      Total: 5
+2021-02-28 15:23:45.555 DEBUG 12392 --- [http-nio-8082-exec-2] c.p.p.p.m.c.P.getAllPiProduct_mpCount    : ==>  Preparing: SELECT COUNT(*) FROM pi_product WHERE price IS NOT NULL AND freight IS NOT NULL
+2021-02-28 15:23:45.556 DEBUG 12392 --- [http-nio-8082-exec-2] c.p.p.p.m.c.P.getAllPiProduct_mpCount    : ==> Parameters: 
+2021-02-28 15:23:45.557 DEBUG 12392 --- [http-nio-8082-exec-2] c.p.p.p.m.c.P.getAllPiProduct_mpCount    : <==      Total: 1
+2021-02-28 15:23:45.558 DEBUG 12392 --- [http-nio-8082-exec-2] c.p.p.p.m.c.P.getAllPiProduct            : ==>  Preparing: select * from pi_product where price is not null and freight is not null LIMIT ?
+2021-02-28 15:23:45.559 DEBUG 12392 --- [http-nio-8082-exec-2] c.p.p.p.m.c.P.getAllPiProduct            : ==> Parameters: 10(Long)
+2021-02-28 15:23:45.561 DEBUG 12392 --- [http-nio-8082-exec-2] c.p.p.p.m.c.P.selectPClassById           : ====>  Preparing: Select * from pi_product_class where id = ?
+2021-02-28 15:23:45.562 DEBUG 12392 --- [http-nio-8082-exec-2] c.p.p.p.m.c.P.selectPClassById           : ====> Parameters: 1(Integer)
+2021-02-28 15:23:45.564 DEBUG 12392 --- [http-nio-8082-exec-2] c.p.p.p.m.c.P.selectPClassById           : <====      Total: 1
+2021-02-28 15:23:45.565 DEBUG 12392 --- [http-nio-8082-exec-2] c.p.p.p.m.c.P.selectUserById             : ====>  Preparing: Select * from user where id = ?
+2021-02-28 15:23:45.565 DEBUG 12392 --- [http-nio-8082-exec-2] c.p.p.p.m.c.P.selectUserById             : ====> Parameters: 10006(Integer)
+2021-02-28 15:23:45.567 DEBUG 12392 --- [http-nio-8082-exec-2] c.p.p.p.m.c.P.selectUserById             : <====      Total: 1
+2021-02-28 15:23:45.571 DEBUG 12392 --- [http-nio-8082-exec-2] c.p.p.p.m.c.P.getAllPiProduct            : <==      Total: 10
+2021-02-28 15:23:53.417 DEBUG 12392 --- [http-nio-8082-exec-7] c.p.p.p.m.c.P.findAllPiProductClass      : ==>  Preparing: select * from pi_product_class
+2021-02-28 15:23:53.418 DEBUG 12392 --- [http-nio-8082-exec-7] c.p.p.p.m.c.P.findAllPiProductClass      : ==> Parameters: 
+2021-02-28 15:23:53.419 DEBUG 12392 --- [http-nio-8082-exec-7] c.p.p.p.m.c.P.findAllPiProductClass      : <==      Total: 5
+2021-02-28 15:23:53.421 DEBUG 12392 --- [http-nio-8082-exec-7] c.p.p.p.m.c.P.getAllPiProduct_mpCount    : ==>  Preparing: SELECT COUNT(*) FROM pi_product WHERE price IS NOT NULL AND freight IS NOT NULL
+2021-02-28 15:23:53.421 DEBUG 12392 --- [http-nio-8082-exec-7] c.p.p.p.m.c.P.getAllPiProduct_mpCount    : ==> Parameters: 
+2021-02-28 15:23:53.422 DEBUG 12392 --- [http-nio-8082-exec-7] c.p.p.p.m.c.P.getAllPiProduct_mpCount    : <==      Total: 1
+2021-02-28 15:23:53.425 DEBUG 12392 --- [http-nio-8082-exec-7] c.p.p.p.m.c.P.getAllPiProduct            : ==>  Preparing: select * from pi_product where price is not null and freight is not null LIMIT ?,?
+2021-02-28 15:23:53.425 DEBUG 12392 --- [http-nio-8082-exec-7] c.p.p.p.m.c.P.getAllPiProduct            : ==> Parameters: 3(Long), 3(Long)
+2021-02-28 15:23:53.427 DEBUG 12392 --- [http-nio-8082-exec-7] c.p.p.p.m.c.P.selectPClassById           : ====>  Preparing: Select * from pi_product_class where id = ?
+2021-02-28 15:23:53.427 DEBUG 12392 --- [http-nio-8082-exec-7] c.p.p.p.m.c.P.selectPClassById           : ====> Parameters: 1(Integer)
+2021-02-28 15:23:53.428 DEBUG 12392 --- [http-nio-8082-exec-7] c.p.p.p.m.c.P.selectPClassById           : <====      Total: 1
+2021-02-28 15:23:53.429 DEBUG 12392 --- [http-nio-8082-exec-7] c.p.p.p.m.c.P.selectUserById             : ====>  Preparing: Select * from user where id = ?
+2021-02-28 15:23:53.429 DEBUG 12392 --- [http-nio-8082-exec-7] c.p.p.p.m.c.P.selectUserById             : ====> Parameters: 10006(Integer)
+2021-02-28 15:23:53.430 DEBUG 12392 --- [http-nio-8082-exec-7] c.p.p.p.m.c.P.selectUserById             : <====      Total: 1
+2021-02-28 15:23:53.431 DEBUG 12392 --- [http-nio-8082-exec-7] c.p.p.p.m.c.P.getAllPiProduct            : <==      Total: 3
+2021-02-28 15:23:56.241 DEBUG 12392 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.findAllPiProductClass      : ==>  Preparing: select * from pi_product_class
+2021-02-28 15:23:56.242 DEBUG 12392 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.findAllPiProductClass      : ==> Parameters: 
+2021-02-28 15:23:56.244 DEBUG 12392 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.findAllPiProductClass      : <==      Total: 5
+2021-02-28 15:23:56.246 DEBUG 12392 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.getAllPiProduct_mpCount    : ==>  Preparing: SELECT COUNT(*) FROM pi_product WHERE price IS NOT NULL AND freight IS NOT NULL
+2021-02-28 15:23:56.246 DEBUG 12392 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.getAllPiProduct_mpCount    : ==> Parameters: 
+2021-02-28 15:23:56.247 DEBUG 12392 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.getAllPiProduct_mpCount    : <==      Total: 1
+2021-02-28 15:23:56.248 DEBUG 12392 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.getAllPiProduct            : ==>  Preparing: select * from pi_product where price is not null and freight is not null LIMIT ?
+2021-02-28 15:23:56.248 DEBUG 12392 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.getAllPiProduct            : ==> Parameters: 3(Long)
+2021-02-28 15:23:56.249 DEBUG 12392 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.selectPClassById           : ====>  Preparing: Select * from pi_product_class where id = ?
+2021-02-28 15:23:56.250 DEBUG 12392 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.selectPClassById           : ====> Parameters: 1(Integer)
+2021-02-28 15:23:56.251 DEBUG 12392 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.selectPClassById           : <====      Total: 1
+2021-02-28 15:23:56.251 DEBUG 12392 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.selectUserById             : ====>  Preparing: Select * from user where id = ?
+2021-02-28 15:23:56.252 DEBUG 12392 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.selectUserById             : ====> Parameters: 10006(Integer)
+2021-02-28 15:23:56.253 DEBUG 12392 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.selectUserById             : <====      Total: 1
+2021-02-28 15:23:56.253 DEBUG 12392 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.getAllPiProduct            : <==      Total: 3
+2021-02-28 15:24:05.257 DEBUG 12392 --- [http-nio-8082-exec-7] c.p.p.p.m.c.P.findAllPiProductClass      : ==>  Preparing: select * from pi_product_class
+2021-02-28 15:24:05.258 DEBUG 12392 --- [http-nio-8082-exec-7] c.p.p.p.m.c.P.findAllPiProductClass      : ==> Parameters: 
+2021-02-28 15:24:05.261 DEBUG 12392 --- [http-nio-8082-exec-7] c.p.p.p.m.c.P.findAllPiProductClass      : <==      Total: 5
+2021-02-28 15:24:05.263 DEBUG 12392 --- [http-nio-8082-exec-7] c.p.p.p.m.c.P.getAllPiProduct_mpCount    : ==>  Preparing: SELECT COUNT(*) FROM pi_product WHERE price IS NOT NULL AND freight IS NOT NULL
+2021-02-28 15:24:05.263 DEBUG 12392 --- [http-nio-8082-exec-7] c.p.p.p.m.c.P.getAllPiProduct_mpCount    : ==> Parameters: 
+2021-02-28 15:24:05.264 DEBUG 12392 --- [http-nio-8082-exec-7] c.p.p.p.m.c.P.getAllPiProduct_mpCount    : <==      Total: 1
+2021-02-28 15:24:05.265 DEBUG 12392 --- [http-nio-8082-exec-7] c.p.p.p.m.c.P.getAllPiProduct            : ==>  Preparing: select * from pi_product where price is not null and freight is not null LIMIT ?,?
+2021-02-28 15:24:05.265 DEBUG 12392 --- [http-nio-8082-exec-7] c.p.p.p.m.c.P.getAllPiProduct            : ==> Parameters: 3(Long), 3(Long)
+2021-02-28 15:24:05.266 DEBUG 12392 --- [http-nio-8082-exec-7] c.p.p.p.m.c.P.selectPClassById           : ====>  Preparing: Select * from pi_product_class where id = ?
+2021-02-28 15:24:05.267 DEBUG 12392 --- [http-nio-8082-exec-7] c.p.p.p.m.c.P.selectPClassById           : ====> Parameters: 1(Integer)
+2021-02-28 15:24:05.268 DEBUG 12392 --- [http-nio-8082-exec-7] c.p.p.p.m.c.P.selectPClassById           : <====      Total: 1
+2021-02-28 15:24:05.269 DEBUG 12392 --- [http-nio-8082-exec-7] c.p.p.p.m.c.P.selectUserById             : ====>  Preparing: Select * from user where id = ?
+2021-02-28 15:24:05.269 DEBUG 12392 --- [http-nio-8082-exec-7] c.p.p.p.m.c.P.selectUserById             : ====> Parameters: 10006(Integer)
+2021-02-28 15:24:05.270 DEBUG 12392 --- [http-nio-8082-exec-7] c.p.p.p.m.c.P.selectUserById             : <====      Total: 1
+2021-02-28 15:24:05.271 DEBUG 12392 --- [http-nio-8082-exec-7] c.p.p.p.m.c.P.getAllPiProduct            : <==      Total: 3
+2021-02-28 15:24:07.073 DEBUG 12392 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.findAllPiProductClass      : ==>  Preparing: select * from pi_product_class
+2021-02-28 15:24:07.073 DEBUG 12392 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.findAllPiProductClass      : ==> Parameters: 
+2021-02-28 15:24:07.075 DEBUG 12392 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.findAllPiProductClass      : <==      Total: 5
+2021-02-28 15:24:07.077 DEBUG 12392 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.getAllPiProduct_mpCount    : ==>  Preparing: SELECT COUNT(*) FROM pi_product WHERE price IS NOT NULL AND freight IS NOT NULL
+2021-02-28 15:24:07.077 DEBUG 12392 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.getAllPiProduct_mpCount    : ==> Parameters: 
+2021-02-28 15:24:07.078 DEBUG 12392 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.getAllPiProduct_mpCount    : <==      Total: 1
+2021-02-28 15:24:07.079 DEBUG 12392 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.getAllPiProduct            : ==>  Preparing: select * from pi_product where price is not null and freight is not null LIMIT ?,?
+2021-02-28 15:24:07.079 DEBUG 12392 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.getAllPiProduct            : ==> Parameters: 15(Long), 3(Long)
+2021-02-28 15:24:07.080 DEBUG 12392 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.selectPClassById           : ====>  Preparing: Select * from pi_product_class where id = ?
+2021-02-28 15:24:07.081 DEBUG 12392 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.selectPClassById           : ====> Parameters: 1(Integer)
+2021-02-28 15:24:07.082 DEBUG 12392 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.selectPClassById           : <====      Total: 1
+2021-02-28 15:24:07.082 DEBUG 12392 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.selectUserById             : ====>  Preparing: Select * from user where id = ?
+2021-02-28 15:24:07.083 DEBUG 12392 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.selectUserById             : ====> Parameters: 10006(Integer)
+2021-02-28 15:24:07.084 DEBUG 12392 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.selectUserById             : <====      Total: 1
+2021-02-28 15:24:07.085 DEBUG 12392 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.getAllPiProduct            : <==      Total: 3
+2021-02-28 15:24:08.737 DEBUG 12392 --- [http-nio-8082-exec-7] c.p.p.p.m.c.P.findAllPiProductClass      : ==>  Preparing: select * from pi_product_class
+2021-02-28 15:24:08.738 DEBUG 12392 --- [http-nio-8082-exec-7] c.p.p.p.m.c.P.findAllPiProductClass      : ==> Parameters: 
+2021-02-28 15:24:08.740 DEBUG 12392 --- [http-nio-8082-exec-7] c.p.p.p.m.c.P.findAllPiProductClass      : <==      Total: 5
+2021-02-28 15:24:08.742 DEBUG 12392 --- [http-nio-8082-exec-7] c.p.p.p.m.c.P.getAllPiProduct_mpCount    : ==>  Preparing: SELECT COUNT(*) FROM pi_product WHERE price IS NOT NULL AND freight IS NOT NULL
+2021-02-28 15:24:08.743 DEBUG 12392 --- [http-nio-8082-exec-7] c.p.p.p.m.c.P.getAllPiProduct_mpCount    : ==> Parameters: 
+2021-02-28 15:24:08.743 DEBUG 12392 --- [http-nio-8082-exec-7] c.p.p.p.m.c.P.getAllPiProduct_mpCount    : <==      Total: 1
+2021-02-28 15:24:08.744 DEBUG 12392 --- [http-nio-8082-exec-7] c.p.p.p.m.c.P.getAllPiProduct            : ==>  Preparing: select * from pi_product where price is not null and freight is not null LIMIT ?,?
+2021-02-28 15:24:08.745 DEBUG 12392 --- [http-nio-8082-exec-7] c.p.p.p.m.c.P.getAllPiProduct            : ==> Parameters: 159(Long), 3(Long)
+2021-02-28 15:24:08.746 DEBUG 12392 --- [http-nio-8082-exec-7] c.p.p.p.m.c.P.selectPClassById           : ====>  Preparing: Select * from pi_product_class where id = ?
+2021-02-28 15:24:08.747 DEBUG 12392 --- [http-nio-8082-exec-7] c.p.p.p.m.c.P.selectPClassById           : ====> Parameters: 3(Integer)
+2021-02-28 15:24:08.748 DEBUG 12392 --- [http-nio-8082-exec-7] c.p.p.p.m.c.P.selectPClassById           : <====      Total: 1
+2021-02-28 15:24:08.748 DEBUG 12392 --- [http-nio-8082-exec-7] c.p.p.p.m.c.P.selectUserById             : ====>  Preparing: Select * from user where id = ?
+2021-02-28 15:24:08.748 DEBUG 12392 --- [http-nio-8082-exec-7] c.p.p.p.m.c.P.selectUserById             : ====> Parameters: 10006(Integer)
+2021-02-28 15:24:08.749 DEBUG 12392 --- [http-nio-8082-exec-7] c.p.p.p.m.c.P.selectUserById             : <====      Total: 1
+2021-02-28 15:24:08.750 DEBUG 12392 --- [http-nio-8082-exec-7] c.p.p.p.m.c.P.getAllPiProduct            : <==      Total: 2
+2021-02-28 15:24:11.521 DEBUG 12392 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.findAllPiProductClass      : ==>  Preparing: select * from pi_product_class
+2021-02-28 15:24:11.521 DEBUG 12392 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.findAllPiProductClass      : ==> Parameters: 
+2021-02-28 15:24:11.522 DEBUG 12392 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.findAllPiProductClass      : <==      Total: 5
+2021-02-28 15:24:11.524 DEBUG 12392 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.getAllPiProduct_mpCount    : ==>  Preparing: SELECT COUNT(*) FROM pi_product WHERE price IS NOT NULL AND freight IS NOT NULL
+2021-02-28 15:24:11.524 DEBUG 12392 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.getAllPiProduct_mpCount    : ==> Parameters: 
+2021-02-28 15:24:11.525 DEBUG 12392 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.getAllPiProduct_mpCount    : <==      Total: 1
+2021-02-28 15:24:11.526 DEBUG 12392 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.getAllPiProduct            : ==>  Preparing: select * from pi_product where price is not null and freight is not null LIMIT ?
+2021-02-28 15:24:11.527 DEBUG 12392 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.getAllPiProduct            : ==> Parameters: 3(Long)
+2021-02-28 15:24:11.528 DEBUG 12392 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.selectPClassById           : ====>  Preparing: Select * from pi_product_class where id = ?
+2021-02-28 15:24:11.529 DEBUG 12392 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.selectPClassById           : ====> Parameters: 1(Integer)
+2021-02-28 15:24:11.530 DEBUG 12392 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.selectPClassById           : <====      Total: 1
+2021-02-28 15:24:11.530 DEBUG 12392 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.selectUserById             : ====>  Preparing: Select * from user where id = ?
+2021-02-28 15:24:11.531 DEBUG 12392 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.selectUserById             : ====> Parameters: 10006(Integer)
+2021-02-28 15:24:11.532 DEBUG 12392 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.selectUserById             : <====      Total: 1
+2021-02-28 15:24:11.533 DEBUG 12392 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.getAllPiProduct            : <==      Total: 3
+2021-02-28 15:24:13.191 DEBUG 12392 --- [http-nio-8082-exec-7] c.p.p.p.m.c.P.findAllPiProductClass      : ==>  Preparing: select * from pi_product_class
+2021-02-28 15:24:13.192 DEBUG 12392 --- [http-nio-8082-exec-7] c.p.p.p.m.c.P.findAllPiProductClass      : ==> Parameters: 
+2021-02-28 15:24:13.193 DEBUG 12392 --- [http-nio-8082-exec-7] c.p.p.p.m.c.P.findAllPiProductClass      : <==      Total: 5
+2021-02-28 15:24:13.196 DEBUG 12392 --- [http-nio-8082-exec-7] c.p.p.p.m.c.P.getAllPiProduct_mpCount    : ==>  Preparing: SELECT COUNT(*) FROM pi_product WHERE price IS NOT NULL AND freight IS NOT NULL
+2021-02-28 15:24:13.196 DEBUG 12392 --- [http-nio-8082-exec-7] c.p.p.p.m.c.P.getAllPiProduct_mpCount    : ==> Parameters: 
+2021-02-28 15:24:13.198 DEBUG 12392 --- [http-nio-8082-exec-7] c.p.p.p.m.c.P.getAllPiProduct_mpCount    : <==      Total: 1
+2021-02-28 15:24:13.198 DEBUG 12392 --- [http-nio-8082-exec-7] c.p.p.p.m.c.P.getAllPiProduct            : ==>  Preparing: select * from pi_product where price is not null and freight is not null LIMIT ?,?
+2021-02-28 15:24:13.199 DEBUG 12392 --- [http-nio-8082-exec-7] c.p.p.p.m.c.P.getAllPiProduct            : ==> Parameters: 3(Long), 3(Long)
+2021-02-28 15:24:13.200 DEBUG 12392 --- [http-nio-8082-exec-7] c.p.p.p.m.c.P.selectPClassById           : ====>  Preparing: Select * from pi_product_class where id = ?
+2021-02-28 15:24:13.200 DEBUG 12392 --- [http-nio-8082-exec-7] c.p.p.p.m.c.P.selectPClassById           : ====> Parameters: 1(Integer)
+2021-02-28 15:24:13.201 DEBUG 12392 --- [http-nio-8082-exec-7] c.p.p.p.m.c.P.selectPClassById           : <====      Total: 1
+2021-02-28 15:24:13.202 DEBUG 12392 --- [http-nio-8082-exec-7] c.p.p.p.m.c.P.selectUserById             : ====>  Preparing: Select * from user where id = ?
+2021-02-28 15:24:13.202 DEBUG 12392 --- [http-nio-8082-exec-7] c.p.p.p.m.c.P.selectUserById             : ====> Parameters: 10006(Integer)
+2021-02-28 15:24:13.203 DEBUG 12392 --- [http-nio-8082-exec-7] c.p.p.p.m.c.P.selectUserById             : <====      Total: 1
+2021-02-28 15:24:13.203 DEBUG 12392 --- [http-nio-8082-exec-7] c.p.p.p.m.c.P.getAllPiProduct            : <==      Total: 3
+2021-02-28 15:24:15.306 DEBUG 12392 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.findAllPiProductClass      : ==>  Preparing: select * from pi_product_class
+2021-02-28 15:24:15.306 DEBUG 12392 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.findAllPiProductClass      : ==> Parameters: 
+2021-02-28 15:24:15.308 DEBUG 12392 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.findAllPiProductClass      : <==      Total: 5
+2021-02-28 15:24:15.309 DEBUG 12392 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.getAllPiProduct_mpCount    : ==>  Preparing: SELECT COUNT(*) FROM pi_product WHERE price IS NOT NULL AND freight IS NOT NULL
+2021-02-28 15:24:15.309 DEBUG 12392 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.getAllPiProduct_mpCount    : ==> Parameters: 
+2021-02-28 15:24:15.310 DEBUG 12392 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.getAllPiProduct_mpCount    : <==      Total: 1
+2021-02-28 15:24:15.311 DEBUG 12392 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.getAllPiProduct            : ==>  Preparing: select * from pi_product where price is not null and freight is not null LIMIT ?,?
+2021-02-28 15:24:15.311 DEBUG 12392 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.getAllPiProduct            : ==> Parameters: 6(Long), 3(Long)
+2021-02-28 15:24:15.312 DEBUG 12392 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.selectPClassById           : ====>  Preparing: Select * from pi_product_class where id = ?
+2021-02-28 15:24:15.313 DEBUG 12392 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.selectPClassById           : ====> Parameters: 1(Integer)
+2021-02-28 15:24:15.314 DEBUG 12392 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.selectPClassById           : <====      Total: 1
+2021-02-28 15:24:15.314 DEBUG 12392 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.selectUserById             : ====>  Preparing: Select * from user where id = ?
+2021-02-28 15:24:15.314 DEBUG 12392 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.selectUserById             : ====> Parameters: 10006(Integer)
+2021-02-28 15:24:15.317 DEBUG 12392 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.selectUserById             : <====      Total: 1
+2021-02-28 15:24:15.318 DEBUG 12392 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.getAllPiProduct            : <==      Total: 3
+2021-02-28 15:24:16.880 DEBUG 12392 --- [http-nio-8082-exec-7] c.p.p.p.m.c.P.findAllPiProductClass      : ==>  Preparing: select * from pi_product_class
+2021-02-28 15:24:16.880 DEBUG 12392 --- [http-nio-8082-exec-7] c.p.p.p.m.c.P.findAllPiProductClass      : ==> Parameters: 
+2021-02-28 15:24:16.881 DEBUG 12392 --- [http-nio-8082-exec-7] c.p.p.p.m.c.P.findAllPiProductClass      : <==      Total: 5
+2021-02-28 15:24:16.884 DEBUG 12392 --- [http-nio-8082-exec-7] c.p.p.p.m.c.P.getAllPiProduct_mpCount    : ==>  Preparing: SELECT COUNT(*) FROM pi_product WHERE price IS NOT NULL AND freight IS NOT NULL
+2021-02-28 15:24:16.884 DEBUG 12392 --- [http-nio-8082-exec-7] c.p.p.p.m.c.P.getAllPiProduct_mpCount    : ==> Parameters: 
+2021-02-28 15:24:16.885 DEBUG 12392 --- [http-nio-8082-exec-7] c.p.p.p.m.c.P.getAllPiProduct_mpCount    : <==      Total: 1
+2021-02-28 15:24:16.886 DEBUG 12392 --- [http-nio-8082-exec-7] c.p.p.p.m.c.P.getAllPiProduct            : ==>  Preparing: select * from pi_product where price is not null and freight is not null LIMIT ?,?
+2021-02-28 15:24:16.887 DEBUG 12392 --- [http-nio-8082-exec-7] c.p.p.p.m.c.P.getAllPiProduct            : ==> Parameters: 9(Long), 3(Long)
+2021-02-28 15:24:16.888 DEBUG 12392 --- [http-nio-8082-exec-7] c.p.p.p.m.c.P.selectPClassById           : ====>  Preparing: Select * from pi_product_class where id = ?
+2021-02-28 15:24:16.889 DEBUG 12392 --- [http-nio-8082-exec-7] c.p.p.p.m.c.P.selectPClassById           : ====> Parameters: 1(Integer)
+2021-02-28 15:24:16.890 DEBUG 12392 --- [http-nio-8082-exec-7] c.p.p.p.m.c.P.selectPClassById           : <====      Total: 1
+2021-02-28 15:24:16.890 DEBUG 12392 --- [http-nio-8082-exec-7] c.p.p.p.m.c.P.selectUserById             : ====>  Preparing: Select * from user where id = ?
+2021-02-28 15:24:16.891 DEBUG 12392 --- [http-nio-8082-exec-7] c.p.p.p.m.c.P.selectUserById             : ====> Parameters: 10006(Integer)
+2021-02-28 15:24:16.892 DEBUG 12392 --- [http-nio-8082-exec-7] c.p.p.p.m.c.P.selectUserById             : <====      Total: 1
+2021-02-28 15:24:16.893 DEBUG 12392 --- [http-nio-8082-exec-7] c.p.p.p.m.c.P.getAllPiProduct            : <==      Total: 3
+2021-02-28 15:26:53.963 DEBUG 12392 --- [http-nio-8082-exec-9] c.p.p.p.m.c.P.findAllPiProductClass      : ==>  Preparing: select * from pi_product_class
+2021-02-28 15:26:53.964 DEBUG 12392 --- [http-nio-8082-exec-9] c.p.p.p.m.c.P.findAllPiProductClass      : ==> Parameters: 
+2021-02-28 15:26:53.967 DEBUG 12392 --- [http-nio-8082-exec-9] c.p.p.p.m.c.P.findAllPiProductClass      : <==      Total: 5
+2021-02-28 15:26:53.969 DEBUG 12392 --- [http-nio-8082-exec-9] c.p.p.p.m.c.P.getAllPiProduct_mpCount    : ==>  Preparing: SELECT COUNT(*) FROM pi_product WHERE price IS NOT NULL AND freight IS NOT NULL
+2021-02-28 15:26:53.970 DEBUG 12392 --- [http-nio-8082-exec-9] c.p.p.p.m.c.P.getAllPiProduct_mpCount    : ==> Parameters: 
+2021-02-28 15:26:53.971 DEBUG 12392 --- [http-nio-8082-exec-9] c.p.p.p.m.c.P.getAllPiProduct_mpCount    : <==      Total: 1
+2021-02-28 15:26:53.971 DEBUG 12392 --- [http-nio-8082-exec-9] c.p.p.p.m.c.P.getAllPiProduct            : ==>  Preparing: select * from pi_product where price is not null and freight is not null LIMIT ?
+2021-02-28 15:26:53.972 DEBUG 12392 --- [http-nio-8082-exec-9] c.p.p.p.m.c.P.getAllPiProduct            : ==> Parameters: 10(Long)
+2021-02-28 15:26:53.973 DEBUG 12392 --- [http-nio-8082-exec-9] c.p.p.p.m.c.P.selectPClassById           : ====>  Preparing: Select * from pi_product_class where id = ?
+2021-02-28 15:26:53.973 DEBUG 12392 --- [http-nio-8082-exec-9] c.p.p.p.m.c.P.selectPClassById           : ====> Parameters: 1(Integer)
+2021-02-28 15:26:53.974 DEBUG 12392 --- [http-nio-8082-exec-9] c.p.p.p.m.c.P.selectPClassById           : <====      Total: 1
+2021-02-28 15:26:53.975 DEBUG 12392 --- [http-nio-8082-exec-9] c.p.p.p.m.c.P.selectUserById             : ====>  Preparing: Select * from user where id = ?
+2021-02-28 15:26:53.975 DEBUG 12392 --- [http-nio-8082-exec-9] c.p.p.p.m.c.P.selectUserById             : ====> Parameters: 10006(Integer)
+2021-02-28 15:26:53.976 DEBUG 12392 --- [http-nio-8082-exec-9] c.p.p.p.m.c.P.selectUserById             : <====      Total: 1
+2021-02-28 15:26:53.978 DEBUG 12392 --- [http-nio-8082-exec-9] c.p.p.p.m.c.P.getAllPiProduct            : <==      Total: 10
+2021-02-28 15:27:09.250 DEBUG 12392 --- [http-nio-8082-exec-6] c.p.p.p.m.c.P.findAllPiProductClass      : ==>  Preparing: select * from pi_product_class
+2021-02-28 15:27:09.251 DEBUG 12392 --- [http-nio-8082-exec-6] c.p.p.p.m.c.P.findAllPiProductClass      : ==> Parameters: 
+2021-02-28 15:27:09.252 DEBUG 12392 --- [http-nio-8082-exec-6] c.p.p.p.m.c.P.findAllPiProductClass      : <==      Total: 5
+2021-02-28 15:27:09.253 DEBUG 12392 --- [http-nio-8082-exec-6] c.p.p.p.m.c.P.getAllPiProduct_mpCount    : ==>  Preparing: SELECT COUNT(*) FROM pi_product WHERE price IS NOT NULL AND freight IS NOT NULL
+2021-02-28 15:27:09.253 DEBUG 12392 --- [http-nio-8082-exec-6] c.p.p.p.m.c.P.getAllPiProduct_mpCount    : ==> Parameters: 
+2021-02-28 15:27:09.254 DEBUG 12392 --- [http-nio-8082-exec-6] c.p.p.p.m.c.P.getAllPiProduct_mpCount    : <==      Total: 1
+2021-02-28 15:27:09.255 DEBUG 12392 --- [http-nio-8082-exec-6] c.p.p.p.m.c.P.getAllPiProduct            : ==>  Preparing: select * from pi_product where price is not null and freight is not null LIMIT ?,?
+2021-02-28 15:27:09.256 DEBUG 12392 --- [http-nio-8082-exec-6] c.p.p.p.m.c.P.getAllPiProduct            : ==> Parameters: 3(Long), 3(Long)
+2021-02-28 15:27:09.257 DEBUG 12392 --- [http-nio-8082-exec-6] c.p.p.p.m.c.P.selectPClassById           : ====>  Preparing: Select * from pi_product_class where id = ?
+2021-02-28 15:27:09.257 DEBUG 12392 --- [http-nio-8082-exec-6] c.p.p.p.m.c.P.selectPClassById           : ====> Parameters: 1(Integer)
+2021-02-28 15:27:09.258 DEBUG 12392 --- [http-nio-8082-exec-6] c.p.p.p.m.c.P.selectPClassById           : <====      Total: 1
+2021-02-28 15:27:09.259 DEBUG 12392 --- [http-nio-8082-exec-6] c.p.p.p.m.c.P.selectUserById             : ====>  Preparing: Select * from user where id = ?
+2021-02-28 15:27:09.259 DEBUG 12392 --- [http-nio-8082-exec-6] c.p.p.p.m.c.P.selectUserById             : ====> Parameters: 10006(Integer)
+2021-02-28 15:27:09.260 DEBUG 12392 --- [http-nio-8082-exec-6] c.p.p.p.m.c.P.selectUserById             : <====      Total: 1
+2021-02-28 15:27:09.260 DEBUG 12392 --- [http-nio-8082-exec-6] c.p.p.p.m.c.P.getAllPiProduct            : <==      Total: 3
+2021-02-28 15:27:10.745 DEBUG 12392 --- [http-nio-8082-exec-10] c.p.p.p.m.c.P.findAllPiProductClass      : ==>  Preparing: select * from pi_product_class
+2021-02-28 15:27:10.745 DEBUG 12392 --- [http-nio-8082-exec-10] c.p.p.p.m.c.P.findAllPiProductClass      : ==> Parameters: 
+2021-02-28 15:27:10.747 DEBUG 12392 --- [http-nio-8082-exec-10] c.p.p.p.m.c.P.findAllPiProductClass      : <==      Total: 5
+2021-02-28 15:27:10.748 DEBUG 12392 --- [http-nio-8082-exec-10] c.p.p.p.m.c.P.getAllPiProduct_mpCount    : ==>  Preparing: SELECT COUNT(*) FROM pi_product WHERE price IS NOT NULL AND freight IS NOT NULL
+2021-02-28 15:27:10.748 DEBUG 12392 --- [http-nio-8082-exec-10] c.p.p.p.m.c.P.getAllPiProduct_mpCount    : ==> Parameters: 
+2021-02-28 15:27:10.749 DEBUG 12392 --- [http-nio-8082-exec-10] c.p.p.p.m.c.P.getAllPiProduct_mpCount    : <==      Total: 1
+2021-02-28 15:27:10.750 DEBUG 12392 --- [http-nio-8082-exec-10] c.p.p.p.m.c.P.getAllPiProduct            : ==>  Preparing: select * from pi_product where price is not null and freight is not null LIMIT ?,?
+2021-02-28 15:27:10.750 DEBUG 12392 --- [http-nio-8082-exec-10] c.p.p.p.m.c.P.getAllPiProduct            : ==> Parameters: 6(Long), 3(Long)
+2021-02-28 15:27:10.751 DEBUG 12392 --- [http-nio-8082-exec-10] c.p.p.p.m.c.P.selectPClassById           : ====>  Preparing: Select * from pi_product_class where id = ?
+2021-02-28 15:27:10.751 DEBUG 12392 --- [http-nio-8082-exec-10] c.p.p.p.m.c.P.selectPClassById           : ====> Parameters: 1(Integer)
+2021-02-28 15:27:10.752 DEBUG 12392 --- [http-nio-8082-exec-10] c.p.p.p.m.c.P.selectPClassById           : <====      Total: 1
+2021-02-28 15:27:10.753 DEBUG 12392 --- [http-nio-8082-exec-10] c.p.p.p.m.c.P.selectUserById             : ====>  Preparing: Select * from user where id = ?
+2021-02-28 15:27:10.753 DEBUG 12392 --- [http-nio-8082-exec-10] c.p.p.p.m.c.P.selectUserById             : ====> Parameters: 10006(Integer)
+2021-02-28 15:27:10.754 DEBUG 12392 --- [http-nio-8082-exec-10] c.p.p.p.m.c.P.selectUserById             : <====      Total: 1
+2021-02-28 15:27:10.754 DEBUG 12392 --- [http-nio-8082-exec-10] c.p.p.p.m.c.P.getAllPiProduct            : <==      Total: 3
+2021-02-28 15:28:28.359 DEBUG 12392 --- [http-nio-8082-exec-8] c.p.p.p.m.c.P.findAllPiProductClass      : ==>  Preparing: select * from pi_product_class
+2021-02-28 15:28:28.360 DEBUG 12392 --- [http-nio-8082-exec-8] c.p.p.p.m.c.P.findAllPiProductClass      : ==> Parameters: 
+2021-02-28 15:28:28.361 DEBUG 12392 --- [http-nio-8082-exec-8] c.p.p.p.m.c.P.findAllPiProductClass      : <==      Total: 5
+2021-02-28 15:28:28.368 DEBUG 12392 --- [http-nio-8082-exec-8] c.p.p.p.m.c.P.getAllPiProduct_mpCount    : ==>  Preparing: SELECT COUNT(*) FROM pi_product WHERE price IS NOT NULL AND freight IS NOT NULL
+2021-02-28 15:28:28.368 DEBUG 12392 --- [http-nio-8082-exec-8] c.p.p.p.m.c.P.getAllPiProduct_mpCount    : ==> Parameters: 
+2021-02-28 15:28:28.369 DEBUG 12392 --- [http-nio-8082-exec-8] c.p.p.p.m.c.P.getAllPiProduct_mpCount    : <==      Total: 1
+2021-02-28 15:28:28.370 DEBUG 12392 --- [http-nio-8082-exec-8] c.p.p.p.m.c.P.getAllPiProduct            : ==>  Preparing: select * from pi_product where price is not null and freight is not null LIMIT ?
+2021-02-28 15:28:28.371 DEBUG 12392 --- [http-nio-8082-exec-8] c.p.p.p.m.c.P.getAllPiProduct            : ==> Parameters: 10(Long)
+2021-02-28 15:28:28.372 DEBUG 12392 --- [http-nio-8082-exec-8] c.p.p.p.m.c.P.selectPClassById           : ====>  Preparing: Select * from pi_product_class where id = ?
+2021-02-28 15:28:28.372 DEBUG 12392 --- [http-nio-8082-exec-8] c.p.p.p.m.c.P.selectPClassById           : ====> Parameters: 1(Integer)
+2021-02-28 15:28:28.373 DEBUG 12392 --- [http-nio-8082-exec-8] c.p.p.p.m.c.P.selectPClassById           : <====      Total: 1
+2021-02-28 15:28:28.374 DEBUG 12392 --- [http-nio-8082-exec-8] c.p.p.p.m.c.P.selectUserById             : ====>  Preparing: Select * from user where id = ?
+2021-02-28 15:28:28.374 DEBUG 12392 --- [http-nio-8082-exec-8] c.p.p.p.m.c.P.selectUserById             : ====> Parameters: 10006(Integer)
+2021-02-28 15:28:28.375 DEBUG 12392 --- [http-nio-8082-exec-8] c.p.p.p.m.c.P.selectUserById             : <====      Total: 1
+2021-02-28 15:28:28.378 DEBUG 12392 --- [http-nio-8082-exec-8] c.p.p.p.m.c.P.getAllPiProduct            : <==      Total: 10
