@@ -4,7 +4,12 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.pipihao.piyu.piyubackground.mapper.common.PiProductMapper">
 
-    <select id="getAllPiProduct" parameterType="map" resultType="com.pipihao.piyu.piyubackground.pojo.PiProduct">
+    <resultMap id="piPro" type="com.pipihao.piyu.piyubackground.pojo.PiProduct">
+        <association property="piProductClass" column="class_id" select="selectPClassById"></association>
+        <association property="maker" column="user_id" select="selectUserById"></association>
+    </resultMap>
+
+    <select id="getAllPiProduct" parameterType="map" resultMap="piPro">
         select * from pi_product where price is not null and freight is not null
         <if test="d.keywords != null">
             and title like '%${d.keywords}%' or content like '%${d.keywords}%'

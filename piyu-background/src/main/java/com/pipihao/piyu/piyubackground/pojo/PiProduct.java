@@ -3,8 +3,8 @@ package com.pipihao.piyu.piyubackground.pojo;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.pipihao.piyu.pojo.PiProductClass;
-import com.pipihao.piyu.pojo.User;
+import com.pipihao.piyu.piyubackground.pojo.PiProductClass;
+import com.pipihao.piyu.piyubackground.pojo.User;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;

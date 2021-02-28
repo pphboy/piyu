@@ -2,8 +2,9 @@ package com.pipihao.piyu.piyubackground.mapper.common;
 
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.pipihao.piyu.piyubackground.pojo.PiProduct;
-import org.apache.ibatis.annotations.Mapper;
-import org.apache.ibatis.annotations.Param;
+import com.pipihao.piyu.piyubackground.pojo.PiProductClass;
+import com.pipihao.piyu.piyubackground.pojo.User;
+import org.apache.ibatis.annotations.*;
 
 import java.util.Map;
 
@@ -24,6 +25,22 @@ public interface PiProductMapper {
      */
     /*代码在xml内*/
     Page<PiProduct> getAllPiProduct(Page<PiProduct> page, @Param("d") Map<String,Object> map);
+
+    /**
+     * 获取一个用户
+     * @param id
+     * @return
+     */
+    @Select("Select * from user where id = #{id}")
+    User selectUserById(Integer id);
+
+    /**
+     * 获取一个分类
+     * @param id
+     * @return
+     */
+    @Select("Select * from pi_product_class where id = #{id}")
+    PiProductClass selectPClassById(Integer id);
 
     /**
      * 删除皮物
