@@ -28,5 +28,26 @@
         </if>
         order by create_date desc
     </select>
+
+    <!--皮帖-->
+    <select id="getAllArticle" parameterType="map" resultMap="piPro">
+        select * from pi_product where price is null and freight is null
+        <if test="d.keywords != null">
+            and title like '%${d.keywords}%' or content like '%${d.keywords}%'
+        </if>
+        <if test="d.userId != null">
+            and user_id = #{d.userId}
+        </if>
+        <if test="d.classId != null">
+            and class_id = #{d.classId}
+        </if>
+        <if test="d.start != null">
+            and create_date  &gt;= #{d.start}
+        </if>
+        <if test="d.end != null">
+            and create_date &lt;= #{d.end}
+        </if>
+        order by create_date desc
+    </select>
 </mapper>
 

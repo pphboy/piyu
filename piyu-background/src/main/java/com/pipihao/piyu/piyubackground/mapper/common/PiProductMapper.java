@@ -1,6 +1,7 @@
 package com.pipihao.piyu.piyubackground.mapper.common;
 
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import com.pipihao.piyu.piyubackground.common.R;
 import com.pipihao.piyu.piyubackground.pojo.PiProduct;
 import com.pipihao.piyu.piyubackground.pojo.PiProductClass;
 import com.pipihao.piyu.piyubackground.pojo.User;
@@ -52,7 +53,7 @@ public interface PiProductMapper {
 
     /**
      * 根据ids删除皮物
-     * @param  map
+     * @param  pid
      * @return
      */
     @Delete("delete from pi_product where id in ${pid}")
@@ -67,5 +68,11 @@ public interface PiProductMapper {
     boolean setPiProductStatus(PiProduct piProduct);
 
 
-
+    /**
+     * 代码在xml
+     * @param page
+     * @param map
+     * @return
+     */
+    Page<PiProduct> getAllArticle(Page<PiProduct> page, @Param("d") Map<String, Object> map);
 }

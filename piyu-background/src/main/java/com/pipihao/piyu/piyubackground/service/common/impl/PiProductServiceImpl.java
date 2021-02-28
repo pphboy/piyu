@@ -73,4 +73,9 @@ public class PiProductServiceImpl implements PiProductService {
         /*数据在前端拼接好的*/
         return new R().getR(this.piProductMapper.deleteByIds(sb.toString()),"删除成功","删除失败");
     }
+
+    @Override
+    public Page<PiProduct> getAllPiArticle(Page<PiProduct> page, Map<String, Object> map) {
+        return this.piProductMapper.getAllArticle(page,map);
+    }
 }

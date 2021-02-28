@@ -14,6 +14,12 @@ import java.util.Map;
  */
 public interface PiProductService {
 
+    /**
+     * 获取所有的皮物
+     * @param page
+     * @param map
+     * @return
+     */
     Page<PiProduct> getAllPiProduct(Page<PiProduct> page, Map<String,Object> map);
 
     R setPiProductStatus(PiProduct piProduct);
@@ -25,4 +31,13 @@ public interface PiProductService {
      * @return
      */
     R deleteByIds(List<String> ids);
+
+
+    /**
+     * 获取所有的 皮帖
+     * @param piProductPage
+     * @param map
+     * @return
+     */
+    Page<PiProduct> getAllPiArticle(Page<PiProduct> piProductPage, Map<String, Object> map);
 }
