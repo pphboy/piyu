@@ -11417,3 +11417,100 @@ Caused by: org.springframework.expression.spel.SpelEvaluationException: EL1007E:
 	at org.thymeleaf.spring5.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:265) ~[thymeleaf-spring5-3.0.12.RELEASE.jar:3.0.12.RELEASE]
 	... 108 common frames omitted
 
+2021-02-28 17:09:38.727  INFO 6408 --- [restartedMain] c.p.p.p.PiyuBackgroundApplication        : Starting PiyuBackgroundApplication using Java 1.8.0_191 on IBM with PID 6408 (D:\Projects\PiYU\piyu\piyu-background\target\classes started by pipihao in D:\Projects\PiYU\piyu)
+2021-02-28 17:09:38.730  INFO 6408 --- [restartedMain] c.p.p.p.PiyuBackgroundApplication        : No active profile set, falling back to default profiles: default
+2021-02-28 17:09:38.789  INFO 6408 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-02-28 17:09:38.789  INFO 6408 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-02-28 17:09:39.716  WARN 6408 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'roleMapper' and 'com.pipihao.piyu.piyubackground.mapper.RoleMapper' mapperInterface. Bean already defined with the same name!
+2021-02-28 17:09:39.717  WARN 6408 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'userMapper' and 'com.pipihao.piyu.piyubackground.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
+2021-02-28 17:09:39.717  WARN 6408 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'cpUserMapper' and 'com.pipihao.piyu.piyubackground.mapper.common.CpUserMapper' mapperInterface. Bean already defined with the same name!
+2021-02-28 17:09:39.717  WARN 6408 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'cpWalletMapper' and 'com.pipihao.piyu.piyubackground.mapper.common.CpWalletMapper' mapperInterface. Bean already defined with the same name!
+2021-02-28 17:09:39.717  WARN 6408 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'piProductClassMapper' and 'com.pipihao.piyu.piyubackground.mapper.common.PiProductClassMapper' mapperInterface. Bean already defined with the same name!
+2021-02-28 17:09:39.717  WARN 6408 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'piProductMapper' and 'com.pipihao.piyu.piyubackground.mapper.common.PiProductMapper' mapperInterface. Bean already defined with the same name!
+2021-02-28 17:09:39.717  WARN 6408 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'piUserMapper' and 'com.pipihao.piyu.piyubackground.mapper.common.PiUserMapper' mapperInterface. Bean already defined with the same name!
+2021-02-28 17:09:39.718  WARN 6408 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.pipihao.piyu.piyubackground.mapper]' package. Please check your configuration.
+2021-02-28 17:09:40.355  INFO 6408 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2021-02-28 17:09:40.372  INFO 6408 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-02-28 17:09:40.372  INFO 6408 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-28 17:09:40.607  INFO 6408 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-02-28 17:09:40.608  INFO 6408 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1818 ms
+2021-02-28 17:09:40.794  INFO 6408 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2021-02-28 17:09:40.984  INFO 6408 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2021-02-28 17:09:42.737  INFO 6408 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-28 17:09:42.846  INFO 6408 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-02-28 17:09:42.934  WARN 6408 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+2021-02-28 17:09:42.964  INFO 6408 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2021-02-28 17:09:42.965  INFO 6408 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2021-02-28 17:09:42.966  INFO 6408 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2021-02-28 17:09:42.968  INFO 6408 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
+2021-02-28 17:09:43.267  INFO 6408 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/js/**'] with []
+2021-02-28 17:09:43.268  INFO 6408 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/css/**'] with []
+2021-02-28 17:09:43.268  INFO 6408 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/fonts/**'] with []
+2021-02-28 17:09:43.268  INFO 6408 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/images/**'] with []
+2021-02-28 17:09:43.269  INFO 6408 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/lib/**'] with []
+2021-02-28 17:09:43.325  INFO 6408 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1bf35b17, org.springframework.security.web.context.SecurityContextPersistenceFilter@74ede31a, org.springframework.security.web.header.HeaderWriterFilter@1cf29684, org.springframework.security.web.csrf.CsrfFilter@3f2e0980, org.springframework.security.web.authentication.logout.LogoutFilter@2dcf6973, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@64885962, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4556ea4f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@a21094e, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@4a755b06, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@30e938fc, org.springframework.security.web.session.SessionManagementFilter@7ec8ea70, org.springframework.security.web.access.ExceptionTranslationFilter@40b2774b, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2c72ea25]
+2021-02-28 17:09:43.422  INFO 6408 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-02-28 17:09:43.499  INFO 6408 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2021-02-28 17:09:43.524  INFO 6408 --- [restartedMain] c.p.p.p.PiyuBackgroundApplication        : Started PiyuBackgroundApplication in 5.287 seconds (JVM running for 6.947)
+2021-02-28 17:09:47.935  INFO 6408 --- [http-nio-8082-exec-1] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [1614430999,1614434243,1614497727; Hm_lpvt_b393d153aeb26b46e9431fabaf0f6190=1614502681; remember-me=VjJ3QTFxN2FGV21SZExEUHYwNGt1ZyUzRCUzRDpTSGFjcGpaM0p6U2tKbldRbzZKVkFBJTNEJTNE; JSESSIONID=8091DE6C6671F1CCD37E566A7CD8922A] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2021-02-28 17:09:47.944  INFO 6408 --- [http-nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-28 17:09:47.944  INFO 6408 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-02-28 17:09:47.945  INFO 6408 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-02-28 17:09:48.212 DEBUG 6408 --- [http-nio-8082-exec-1] c.p.p.p.mapper.UserMapper.selectOne      : ==>  Preparing: SELECT id,username,password,state,email,register_date FROM bg_user WHERE (username = ?)
+2021-02-28 17:09:48.222 DEBUG 6408 --- [http-nio-8082-exec-1] c.p.p.p.mapper.UserMapper.selectOne      : ==> Parameters: xiaopi(String)
+2021-02-28 17:09:48.237 DEBUG 6408 --- [http-nio-8082-exec-1] c.p.p.p.mapper.UserMapper.selectOne      : <==      Total: 1
+2021-02-28 17:09:48.243 DEBUG 6408 --- [http-nio-8082-exec-1] c.p.p.p.mapper.RoleMapper.getRoleIds     : ==>  Preparing: select * from bg_role where id in (select role_id from bg_user_role where user_id = ?) order by num desc
+2021-02-28 17:09:48.245 DEBUG 6408 --- [http-nio-8082-exec-1] c.p.p.p.mapper.RoleMapper.getRoleIds     : ==> Parameters: 2(Integer)
+2021-02-28 17:09:48.247 DEBUG 6408 --- [http-nio-8082-exec-1] c.p.p.p.mapper.RoleMapper.getRoleIds     : <==      Total: 1
+2021-02-28 17:09:49.001 DEBUG 6408 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.findAllPiProductClass      : ==>  Preparing: select * from pi_product_class
+2021-02-28 17:09:49.002 DEBUG 6408 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.findAllPiProductClass      : ==> Parameters: 
+2021-02-28 17:09:49.006 DEBUG 6408 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.findAllPiProductClass      : <==      Total: 5
+2021-02-28 17:09:49.068 DEBUG 6408 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.getAllArticle_mpCount      : ==>  Preparing: SELECT COUNT(*) FROM pi_product WHERE price IS NULL AND freight IS NULL
+2021-02-28 17:09:49.068 DEBUG 6408 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.getAllArticle_mpCount      : ==> Parameters: 
+2021-02-28 17:09:49.071 DEBUG 6408 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.getAllArticle_mpCount      : <==      Total: 1
+2021-02-28 17:09:49.084 DEBUG 6408 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.getAllArticle              : ==>  Preparing: select * from pi_product where price is null and freight is null order by create_date desc LIMIT ?
+2021-02-28 17:09:49.086 DEBUG 6408 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.getAllArticle              : ==> Parameters: 10(Long)
+2021-02-28 17:09:49.092 DEBUG 6408 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.selectPClassById           : ====>  Preparing: Select * from pi_product_class where id = ?
+2021-02-28 17:09:49.092 DEBUG 6408 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.selectPClassById           : ====> Parameters: 3(Integer)
+2021-02-28 17:09:49.094 DEBUG 6408 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.selectPClassById           : <====      Total: 1
+2021-02-28 17:09:49.095 DEBUG 6408 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.selectUserById             : ====>  Preparing: Select * from user where id = ?
+2021-02-28 17:09:49.096 DEBUG 6408 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.selectUserById             : ====> Parameters: 10007(Integer)
+2021-02-28 17:09:49.100 DEBUG 6408 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.selectUserById             : <====      Total: 1
+2021-02-28 17:09:49.109 DEBUG 6408 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.getAllArticle              : <==      Total: 10
+2021-02-28 17:10:14.732 DEBUG 6408 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.findAllPiProductClass      : ==>  Preparing: select * from pi_product_class
+2021-02-28 17:10:14.732 DEBUG 6408 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.findAllPiProductClass      : ==> Parameters: 
+2021-02-28 17:10:14.735 DEBUG 6408 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.findAllPiProductClass      : <==      Total: 5
+2021-02-28 17:10:14.738 DEBUG 6408 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.getAllArticle_mpCount      : ==>  Preparing: SELECT COUNT(*) FROM pi_product WHERE price IS NULL AND freight IS NULL
+2021-02-28 17:10:14.739 DEBUG 6408 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.getAllArticle_mpCount      : ==> Parameters: 
+2021-02-28 17:10:14.741 DEBUG 6408 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.getAllArticle_mpCount      : <==      Total: 1
+2021-02-28 17:10:14.742 DEBUG 6408 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.getAllArticle              : ==>  Preparing: select * from pi_product where price is null and freight is null order by create_date desc LIMIT ?
+2021-02-28 17:10:14.742 DEBUG 6408 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.getAllArticle              : ==> Parameters: 10(Long)
+2021-02-28 17:10:14.745 DEBUG 6408 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.selectPClassById           : ====>  Preparing: Select * from pi_product_class where id = ?
+2021-02-28 17:10:14.746 DEBUG 6408 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.selectPClassById           : ====> Parameters: 3(Integer)
+2021-02-28 17:10:14.747 DEBUG 6408 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.selectPClassById           : <====      Total: 1
+2021-02-28 17:10:14.749 DEBUG 6408 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.selectUserById             : ====>  Preparing: Select * from user where id = ?
+2021-02-28 17:10:14.749 DEBUG 6408 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.selectUserById             : ====> Parameters: 10007(Integer)
+2021-02-28 17:10:14.752 DEBUG 6408 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.selectUserById             : <====      Total: 1
+2021-02-28 17:10:14.759 DEBUG 6408 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.getAllArticle              : <==      Total: 10
+2021-02-28 17:10:22.567 DEBUG 6408 --- [http-nio-8082-exec-7] c.p.p.p.m.c.P.deletePiProductById        : ==>  Preparing: delete from pi_product where id = ?
+2021-02-28 17:10:22.568 DEBUG 6408 --- [http-nio-8082-exec-7] c.p.p.p.m.c.P.deletePiProductById        : ==> Parameters: 99798f9fa1ae4db5(String)
+2021-02-28 17:10:22.570 DEBUG 6408 --- [http-nio-8082-exec-7] c.p.p.p.m.c.P.deletePiProductById        : <==    Updates: 1
+2021-02-28 17:10:25.468 DEBUG 6408 --- [http-nio-8082-exec-6] c.p.p.p.m.c.P.setPiProductStatus         : ==>  Preparing: update pi_product set status = ? where id = ?
+2021-02-28 17:10:25.469 DEBUG 6408 --- [http-nio-8082-exec-6] c.p.p.p.m.c.P.setPiProductStatus         : ==> Parameters: false(Boolean), 7d09262fa2344cb9(String)
+2021-02-28 17:10:25.471 DEBUG 6408 --- [http-nio-8082-exec-6] c.p.p.p.m.c.P.setPiProductStatus         : <==    Updates: 1
+2021-02-28 17:10:27.204 DEBUG 6408 --- [http-nio-8082-exec-9] c.p.p.p.m.c.P.findAllPiProductClass      : ==>  Preparing: select * from pi_product_class
+2021-02-28 17:10:27.204 DEBUG 6408 --- [http-nio-8082-exec-9] c.p.p.p.m.c.P.findAllPiProductClass      : ==> Parameters: 
+2021-02-28 17:10:27.210 DEBUG 6408 --- [http-nio-8082-exec-9] c.p.p.p.m.c.P.findAllPiProductClass      : <==      Total: 5
+2021-02-28 17:10:27.215 DEBUG 6408 --- [http-nio-8082-exec-9] c.p.p.p.m.c.P.getAllArticle_mpCount      : ==>  Preparing: SELECT COUNT(*) FROM pi_product WHERE price IS NULL AND freight IS NULL
+2021-02-28 17:10:27.216 DEBUG 6408 --- [http-nio-8082-exec-9] c.p.p.p.m.c.P.getAllArticle_mpCount      : ==> Parameters: 
+2021-02-28 17:10:27.218 DEBUG 6408 --- [http-nio-8082-exec-9] c.p.p.p.m.c.P.getAllArticle_mpCount      : <==      Total: 1
+2021-02-28 17:10:27.221 DEBUG 6408 --- [http-nio-8082-exec-9] c.p.p.p.m.c.P.getAllArticle              : ==>  Preparing: select * from pi_product where price is null and freight is null order by create_date desc LIMIT ?
+2021-02-28 17:10:27.222 DEBUG 6408 --- [http-nio-8082-exec-9] c.p.p.p.m.c.P.getAllArticle              : ==> Parameters: 10(Long)
+2021-02-28 17:10:27.225 DEBUG 6408 --- [http-nio-8082-exec-9] c.p.p.p.m.c.P.selectPClassById           : ====>  Preparing: Select * from pi_product_class where id = ?
+2021-02-28 17:10:27.226 DEBUG 6408 --- [http-nio-8082-exec-9] c.p.p.p.m.c.P.selectPClassById           : ====> Parameters: 3(Integer)
+2021-02-28 17:10:27.230 DEBUG 6408 --- [http-nio-8082-exec-9] c.p.p.p.m.c.P.selectPClassById           : <====      Total: 1
+2021-02-28 17:10:27.231 DEBUG 6408 --- [http-nio-8082-exec-9] c.p.p.p.m.c.P.selectUserById             : ====>  Preparing: Select * from user where id = ?
+2021-02-28 17:10:27.231 DEBUG 6408 --- [http-nio-8082-exec-9] c.p.p.p.m.c.P.selectUserById             : ====> Parameters: 10007(Integer)
+2021-02-28 17:10:27.234 DEBUG 6408 --- [http-nio-8082-exec-9] c.p.p.p.m.c.P.selectUserById             : <====      Total: 1
+2021-02-28 17:10:27.239 DEBUG 6408 --- [http-nio-8082-exec-9] c.p.p.p.m.c.P.getAllArticle              : <==      Total: 10
