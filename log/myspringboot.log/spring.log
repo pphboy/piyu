@@ -11514,3 +11514,57 @@ Caused by: org.springframework.expression.spel.SpelEvaluationException: EL1007E:
 2021-02-28 17:10:27.231 DEBUG 6408 --- [http-nio-8082-exec-9] c.p.p.p.m.c.P.selectUserById             : ====> Parameters: 10007(Integer)
 2021-02-28 17:10:27.234 DEBUG 6408 --- [http-nio-8082-exec-9] c.p.p.p.m.c.P.selectUserById             : <====      Total: 1
 2021-02-28 17:10:27.239 DEBUG 6408 --- [http-nio-8082-exec-9] c.p.p.p.m.c.P.getAllArticle              : <==      Total: 10
+2021-02-28 17:13:50.201 DEBUG 6408 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.findAllPiProductClass      : ==>  Preparing: select * from pi_product_class
+2021-02-28 17:13:50.201 DEBUG 6408 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.findAllPiProductClass      : ==> Parameters: 
+2021-02-28 17:13:50.203 DEBUG 6408 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.findAllPiProductClass      : <==      Total: 5
+2021-02-28 17:13:50.208 DEBUG 6408 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.getAllArticle_mpCount      : ==>  Preparing: SELECT COUNT(*) FROM pi_product WHERE price IS NULL AND freight IS NULL
+2021-02-28 17:13:50.208 DEBUG 6408 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.getAllArticle_mpCount      : ==> Parameters: 
+2021-02-28 17:13:50.210 DEBUG 6408 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.getAllArticle_mpCount      : <==      Total: 1
+2021-02-28 17:13:50.211 DEBUG 6408 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.getAllArticle              : ==>  Preparing: select * from pi_product where price is null and freight is null order by create_date desc LIMIT ?
+2021-02-28 17:13:50.211 DEBUG 6408 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.getAllArticle              : ==> Parameters: 10(Long)
+2021-02-28 17:13:50.214 DEBUG 6408 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.selectPClassById           : ====>  Preparing: Select * from pi_product_class where id = ?
+2021-02-28 17:13:50.215 DEBUG 6408 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.selectPClassById           : ====> Parameters: 3(Integer)
+2021-02-28 17:13:50.216 DEBUG 6408 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.selectPClassById           : <====      Total: 1
+2021-02-28 17:13:50.217 DEBUG 6408 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.selectUserById             : ====>  Preparing: Select * from user where id = ?
+2021-02-28 17:13:50.217 DEBUG 6408 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.selectUserById             : ====> Parameters: 10007(Integer)
+2021-02-28 17:13:50.219 DEBUG 6408 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.selectUserById             : <====      Total: 1
+2021-02-28 17:13:50.223 DEBUG 6408 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.getAllArticle              : <==      Total: 10
+2021-02-28 17:14:05.203 DEBUG 6408 --- [http-nio-8082-exec-5] c.p.p.p.mapper.UserMapper.selectOne      : ==>  Preparing: SELECT id,username,password,state,email,register_date FROM bg_user WHERE (username = ?)
+2021-02-28 17:14:05.203 DEBUG 6408 --- [http-nio-8082-exec-5] c.p.p.p.mapper.UserMapper.selectOne      : ==> Parameters: admin(String)
+2021-02-28 17:14:05.205 DEBUG 6408 --- [http-nio-8082-exec-5] c.p.p.p.mapper.UserMapper.selectOne      : <==      Total: 1
+2021-02-28 17:14:05.205 DEBUG 6408 --- [http-nio-8082-exec-5] c.p.p.p.mapper.RoleMapper.getRoleIds     : ==>  Preparing: select * from bg_role where id in (select role_id from bg_user_role where user_id = ?) order by num desc
+2021-02-28 17:14:05.206 DEBUG 6408 --- [http-nio-8082-exec-5] c.p.p.p.mapper.RoleMapper.getRoleIds     : ==> Parameters: 1(Integer)
+2021-02-28 17:14:05.208 DEBUG 6408 --- [http-nio-8082-exec-5] c.p.p.p.mapper.RoleMapper.getRoleIds     : <==      Total: 2
+2021-02-28 17:14:08.431 DEBUG 6408 --- [http-nio-8082-exec-4] c.p.p.p.m.c.P.findAll_mpCount            : ==>  Preparing: SELECT COUNT(*) FROM `user` WHERE IFNULL(del, 0) <> 1 AND username LIKE '%%'
+2021-02-28 17:14:08.432 DEBUG 6408 --- [http-nio-8082-exec-4] c.p.p.p.m.c.P.findAll_mpCount            : ==> Parameters: 
+2021-02-28 17:14:08.433 DEBUG 6408 --- [http-nio-8082-exec-4] c.p.p.p.m.c.P.findAll_mpCount            : <==      Total: 1
+2021-02-28 17:14:08.434 DEBUG 6408 --- [http-nio-8082-exec-4] c.p.p.p.m.common.PiUserMapper.findAll    : ==>  Preparing: SELECT * FROM `user` WHERE IFNULL(del,0) <> 1 AND username LIKE '%%' order by id desc LIMIT ?
+2021-02-28 17:14:08.434 DEBUG 6408 --- [http-nio-8082-exec-4] c.p.p.p.m.common.PiUserMapper.findAll    : ==> Parameters: 10(Long)
+2021-02-28 17:14:08.437 DEBUG 6408 --- [http-nio-8082-exec-4] c.p.p.p.m.c.P.getUserMoneyByUserId       : ====>  Preparing: select balance from wallet where user_id = ?
+2021-02-28 17:14:08.437 DEBUG 6408 --- [http-nio-8082-exec-4] c.p.p.p.m.c.P.getUserMoneyByUserId       : ====> Parameters: 10019(Integer)
+2021-02-28 17:14:08.440 DEBUG 6408 --- [http-nio-8082-exec-4] c.p.p.p.m.c.P.getUserMoneyByUserId       : <====      Total: 1
+2021-02-28 17:14:08.441 DEBUG 6408 --- [http-nio-8082-exec-4] c.p.p.p.m.c.P.getUserMoneyByUserId       : ====>  Preparing: select balance from wallet where user_id = ?
+2021-02-28 17:14:08.441 DEBUG 6408 --- [http-nio-8082-exec-4] c.p.p.p.m.c.P.getUserMoneyByUserId       : ====> Parameters: 10018(Integer)
+2021-02-28 17:14:08.442 DEBUG 6408 --- [http-nio-8082-exec-4] c.p.p.p.m.c.P.getUserMoneyByUserId       : <====      Total: 1
+2021-02-28 17:14:08.443 DEBUG 6408 --- [http-nio-8082-exec-4] c.p.p.p.m.c.P.getUserMoneyByUserId       : ====>  Preparing: select balance from wallet where user_id = ?
+2021-02-28 17:14:08.443 DEBUG 6408 --- [http-nio-8082-exec-4] c.p.p.p.m.c.P.getUserMoneyByUserId       : ====> Parameters: 10017(Integer)
+2021-02-28 17:14:08.444 DEBUG 6408 --- [http-nio-8082-exec-4] c.p.p.p.m.c.P.getUserMoneyByUserId       : <====      Total: 1
+2021-02-28 17:14:08.445 DEBUG 6408 --- [http-nio-8082-exec-4] c.p.p.p.m.c.P.getUserMoneyByUserId       : ====>  Preparing: select balance from wallet where user_id = ?
+2021-02-28 17:14:08.445 DEBUG 6408 --- [http-nio-8082-exec-4] c.p.p.p.m.c.P.getUserMoneyByUserId       : ====> Parameters: 10015(Integer)
+2021-02-28 17:14:08.446 DEBUG 6408 --- [http-nio-8082-exec-4] c.p.p.p.m.c.P.getUserMoneyByUserId       : <====      Total: 1
+2021-02-28 17:14:08.447 DEBUG 6408 --- [http-nio-8082-exec-4] c.p.p.p.m.c.P.getUserMoneyByUserId       : ====>  Preparing: select balance from wallet where user_id = ?
+2021-02-28 17:14:08.447 DEBUG 6408 --- [http-nio-8082-exec-4] c.p.p.p.m.c.P.getUserMoneyByUserId       : ====> Parameters: 10014(Integer)
+2021-02-28 17:14:08.448 DEBUG 6408 --- [http-nio-8082-exec-4] c.p.p.p.m.c.P.getUserMoneyByUserId       : <====      Total: 1
+2021-02-28 17:14:08.448 DEBUG 6408 --- [http-nio-8082-exec-4] c.p.p.p.m.c.P.getUserMoneyByUserId       : ====>  Preparing: select balance from wallet where user_id = ?
+2021-02-28 17:14:08.449 DEBUG 6408 --- [http-nio-8082-exec-4] c.p.p.p.m.c.P.getUserMoneyByUserId       : ====> Parameters: 10009(Integer)
+2021-02-28 17:14:08.450 DEBUG 6408 --- [http-nio-8082-exec-4] c.p.p.p.m.c.P.getUserMoneyByUserId       : <====      Total: 1
+2021-02-28 17:14:08.450 DEBUG 6408 --- [http-nio-8082-exec-4] c.p.p.p.m.c.P.getUserMoneyByUserId       : ====>  Preparing: select balance from wallet where user_id = ?
+2021-02-28 17:14:08.451 DEBUG 6408 --- [http-nio-8082-exec-4] c.p.p.p.m.c.P.getUserMoneyByUserId       : ====> Parameters: 10008(Integer)
+2021-02-28 17:14:08.451 DEBUG 6408 --- [http-nio-8082-exec-4] c.p.p.p.m.c.P.getUserMoneyByUserId       : <====      Total: 1
+2021-02-28 17:14:08.452 DEBUG 6408 --- [http-nio-8082-exec-4] c.p.p.p.m.c.P.getUserMoneyByUserId       : ====>  Preparing: select balance from wallet where user_id = ?
+2021-02-28 17:14:08.453 DEBUG 6408 --- [http-nio-8082-exec-4] c.p.p.p.m.c.P.getUserMoneyByUserId       : ====> Parameters: 10007(Integer)
+2021-02-28 17:14:08.454 DEBUG 6408 --- [http-nio-8082-exec-4] c.p.p.p.m.c.P.getUserMoneyByUserId       : <====      Total: 1
+2021-02-28 17:14:08.454 DEBUG 6408 --- [http-nio-8082-exec-4] c.p.p.p.m.c.P.getUserMoneyByUserId       : ====>  Preparing: select balance from wallet where user_id = ?
+2021-02-28 17:14:08.455 DEBUG 6408 --- [http-nio-8082-exec-4] c.p.p.p.m.c.P.getUserMoneyByUserId       : ====> Parameters: 10006(Integer)
+2021-02-28 17:14:08.456 DEBUG 6408 --- [http-nio-8082-exec-4] c.p.p.p.m.c.P.getUserMoneyByUserId       : <====      Total: 1
+2021-02-28 17:14:08.456 DEBUG 6408 --- [http-nio-8082-exec-4] c.p.p.p.m.common.PiUserMapper.findAll    : <==      Total: 9
