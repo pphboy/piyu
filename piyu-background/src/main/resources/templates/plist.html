@@ -90,8 +90,13 @@
                                         <td th:text="${p.tradeStatus == true ? '是':'否'}">我是售出状态</td>
                                         <td th:text="${p.downShelf == true ? '是':'否'}">我是下架状态</td>
                                         <td th:text="${#dates.format(p.createDate,'yyyy-MM-dd HH:mm:ss')}">2017-08-17 18:22</td>
-                                        <td>我是封禁状态</td>
+                                        <td class="td-status">
+                                            <span th:if="${p.status}" class="layui-btn layui-btn-normal layui-btn-mini">已启用</span>
+                                            <span th:if="${!p.status}" class="layui-btn layui-btn-normal layui-btn-mini layui-btn-disabled">已停用</span></td>
                                         <td class="td-manage">
+                                            <a th:id="${'a'+p.id}" th:onclick="member_stop(this,[[${p.id}]])" href="javascript:;"  th:title="${p.status ? '停用':'启用'}">
+                                                <i class="layui-icon">&#xe601;</i>
+                                            </a>
                                             <a title="删除" onclick="member_del(this,'要删除的id')" href="javascript:;">
                                                 <i class="layui-icon">&#xe640;</i></a>
                                         </td>
@@ -168,34 +173,52 @@
 
 
 
-        /*用户-停用*/
-        function member_stop(obj, id) {
-            layer.confirm('确认要停用吗？',
-            function(index) {
+        /*皮物-停用*/
+        function member_stop(obj,id){
+            var msg = '';
+            if($(obj).attr('title')=='停用') msg = '停用';
+            else msg = '启用';
+            layer.confirm(`确认要${msg}吗?`,function(index){
+                if($(obj).attr('title')=='停用'){
 
-                if ($(obj).attr('title') == '启用') {
-
+                    // changeUserActive(false,id);
                     //发异步把用户状态进行更改
-                    $(obj).attr('title', '停用');
+                    $(obj).attr('title','启用')
                     $(obj).find('i').html('&#xe62f;');
 
                     $(obj).parents("tr").find(".td-status").find('span').addClass('layui-btn-disabled').html('已停用');
-                    layer.msg('已停用!', {
-                        icon: 5,
-                        time: 1000
-                    });
+                    layer.msg('已停用!',{icon: 5,time:1000});
 
-                } else {
-                    $(obj).attr('title', '启用');
+                }else{
+                    // changeUserActive(true,id);
+                    $(obj).attr('title','停用')
                     $(obj).find('i').html('&#xe601;');
 
                     $(obj).parents("tr").find(".td-status").find('span').removeClass('layui-btn-disabled').html('已启用');
-                    layer.msg('已启用!', {
-                        icon: 5,
-                        time: 1000
-                    });
+                    layer.msg('已启用!',{icon:1,time:1000});
                 }
 
+            });
+        }
+
+        /**
+         * 改变皮物激活状态
+         */
+        function changePiProductActive(state,id){
+            $.ajax({
+                type:"POST",
+                dataType:"json",
+                contentType:"application/json",
+                url:"/bg/banUser?"+[[${_csrf.parameterName}]]+'='+[[${_csrf.token}]],
+                data:JSON.stringify({
+                    state: state,
+                    id: id
+                }),
+                success(data){
+                    if(!data.state){
+                        layer.msg(data.msg,{icon:5,time:1000});
+                    }
+                }
             });
         }
 
