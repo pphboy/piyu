@@ -54,6 +54,7 @@ public interface PiProductMapper {
      * @param piProduct
      * @return
      */
+    @Update("update pi_product set status = #{status} where id = #{id}")
     boolean setPiProductStatus(PiProduct piProduct);
 
 

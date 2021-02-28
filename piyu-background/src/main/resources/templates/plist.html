@@ -17,9 +17,9 @@
         <div class="x-nav">
             <span class="layui-breadcrumb">
                 <a href="">首页</a>
-                <a href="">演示</a>
+                <a >皮物管理</a>
                 <a>
-                    <cite>导航元素</cite></a>
+                    <cite>皮物列表</cite></a>
             </span>
             <a class="layui-btn layui-btn-small" style="line-height:1.6em;margin-top:3px;float:right" onclick="location.reload()" title="刷新">
                 <i class="layui-icon layui-icon-refresh" style="line-height:30px"></i>
@@ -181,7 +181,7 @@
             layer.confirm(`确认要${msg}吗?`,function(index){
                 if($(obj).attr('title')=='停用'){
 
-                    // changeUserActive(false,id);
+                    changePiProductActive(false,id);
                     //发异步把用户状态进行更改
                     $(obj).attr('title','启用')
                     $(obj).find('i').html('&#xe62f;');
@@ -190,7 +190,7 @@
                     layer.msg('已停用!',{icon: 5,time:1000});
 
                 }else{
-                    // changeUserActive(true,id);
+                    changePiProductActive(true,id);
                     $(obj).attr('title','停用')
                     $(obj).find('i').html('&#xe601;');
 
@@ -209,9 +209,9 @@
                 type:"POST",
                 dataType:"json",
                 contentType:"application/json",
-                url:"/bg/banUser?"+[[${_csrf.parameterName}]]+'='+[[${_csrf.token}]],
+                url:"/pi/banPiProduct?"+[[${_csrf.parameterName}]]+'='+[[${_csrf.token}]],
                 data:JSON.stringify({
-                    state: state,
+                    status: state,
                     id: id
                 }),
                 success(data){

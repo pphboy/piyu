@@ -1,6 +1,7 @@
 package com.pipihao.piyu.piyubackground.service.common;
 
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import com.pipihao.piyu.piyubackground.common.R;
 import com.pipihao.piyu.piyubackground.pojo.PiProduct;
 
 import java.util.Map;
@@ -13,4 +14,6 @@ import java.util.Map;
 public interface PiProductService {
 
     Page<PiProduct> getAllPiProduct(Page<PiProduct> page, Map<String,Object> map);
+
+    R setPiProductStatus(PiProduct piProduct);
 }

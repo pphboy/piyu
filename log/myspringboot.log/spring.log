@@ -6350,3 +6350,472 @@ Caused by: org.springframework.expression.spel.SpelEvaluationException: EL1007E:
 2021-02-28 16:04:26.942  INFO 6120 --- [http-nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2021-02-28 16:04:26.945  INFO 6120 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2021-02-28 16:04:26.948  INFO 6120 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2021-02-28 16:08:44.051  INFO 6120 --- [Thread-32] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-02-28 16:08:44.052  INFO 6120 --- [Thread-32] com.alibaba.druid.pool.DruidDataSource   : {dataSource-4} closed
+2021-02-28 16:08:44.295  INFO 6120 --- [restartedMain] c.p.p.p.PiyuBackgroundApplication        : Starting PiyuBackgroundApplication using Java 1.8.0_191 on IBM with PID 6120 (D:\Projects\PiYU\piyu\piyu-background\target\classes started by pipihao in D:\Projects\PiYU\piyu)
+2021-02-28 16:08:44.295  INFO 6120 --- [restartedMain] c.p.p.p.PiyuBackgroundApplication        : No active profile set, falling back to default profiles: default
+2021-02-28 16:08:44.765  WARN 6120 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'roleMapper' and 'com.pipihao.piyu.piyubackground.mapper.RoleMapper' mapperInterface. Bean already defined with the same name!
+2021-02-28 16:08:44.766  WARN 6120 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'userMapper' and 'com.pipihao.piyu.piyubackground.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
+2021-02-28 16:08:44.766  WARN 6120 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'cpUserMapper' and 'com.pipihao.piyu.piyubackground.mapper.common.CpUserMapper' mapperInterface. Bean already defined with the same name!
+2021-02-28 16:08:44.766  WARN 6120 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'cpWalletMapper' and 'com.pipihao.piyu.piyubackground.mapper.common.CpWalletMapper' mapperInterface. Bean already defined with the same name!
+2021-02-28 16:08:44.766  WARN 6120 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'piProductClassMapper' and 'com.pipihao.piyu.piyubackground.mapper.common.PiProductClassMapper' mapperInterface. Bean already defined with the same name!
+2021-02-28 16:08:44.766  WARN 6120 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'piProductMapper' and 'com.pipihao.piyu.piyubackground.mapper.common.PiProductMapper' mapperInterface. Bean already defined with the same name!
+2021-02-28 16:08:44.766  WARN 6120 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'piUserMapper' and 'com.pipihao.piyu.piyubackground.mapper.common.PiUserMapper' mapperInterface. Bean already defined with the same name!
+2021-02-28 16:08:44.766  WARN 6120 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.pipihao.piyu.piyubackground.mapper]' package. Please check your configuration.
+2021-02-28 16:08:45.164  INFO 6120 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2021-02-28 16:08:45.168  INFO 6120 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-02-28 16:08:45.173  INFO 6120 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-28 16:08:45.228  INFO 6120 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-02-28 16:08:45.228  INFO 6120 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 930 ms
+2021-02-28 16:08:45.314  INFO 6120 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2021-02-28 16:08:45.442  INFO 6120 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-5} inited
+2021-02-28 16:08:46.289  INFO 6120 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-28 16:08:46.319  INFO 6120 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-02-28 16:08:46.337  WARN 6120 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+2021-02-28 16:08:46.344  INFO 6120 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2021-02-28 16:08:46.345  INFO 6120 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2021-02-28 16:08:46.345  INFO 6120 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2021-02-28 16:08:46.347  INFO 6120 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
+2021-02-28 16:08:46.444  INFO 6120 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/js/**'] with []
+2021-02-28 16:08:46.444  INFO 6120 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/css/**'] with []
+2021-02-28 16:08:46.444  INFO 6120 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/fonts/**'] with []
+2021-02-28 16:08:46.444  INFO 6120 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/images/**'] with []
+2021-02-28 16:08:46.444  INFO 6120 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/lib/**'] with []
+2021-02-28 16:08:46.456  INFO 6120 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@ce6e975, org.springframework.security.web.context.SecurityContextPersistenceFilter@6c4dcde3, org.springframework.security.web.header.HeaderWriterFilter@3fff99cd, org.springframework.security.web.csrf.CsrfFilter@575419d4, org.springframework.security.web.authentication.logout.LogoutFilter@f504cf7, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7ec9a9b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5251107a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1123ca0c, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@3b57adc4, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@509526f1, org.springframework.security.web.session.SessionManagementFilter@1b20fdea, org.springframework.security.web.access.ExceptionTranslationFilter@35b16262, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7d643969]
+2021-02-28 16:08:46.471  INFO 6120 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-02-28 16:08:46.550  INFO 6120 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2021-02-28 16:08:46.578  INFO 6120 --- [restartedMain] c.p.p.p.PiyuBackgroundApplication        : Started PiyuBackgroundApplication in 2.33 seconds (JVM running for 601.834)
+2021-02-28 16:08:46.581  INFO 6120 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-02-28 16:08:48.513  INFO 6120 --- [Thread-37] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-02-28 16:08:48.516  INFO 6120 --- [Thread-37] com.alibaba.druid.pool.DruidDataSource   : {dataSource-5} closed
+2021-02-28 16:08:48.812  INFO 6120 --- [restartedMain] c.p.p.p.PiyuBackgroundApplication        : Starting PiyuBackgroundApplication using Java 1.8.0_191 on IBM with PID 6120 (D:\Projects\PiYU\piyu\piyu-background\target\classes started by pipihao in D:\Projects\PiYU\piyu)
+2021-02-28 16:08:48.812  INFO 6120 --- [restartedMain] c.p.p.p.PiyuBackgroundApplication        : No active profile set, falling back to default profiles: default
+2021-02-28 16:08:49.193  WARN 6120 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'roleMapper' and 'com.pipihao.piyu.piyubackground.mapper.RoleMapper' mapperInterface. Bean already defined with the same name!
+2021-02-28 16:08:49.193  WARN 6120 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'userMapper' and 'com.pipihao.piyu.piyubackground.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
+2021-02-28 16:08:49.193  WARN 6120 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'cpUserMapper' and 'com.pipihao.piyu.piyubackground.mapper.common.CpUserMapper' mapperInterface. Bean already defined with the same name!
+2021-02-28 16:08:49.193  WARN 6120 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'cpWalletMapper' and 'com.pipihao.piyu.piyubackground.mapper.common.CpWalletMapper' mapperInterface. Bean already defined with the same name!
+2021-02-28 16:08:49.193  WARN 6120 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'piProductClassMapper' and 'com.pipihao.piyu.piyubackground.mapper.common.PiProductClassMapper' mapperInterface. Bean already defined with the same name!
+2021-02-28 16:08:49.193  WARN 6120 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'piProductMapper' and 'com.pipihao.piyu.piyubackground.mapper.common.PiProductMapper' mapperInterface. Bean already defined with the same name!
+2021-02-28 16:08:49.193  WARN 6120 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'piUserMapper' and 'com.pipihao.piyu.piyubackground.mapper.common.PiUserMapper' mapperInterface. Bean already defined with the same name!
+2021-02-28 16:08:49.194  WARN 6120 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.pipihao.piyu.piyubackground.mapper]' package. Please check your configuration.
+2021-02-28 16:08:49.337  INFO 6120 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2021-02-28 16:08:49.338  INFO 6120 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-02-28 16:08:49.339  INFO 6120 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-28 16:08:49.363  INFO 6120 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-02-28 16:08:49.363  INFO 6120 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 546 ms
+2021-02-28 16:08:49.402  INFO 6120 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2021-02-28 16:08:49.434  INFO 6120 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-6} inited
+2021-02-28 16:08:49.932  INFO 6120 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-28 16:08:49.951  INFO 6120 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-02-28 16:08:49.969  WARN 6120 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+2021-02-28 16:08:49.975  INFO 6120 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2021-02-28 16:08:49.976  INFO 6120 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2021-02-28 16:08:49.976  INFO 6120 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2021-02-28 16:08:49.977  INFO 6120 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
+2021-02-28 16:08:50.028  INFO 6120 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/js/**'] with []
+2021-02-28 16:08:50.028  INFO 6120 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/css/**'] with []
+2021-02-28 16:08:50.028  INFO 6120 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/fonts/**'] with []
+2021-02-28 16:08:50.028  INFO 6120 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/images/**'] with []
+2021-02-28 16:08:50.028  INFO 6120 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/lib/**'] with []
+2021-02-28 16:08:50.038  INFO 6120 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@65ab1c8c, org.springframework.security.web.context.SecurityContextPersistenceFilter@48ce70af, org.springframework.security.web.header.HeaderWriterFilter@5fad1db3, org.springframework.security.web.csrf.CsrfFilter@496eabf0, org.springframework.security.web.authentication.logout.LogoutFilter@4cddd14a, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@22a12338, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2f51bfa8, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@18267f74, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@51d0e78e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6399a519, org.springframework.security.web.session.SessionManagementFilter@744364fc, org.springframework.security.web.access.ExceptionTranslationFilter@e0d2eb0, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6a7d9931]
+2021-02-28 16:08:50.047  INFO 6120 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-02-28 16:08:50.070  INFO 6120 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2021-02-28 16:08:50.075  INFO 6120 --- [restartedMain] c.p.p.p.PiyuBackgroundApplication        : Started PiyuBackgroundApplication in 1.349 seconds (JVM running for 605.33)
+2021-02-28 16:08:50.076  INFO 6120 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-02-28 16:09:27.424  INFO 6120 --- [Thread-42] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-02-28 16:09:27.425  INFO 6120 --- [Thread-42] com.alibaba.druid.pool.DruidDataSource   : {dataSource-6} closed
+2021-02-28 16:09:27.688  INFO 6120 --- [restartedMain] c.p.p.p.PiyuBackgroundApplication        : Starting PiyuBackgroundApplication using Java 1.8.0_191 on IBM with PID 6120 (D:\Projects\PiYU\piyu\piyu-background\target\classes started by pipihao in D:\Projects\PiYU\piyu)
+2021-02-28 16:09:27.689  INFO 6120 --- [restartedMain] c.p.p.p.PiyuBackgroundApplication        : No active profile set, falling back to default profiles: default
+2021-02-28 16:09:28.058  WARN 6120 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'roleMapper' and 'com.pipihao.piyu.piyubackground.mapper.RoleMapper' mapperInterface. Bean already defined with the same name!
+2021-02-28 16:09:28.059  WARN 6120 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'userMapper' and 'com.pipihao.piyu.piyubackground.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
+2021-02-28 16:09:28.059  WARN 6120 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'cpUserMapper' and 'com.pipihao.piyu.piyubackground.mapper.common.CpUserMapper' mapperInterface. Bean already defined with the same name!
+2021-02-28 16:09:28.059  WARN 6120 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'cpWalletMapper' and 'com.pipihao.piyu.piyubackground.mapper.common.CpWalletMapper' mapperInterface. Bean already defined with the same name!
+2021-02-28 16:09:28.059  WARN 6120 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'piProductClassMapper' and 'com.pipihao.piyu.piyubackground.mapper.common.PiProductClassMapper' mapperInterface. Bean already defined with the same name!
+2021-02-28 16:09:28.059  WARN 6120 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'piUserMapper' and 'com.pipihao.piyu.piyubackground.mapper.common.PiUserMapper' mapperInterface. Bean already defined with the same name!
+2021-02-28 16:09:28.059  WARN 6120 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.pipihao.piyu.piyubackground.mapper]' package. Please check your configuration.
+2021-02-28 16:09:28.198  INFO 6120 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2021-02-28 16:09:28.199  INFO 6120 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-02-28 16:09:28.200  INFO 6120 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-28 16:09:28.230  INFO 6120 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-02-28 16:09:28.230  INFO 6120 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 539 ms
+2021-02-28 16:09:28.297  INFO 6120 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2021-02-28 16:09:28.393  INFO 6120 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-7} inited
+2021-02-28 16:09:29.251  WARN 6120 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'piProductController': Unsatisfied dependency expressed through field 'piProductService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'piProductServiceImpl': Unsatisfied dependency expressed through field 'piProductMapper'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.pipihao.piyu.piyubackground.mapper.common.PiProductMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2021-02-28 16:09:29.252  INFO 6120 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-7} closed
+2021-02-28 16:09:29.253  INFO 6120 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2021-02-28 16:09:29.270  INFO 6120 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-02-28 16:09:29.303 ERROR 6120 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field piProductMapper in com.pipihao.piyu.piyubackground.service.common.impl.PiProductServiceImpl required a bean of type 'com.pipihao.piyu.piyubackground.mapper.common.PiProductMapper' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.pipihao.piyu.piyubackground.mapper.common.PiProductMapper' in your configuration.
+
+2021-02-28 16:09:30.833  INFO 6120 --- [restartedMain] c.p.p.p.PiyuBackgroundApplication        : Starting PiyuBackgroundApplication using Java 1.8.0_191 on IBM with PID 6120 (D:\Projects\PiYU\piyu\piyu-background\target\classes started by pipihao in D:\Projects\PiYU\piyu)
+2021-02-28 16:09:30.833  INFO 6120 --- [restartedMain] c.p.p.p.PiyuBackgroundApplication        : No active profile set, falling back to default profiles: default
+2021-02-28 16:09:31.321  WARN 6120 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'roleMapper' and 'com.pipihao.piyu.piyubackground.mapper.RoleMapper' mapperInterface. Bean already defined with the same name!
+2021-02-28 16:09:31.322  WARN 6120 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'userMapper' and 'com.pipihao.piyu.piyubackground.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
+2021-02-28 16:09:31.322  WARN 6120 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'cpUserMapper' and 'com.pipihao.piyu.piyubackground.mapper.common.CpUserMapper' mapperInterface. Bean already defined with the same name!
+2021-02-28 16:09:31.322  WARN 6120 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'cpWalletMapper' and 'com.pipihao.piyu.piyubackground.mapper.common.CpWalletMapper' mapperInterface. Bean already defined with the same name!
+2021-02-28 16:09:31.322  WARN 6120 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'piProductClassMapper' and 'com.pipihao.piyu.piyubackground.mapper.common.PiProductClassMapper' mapperInterface. Bean already defined with the same name!
+2021-02-28 16:09:31.322  WARN 6120 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'piProductMapper' and 'com.pipihao.piyu.piyubackground.mapper.common.PiProductMapper' mapperInterface. Bean already defined with the same name!
+2021-02-28 16:09:31.322  WARN 6120 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'piUserMapper' and 'com.pipihao.piyu.piyubackground.mapper.common.PiUserMapper' mapperInterface. Bean already defined with the same name!
+2021-02-28 16:09:31.322  WARN 6120 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.pipihao.piyu.piyubackground.mapper]' package. Please check your configuration.
+2021-02-28 16:09:31.542  INFO 6120 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2021-02-28 16:09:31.543  INFO 6120 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-02-28 16:09:31.543  INFO 6120 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-28 16:09:31.575  INFO 6120 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2021-02-28 16:09:31.575  INFO 6120 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 738 ms
+2021-02-28 16:09:31.645  INFO 6120 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2021-02-28 16:09:31.688  INFO 6120 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-8} inited
+2021-02-28 16:09:32.311  INFO 6120 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-28 16:09:32.331  INFO 6120 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-02-28 16:09:32.357  WARN 6120 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+2021-02-28 16:09:32.365  INFO 6120 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2021-02-28 16:09:32.366  INFO 6120 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2021-02-28 16:09:32.366  INFO 6120 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2021-02-28 16:09:32.368  INFO 6120 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
+2021-02-28 16:09:32.437  INFO 6120 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/js/**'] with []
+2021-02-28 16:09:32.437  INFO 6120 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/css/**'] with []
+2021-02-28 16:09:32.437  INFO 6120 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/fonts/**'] with []
+2021-02-28 16:09:32.437  INFO 6120 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/images/**'] with []
+2021-02-28 16:09:32.437  INFO 6120 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/lib/**'] with []
+2021-02-28 16:09:32.447  INFO 6120 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@19a3e915, org.springframework.security.web.context.SecurityContextPersistenceFilter@4109d8de, org.springframework.security.web.header.HeaderWriterFilter@5c99364c, org.springframework.security.web.csrf.CsrfFilter@d1329eb, org.springframework.security.web.authentication.logout.LogoutFilter@65225c2c, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4aa7bd4e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@25b87848, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@308611e5, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@5a5f0fa1, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@62fcf1a6, org.springframework.security.web.session.SessionManagementFilter@5541efec, org.springframework.security.web.access.ExceptionTranslationFilter@393bbdda, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@105d7f38]
+2021-02-28 16:09:32.458  INFO 6120 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-02-28 16:09:32.486  INFO 6120 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2021-02-28 16:09:32.493  INFO 6120 --- [restartedMain] c.p.p.p.PiyuBackgroundApplication        : Started PiyuBackgroundApplication in 1.696 seconds (JVM running for 647.748)
+2021-02-28 16:09:32.495  INFO 6120 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-02-28 16:10:58.703  INFO 6120 --- [Thread-47] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-02-28 16:10:58.705  INFO 6120 --- [Thread-47] com.alibaba.druid.pool.DruidDataSource   : {dataSource-8} closed
+2021-02-28 16:10:59.459  INFO 6120 --- [restartedMain] c.p.p.p.PiyuBackgroundApplication        : Starting PiyuBackgroundApplication using Java 1.8.0_191 on IBM with PID 6120 (D:\Projects\PiYU\piyu\piyu-background\target\classes started by pipihao in D:\Projects\PiYU\piyu)
+2021-02-28 16:10:59.459  INFO 6120 --- [restartedMain] c.p.p.p.PiyuBackgroundApplication        : No active profile set, falling back to default profiles: default
+2021-02-28 16:10:59.957  WARN 6120 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'roleMapper' and 'com.pipihao.piyu.piyubackground.mapper.RoleMapper' mapperInterface. Bean already defined with the same name!
+2021-02-28 16:10:59.957  WARN 6120 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'userMapper' and 'com.pipihao.piyu.piyubackground.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
+2021-02-28 16:10:59.957  WARN 6120 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'cpUserMapper' and 'com.pipihao.piyu.piyubackground.mapper.common.CpUserMapper' mapperInterface. Bean already defined with the same name!
+2021-02-28 16:10:59.957  WARN 6120 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'cpWalletMapper' and 'com.pipihao.piyu.piyubackground.mapper.common.CpWalletMapper' mapperInterface. Bean already defined with the same name!
+2021-02-28 16:10:59.957  WARN 6120 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'piProductClassMapper' and 'com.pipihao.piyu.piyubackground.mapper.common.PiProductClassMapper' mapperInterface. Bean already defined with the same name!
+2021-02-28 16:10:59.958  WARN 6120 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'piProductMapper' and 'com.pipihao.piyu.piyubackground.mapper.common.PiProductMapper' mapperInterface. Bean already defined with the same name!
+2021-02-28 16:10:59.958  WARN 6120 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'piUserMapper' and 'com.pipihao.piyu.piyubackground.mapper.common.PiUserMapper' mapperInterface. Bean already defined with the same name!
+2021-02-28 16:10:59.958  WARN 6120 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.pipihao.piyu.piyubackground.mapper]' package. Please check your configuration.
+2021-02-28 16:11:00.120  INFO 6120 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2021-02-28 16:11:00.121  INFO 6120 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-02-28 16:11:00.122  INFO 6120 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-28 16:11:00.152  INFO 6120 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2021-02-28 16:11:00.153  INFO 6120 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 685 ms
+2021-02-28 16:11:00.222  INFO 6120 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2021-02-28 16:11:00.311  INFO 6120 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-9} inited
+2021-02-28 16:11:00.986  WARN 6120 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'piProductController': Unsatisfied dependency expressed through field 'piProductService'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.pipihao.piyu.piyubackground.service.common.PiProductService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2021-02-28 16:11:00.987  INFO 6120 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-9} closed
+2021-02-28 16:11:00.987  INFO 6120 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2021-02-28 16:11:00.997  INFO 6120 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-02-28 16:11:01.001 ERROR 6120 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field piProductService in com.pipihao.piyu.piyubackground.controller.common.PiProductController required a bean of type 'com.pipihao.piyu.piyubackground.service.common.PiProductService' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.pipihao.piyu.piyubackground.service.common.PiProductService' in your configuration.
+
+2021-02-28 16:11:03.009  INFO 6120 --- [restartedMain] c.p.p.p.PiyuBackgroundApplication        : Starting PiyuBackgroundApplication using Java 1.8.0_191 on IBM with PID 6120 (D:\Projects\PiYU\piyu\piyu-background\target\classes started by pipihao in D:\Projects\PiYU\piyu)
+2021-02-28 16:11:03.010  INFO 6120 --- [restartedMain] c.p.p.p.PiyuBackgroundApplication        : No active profile set, falling back to default profiles: default
+2021-02-28 16:11:03.557  WARN 6120 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'roleMapper' and 'com.pipihao.piyu.piyubackground.mapper.RoleMapper' mapperInterface. Bean already defined with the same name!
+2021-02-28 16:11:03.557  WARN 6120 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'userMapper' and 'com.pipihao.piyu.piyubackground.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
+2021-02-28 16:11:03.557  WARN 6120 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'cpUserMapper' and 'com.pipihao.piyu.piyubackground.mapper.common.CpUserMapper' mapperInterface. Bean already defined with the same name!
+2021-02-28 16:11:03.558  WARN 6120 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'cpWalletMapper' and 'com.pipihao.piyu.piyubackground.mapper.common.CpWalletMapper' mapperInterface. Bean already defined with the same name!
+2021-02-28 16:11:03.558  WARN 6120 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'piProductClassMapper' and 'com.pipihao.piyu.piyubackground.mapper.common.PiProductClassMapper' mapperInterface. Bean already defined with the same name!
+2021-02-28 16:11:03.558  WARN 6120 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'piProductMapper' and 'com.pipihao.piyu.piyubackground.mapper.common.PiProductMapper' mapperInterface. Bean already defined with the same name!
+2021-02-28 16:11:03.558  WARN 6120 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'piUserMapper' and 'com.pipihao.piyu.piyubackground.mapper.common.PiUserMapper' mapperInterface. Bean already defined with the same name!
+2021-02-28 16:11:03.558  WARN 6120 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.pipihao.piyu.piyubackground.mapper]' package. Please check your configuration.
+2021-02-28 16:11:03.715  INFO 6120 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2021-02-28 16:11:03.715  INFO 6120 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-02-28 16:11:03.715  INFO 6120 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-28 16:11:03.747  INFO 6120 --- [restartedMain] o.a.c.c.C.[Tomcat-2].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2021-02-28 16:11:03.747  INFO 6120 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 734 ms
+2021-02-28 16:11:03.795  INFO 6120 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2021-02-28 16:11:03.834  INFO 6120 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-10} inited
+2021-02-28 16:11:04.634  INFO 6120 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-28 16:11:04.658  INFO 6120 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-02-28 16:11:04.680  WARN 6120 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+2021-02-28 16:11:04.691  INFO 6120 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2021-02-28 16:11:04.692  INFO 6120 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2021-02-28 16:11:04.692  INFO 6120 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2021-02-28 16:11:04.694  INFO 6120 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
+2021-02-28 16:11:04.778  INFO 6120 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/js/**'] with []
+2021-02-28 16:11:04.778  INFO 6120 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/css/**'] with []
+2021-02-28 16:11:04.778  INFO 6120 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/fonts/**'] with []
+2021-02-28 16:11:04.778  INFO 6120 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/images/**'] with []
+2021-02-28 16:11:04.778  INFO 6120 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/lib/**'] with []
+2021-02-28 16:11:04.802  INFO 6120 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@62d5b88b, org.springframework.security.web.context.SecurityContextPersistenceFilter@2528b06b, org.springframework.security.web.header.HeaderWriterFilter@28964b84, org.springframework.security.web.csrf.CsrfFilter@5fcffbff, org.springframework.security.web.authentication.logout.LogoutFilter@48eb3dd0, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6c345bc2, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@72b1cb45, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@68e164fc, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@1cfc805e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1a0358ba, org.springframework.security.web.session.SessionManagementFilter@598a324, org.springframework.security.web.access.ExceptionTranslationFilter@4cc371aa, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@ff0a29]
+2021-02-28 16:11:04.818  INFO 6120 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-02-28 16:11:04.883  INFO 6120 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2021-02-28 16:11:04.892  INFO 6120 --- [restartedMain] c.p.p.p.PiyuBackgroundApplication        : Started PiyuBackgroundApplication in 1.926 seconds (JVM running for 740.147)
+2021-02-28 16:11:04.894  INFO 6120 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-02-28 16:11:25.479  INFO 6120 --- [Thread-55] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-02-28 16:11:25.481  INFO 6120 --- [Thread-55] com.alibaba.druid.pool.DruidDataSource   : {dataSource-10} closed
+2021-02-28 16:11:25.877  INFO 6120 --- [restartedMain] c.p.p.p.PiyuBackgroundApplication        : Starting PiyuBackgroundApplication using Java 1.8.0_191 on IBM with PID 6120 (D:\Projects\PiYU\piyu\piyu-background\target\classes started by pipihao in D:\Projects\PiYU\piyu)
+2021-02-28 16:11:25.877  INFO 6120 --- [restartedMain] c.p.p.p.PiyuBackgroundApplication        : No active profile set, falling back to default profiles: default
+2021-02-28 16:11:26.581  WARN 6120 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'roleMapper' and 'com.pipihao.piyu.piyubackground.mapper.RoleMapper' mapperInterface. Bean already defined with the same name!
+2021-02-28 16:11:26.581  WARN 6120 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'userMapper' and 'com.pipihao.piyu.piyubackground.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
+2021-02-28 16:11:26.581  WARN 6120 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'cpUserMapper' and 'com.pipihao.piyu.piyubackground.mapper.common.CpUserMapper' mapperInterface. Bean already defined with the same name!
+2021-02-28 16:11:26.581  WARN 6120 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'cpWalletMapper' and 'com.pipihao.piyu.piyubackground.mapper.common.CpWalletMapper' mapperInterface. Bean already defined with the same name!
+2021-02-28 16:11:26.582  WARN 6120 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'piProductClassMapper' and 'com.pipihao.piyu.piyubackground.mapper.common.PiProductClassMapper' mapperInterface. Bean already defined with the same name!
+2021-02-28 16:11:26.582  WARN 6120 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'piProductMapper' and 'com.pipihao.piyu.piyubackground.mapper.common.PiProductMapper' mapperInterface. Bean already defined with the same name!
+2021-02-28 16:11:26.582  WARN 6120 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'piUserMapper' and 'com.pipihao.piyu.piyubackground.mapper.common.PiUserMapper' mapperInterface. Bean already defined with the same name!
+2021-02-28 16:11:26.582  WARN 6120 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.pipihao.piyu.piyubackground.mapper]' package. Please check your configuration.
+2021-02-28 16:11:26.900  INFO 6120 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2021-02-28 16:11:26.901  INFO 6120 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-02-28 16:11:26.901  INFO 6120 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-28 16:11:26.931  INFO 6120 --- [restartedMain] o.a.c.c.C.[Tomcat-2].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2021-02-28 16:11:26.931  INFO 6120 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1050 ms
+2021-02-28 16:11:26.977  INFO 6120 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2021-02-28 16:11:27.016  INFO 6120 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-11} inited
+2021-02-28 16:11:27.804  INFO 6120 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-28 16:11:27.831  INFO 6120 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-02-28 16:11:27.850  WARN 6120 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+2021-02-28 16:11:27.859  INFO 6120 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2021-02-28 16:11:27.860  INFO 6120 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2021-02-28 16:11:27.861  INFO 6120 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2021-02-28 16:11:27.863  INFO 6120 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
+2021-02-28 16:11:27.969  INFO 6120 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/js/**'] with []
+2021-02-28 16:11:27.970  INFO 6120 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/css/**'] with []
+2021-02-28 16:11:27.970  INFO 6120 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/fonts/**'] with []
+2021-02-28 16:11:27.970  INFO 6120 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/images/**'] with []
+2021-02-28 16:11:27.970  INFO 6120 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/lib/**'] with []
+2021-02-28 16:11:27.979  INFO 6120 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@12b4a822, org.springframework.security.web.context.SecurityContextPersistenceFilter@26968e9d, org.springframework.security.web.header.HeaderWriterFilter@30194a47, org.springframework.security.web.csrf.CsrfFilter@746110a5, org.springframework.security.web.authentication.logout.LogoutFilter@37b7e021, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@3f2c3b54, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@779ad311, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@d2bf4d7, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@7646586b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@53e5c1b3, org.springframework.security.web.session.SessionManagementFilter@5a0e5941, org.springframework.security.web.access.ExceptionTranslationFilter@b7b54da, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2dcd9bbc]
+2021-02-28 16:11:27.996  INFO 6120 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-02-28 16:11:28.058  INFO 6120 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2021-02-28 16:11:28.078  INFO 6120 --- [restartedMain] c.p.p.p.PiyuBackgroundApplication        : Started PiyuBackgroundApplication in 2.249 seconds (JVM running for 763.333)
+2021-02-28 16:11:28.081  INFO 6120 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-02-28 16:11:30.092  INFO 6120 --- [Thread-63] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-02-28 16:11:30.095  INFO 6120 --- [Thread-63] com.alibaba.druid.pool.DruidDataSource   : {dataSource-11} closed
+2021-02-28 16:11:30.455  INFO 6120 --- [restartedMain] c.p.p.p.PiyuBackgroundApplication        : Starting PiyuBackgroundApplication using Java 1.8.0_191 on IBM with PID 6120 (D:\Projects\PiYU\piyu\piyu-background\target\classes started by pipihao in D:\Projects\PiYU\piyu)
+2021-02-28 16:11:30.455  INFO 6120 --- [restartedMain] c.p.p.p.PiyuBackgroundApplication        : No active profile set, falling back to default profiles: default
+2021-02-28 16:11:30.794  WARN 6120 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'roleMapper' and 'com.pipihao.piyu.piyubackground.mapper.RoleMapper' mapperInterface. Bean already defined with the same name!
+2021-02-28 16:11:30.794  WARN 6120 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'userMapper' and 'com.pipihao.piyu.piyubackground.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
+2021-02-28 16:11:30.794  WARN 6120 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'cpUserMapper' and 'com.pipihao.piyu.piyubackground.mapper.common.CpUserMapper' mapperInterface. Bean already defined with the same name!
+2021-02-28 16:11:30.795  WARN 6120 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'cpWalletMapper' and 'com.pipihao.piyu.piyubackground.mapper.common.CpWalletMapper' mapperInterface. Bean already defined with the same name!
+2021-02-28 16:11:30.795  WARN 6120 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'piProductClassMapper' and 'com.pipihao.piyu.piyubackground.mapper.common.PiProductClassMapper' mapperInterface. Bean already defined with the same name!
+2021-02-28 16:11:30.795  WARN 6120 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'piProductMapper' and 'com.pipihao.piyu.piyubackground.mapper.common.PiProductMapper' mapperInterface. Bean already defined with the same name!
+2021-02-28 16:11:30.795  WARN 6120 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'piUserMapper' and 'com.pipihao.piyu.piyubackground.mapper.common.PiUserMapper' mapperInterface. Bean already defined with the same name!
+2021-02-28 16:11:30.795  WARN 6120 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.pipihao.piyu.piyubackground.mapper]' package. Please check your configuration.
+2021-02-28 16:11:30.901  INFO 6120 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2021-02-28 16:11:30.902  INFO 6120 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-02-28 16:11:30.902  INFO 6120 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-28 16:11:30.922  INFO 6120 --- [restartedMain] o.a.c.c.C.[Tomcat-2].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2021-02-28 16:11:30.922  INFO 6120 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 463 ms
+2021-02-28 16:11:30.959  INFO 6120 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2021-02-28 16:11:30.987  INFO 6120 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-12} inited
+2021-02-28 16:11:31.826  INFO 6120 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-28 16:11:31.839  INFO 6120 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-02-28 16:11:31.855  WARN 6120 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+2021-02-28 16:11:31.861  INFO 6120 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2021-02-28 16:11:31.861  INFO 6120 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2021-02-28 16:11:31.861  INFO 6120 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2021-02-28 16:11:31.862  INFO 6120 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
+2021-02-28 16:11:31.910  INFO 6120 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/js/**'] with []
+2021-02-28 16:11:31.910  INFO 6120 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/css/**'] with []
+2021-02-28 16:11:31.910  INFO 6120 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/fonts/**'] with []
+2021-02-28 16:11:31.910  INFO 6120 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/images/**'] with []
+2021-02-28 16:11:31.910  INFO 6120 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/lib/**'] with []
+2021-02-28 16:11:31.918  INFO 6120 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@641c9869, org.springframework.security.web.context.SecurityContextPersistenceFilter@64702e66, org.springframework.security.web.header.HeaderWriterFilter@30bf5e92, org.springframework.security.web.csrf.CsrfFilter@63542aae, org.springframework.security.web.authentication.logout.LogoutFilter@778dc0b8, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@30146b08, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@65ee3b04, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2f6fa2e5, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@8b3152d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@660ea133, org.springframework.security.web.session.SessionManagementFilter@26337154, org.springframework.security.web.access.ExceptionTranslationFilter@43a856ea, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7c3fc5fc]
+2021-02-28 16:11:31.926  INFO 6120 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-02-28 16:11:31.947  INFO 6120 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2021-02-28 16:11:31.953  INFO 6120 --- [restartedMain] c.p.p.p.PiyuBackgroundApplication        : Started PiyuBackgroundApplication in 1.538 seconds (JVM running for 767.209)
+2021-02-28 16:11:31.954  INFO 6120 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-02-28 16:11:40.741  INFO 1852 --- [restartedMain] c.p.p.p.PiyuBackgroundApplication        : Starting PiyuBackgroundApplication using Java 1.8.0_191 on IBM with PID 1852 (D:\Projects\PiYU\piyu\piyu-background\target\classes started by pipihao in D:\Projects\PiYU\piyu)
+2021-02-28 16:11:40.747  INFO 1852 --- [restartedMain] c.p.p.p.PiyuBackgroundApplication        : No active profile set, falling back to default profiles: default
+2021-02-28 16:11:40.891  INFO 1852 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-02-28 16:11:40.892  INFO 1852 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-02-28 16:11:42.694  WARN 1852 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'roleMapper' and 'com.pipihao.piyu.piyubackground.mapper.RoleMapper' mapperInterface. Bean already defined with the same name!
+2021-02-28 16:11:42.695  WARN 1852 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'userMapper' and 'com.pipihao.piyu.piyubackground.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
+2021-02-28 16:11:42.695  WARN 1852 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'cpUserMapper' and 'com.pipihao.piyu.piyubackground.mapper.common.CpUserMapper' mapperInterface. Bean already defined with the same name!
+2021-02-28 16:11:42.695  WARN 1852 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'cpWalletMapper' and 'com.pipihao.piyu.piyubackground.mapper.common.CpWalletMapper' mapperInterface. Bean already defined with the same name!
+2021-02-28 16:11:42.696  WARN 1852 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'piProductClassMapper' and 'com.pipihao.piyu.piyubackground.mapper.common.PiProductClassMapper' mapperInterface. Bean already defined with the same name!
+2021-02-28 16:11:42.696  WARN 1852 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'piProductMapper' and 'com.pipihao.piyu.piyubackground.mapper.common.PiProductMapper' mapperInterface. Bean already defined with the same name!
+2021-02-28 16:11:42.696  WARN 1852 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'piUserMapper' and 'com.pipihao.piyu.piyubackground.mapper.common.PiUserMapper' mapperInterface. Bean already defined with the same name!
+2021-02-28 16:11:42.697  WARN 1852 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.pipihao.piyu.piyubackground.mapper]' package. Please check your configuration.
+2021-02-28 16:11:43.557  INFO 1852 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2021-02-28 16:11:43.572  INFO 1852 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-02-28 16:11:43.572  INFO 1852 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-28 16:11:43.839  INFO 1852 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-02-28 16:11:43.841  INFO 1852 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2948 ms
+2021-02-28 16:11:44.017  INFO 1852 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2021-02-28 16:11:44.217  INFO 1852 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2021-02-28 16:11:46.103  INFO 1852 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-28 16:11:46.205  INFO 1852 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-02-28 16:11:46.285  WARN 1852 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+2021-02-28 16:11:46.309  INFO 1852 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2021-02-28 16:11:46.310  INFO 1852 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2021-02-28 16:11:46.310  INFO 1852 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2021-02-28 16:11:46.312  INFO 1852 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
+2021-02-28 16:11:46.613  INFO 1852 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/js/**'] with []
+2021-02-28 16:11:46.614  INFO 1852 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/css/**'] with []
+2021-02-28 16:11:46.614  INFO 1852 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/fonts/**'] with []
+2021-02-28 16:11:46.614  INFO 1852 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/images/**'] with []
+2021-02-28 16:11:46.614  INFO 1852 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/lib/**'] with []
+2021-02-28 16:11:46.677  INFO 1852 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@43a506b6, org.springframework.security.web.context.SecurityContextPersistenceFilter@74179c0, org.springframework.security.web.header.HeaderWriterFilter@34a69910, org.springframework.security.web.csrf.CsrfFilter@38e83ad9, org.springframework.security.web.authentication.logout.LogoutFilter@11b09a86, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@70c4e4ec, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@73bd52f9, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6597fe22, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@74c89a2a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@75c1068a, org.springframework.security.web.session.SessionManagementFilter@4c991cfa, org.springframework.security.web.access.ExceptionTranslationFilter@3f90e0c2, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1f3a8732]
+2021-02-28 16:11:46.810  INFO 1852 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-02-28 16:11:46.896  INFO 1852 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2021-02-28 16:11:46.913  INFO 1852 --- [restartedMain] c.p.p.p.PiyuBackgroundApplication        : Started PiyuBackgroundApplication in 6.984 seconds (JVM running for 9.598)
+2021-02-28 16:12:03.322  INFO 1852 --- [http-nio-8082-exec-1] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [1614430999,1614434243,1614497727; Hm_lpvt_b393d153aeb26b46e9431fabaf0f6190=1614498249; remember-me=VjJ3QTFxN2FGV21SZExEUHYwNGt1ZyUzRCUzRDozSW83c3ZlTXBzZWowQk1OaG5Hc2RnJTNEJTNE; JSESSIONID=38AA3AD239D7A59DAD1DF2FB18CF007B] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2021-02-28 16:12:03.329  INFO 1852 --- [http-nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-28 16:12:03.330  INFO 1852 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-02-28 16:12:03.332  INFO 1852 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2021-02-28 16:12:03.624 DEBUG 1852 --- [http-nio-8082-exec-1] c.p.p.p.mapper.UserMapper.selectOne      : ==>  Preparing: SELECT id,username,password,state,email,register_date FROM bg_user WHERE (username = ?)
+2021-02-28 16:12:03.636 DEBUG 1852 --- [http-nio-8082-exec-1] c.p.p.p.mapper.UserMapper.selectOne      : ==> Parameters: xiaopi(String)
+2021-02-28 16:12:03.648 DEBUG 1852 --- [http-nio-8082-exec-1] c.p.p.p.mapper.UserMapper.selectOne      : <==      Total: 1
+2021-02-28 16:12:03.653 DEBUG 1852 --- [http-nio-8082-exec-1] c.p.p.p.mapper.RoleMapper.getRoleIds     : ==>  Preparing: select * from bg_role where id in (select role_id from bg_user_role where user_id = ?) order by num desc
+2021-02-28 16:12:03.654 DEBUG 1852 --- [http-nio-8082-exec-1] c.p.p.p.mapper.RoleMapper.getRoleIds     : ==> Parameters: 2(Integer)
+2021-02-28 16:12:03.656 DEBUG 1852 --- [http-nio-8082-exec-1] c.p.p.p.mapper.RoleMapper.getRoleIds     : <==      Total: 1
+2021-02-28 16:12:04.594 DEBUG 1852 --- [http-nio-8082-exec-9] c.p.p.p.m.c.P.findAllPiProductClass      : ==>  Preparing: select * from pi_product_class
+2021-02-28 16:12:04.594 DEBUG 1852 --- [http-nio-8082-exec-9] c.p.p.p.m.c.P.findAllPiProductClass      : ==> Parameters: 
+2021-02-28 16:12:04.597 DEBUG 1852 --- [http-nio-8082-exec-9] c.p.p.p.m.c.P.findAllPiProductClass      : <==      Total: 5
+2021-02-28 16:12:04.676 DEBUG 1852 --- [http-nio-8082-exec-9] c.p.p.p.m.c.P.getAllPiProduct_mpCount    : ==>  Preparing: SELECT COUNT(*) FROM pi_product WHERE price IS NOT NULL AND freight IS NOT NULL
+2021-02-28 16:12:04.678 DEBUG 1852 --- [http-nio-8082-exec-9] c.p.p.p.m.c.P.getAllPiProduct_mpCount    : ==> Parameters: 
+2021-02-28 16:12:04.680 DEBUG 1852 --- [http-nio-8082-exec-9] c.p.p.p.m.c.P.getAllPiProduct_mpCount    : <==      Total: 1
+2021-02-28 16:12:04.689 DEBUG 1852 --- [http-nio-8082-exec-9] c.p.p.p.m.c.P.getAllPiProduct            : ==>  Preparing: select * from pi_product where price is not null and freight is not null LIMIT ?
+2021-02-28 16:12:04.690 DEBUG 1852 --- [http-nio-8082-exec-9] c.p.p.p.m.c.P.getAllPiProduct            : ==> Parameters: 10(Long)
+2021-02-28 16:12:04.698 DEBUG 1852 --- [http-nio-8082-exec-9] c.p.p.p.m.c.P.selectPClassById           : ====>  Preparing: Select * from pi_product_class where id = ?
+2021-02-28 16:12:04.699 DEBUG 1852 --- [http-nio-8082-exec-9] c.p.p.p.m.c.P.selectPClassById           : ====> Parameters: 1(Integer)
+2021-02-28 16:12:04.703 DEBUG 1852 --- [http-nio-8082-exec-9] c.p.p.p.m.c.P.selectPClassById           : <====      Total: 1
+2021-02-28 16:12:04.705 DEBUG 1852 --- [http-nio-8082-exec-9] c.p.p.p.m.c.P.selectUserById             : ====>  Preparing: Select * from user where id = ?
+2021-02-28 16:12:04.706 DEBUG 1852 --- [http-nio-8082-exec-9] c.p.p.p.m.c.P.selectUserById             : ====> Parameters: 10006(Integer)
+2021-02-28 16:12:04.710 DEBUG 1852 --- [http-nio-8082-exec-9] c.p.p.p.m.c.P.selectUserById             : <====      Total: 1
+2021-02-28 16:12:04.720 DEBUG 1852 --- [http-nio-8082-exec-9] c.p.p.p.m.c.P.getAllPiProduct            : <==      Total: 10
+2021-02-28 16:12:18.816 DEBUG 1852 --- [http-nio-8082-exec-9] c.p.p.p.m.c.P.setPiProductStatus         : ==>  Preparing: update pi_product set status = ? where id = ?
+2021-02-28 16:12:18.818 DEBUG 1852 --- [http-nio-8082-exec-9] c.p.p.p.m.c.P.setPiProductStatus         : ==> Parameters: false(Boolean), 905cbf5367d14ee1(String)
+2021-02-28 16:12:18.820 DEBUG 1852 --- [http-nio-8082-exec-9] c.p.p.p.m.c.P.setPiProductStatus         : <==    Updates: 1
+2021-02-28 16:12:21.580 DEBUG 1852 --- [http-nio-8082-exec-7] c.p.p.p.m.c.P.findAllPiProductClass      : ==>  Preparing: select * from pi_product_class
+2021-02-28 16:12:21.581 DEBUG 1852 --- [http-nio-8082-exec-7] c.p.p.p.m.c.P.findAllPiProductClass      : ==> Parameters: 
+2021-02-28 16:12:21.585 DEBUG 1852 --- [http-nio-8082-exec-7] c.p.p.p.m.c.P.findAllPiProductClass      : <==      Total: 5
+2021-02-28 16:12:21.589 DEBUG 1852 --- [http-nio-8082-exec-7] c.p.p.p.m.c.P.getAllPiProduct_mpCount    : ==>  Preparing: SELECT COUNT(*) FROM pi_product WHERE price IS NOT NULL AND freight IS NOT NULL
+2021-02-28 16:12:21.590 DEBUG 1852 --- [http-nio-8082-exec-7] c.p.p.p.m.c.P.getAllPiProduct_mpCount    : ==> Parameters: 
+2021-02-28 16:12:21.591 DEBUG 1852 --- [http-nio-8082-exec-7] c.p.p.p.m.c.P.getAllPiProduct_mpCount    : <==      Total: 1
+2021-02-28 16:12:21.592 DEBUG 1852 --- [http-nio-8082-exec-7] c.p.p.p.m.c.P.getAllPiProduct            : ==>  Preparing: select * from pi_product where price is not null and freight is not null LIMIT ?
+2021-02-28 16:12:21.593 DEBUG 1852 --- [http-nio-8082-exec-7] c.p.p.p.m.c.P.getAllPiProduct            : ==> Parameters: 10(Long)
+2021-02-28 16:12:21.595 DEBUG 1852 --- [http-nio-8082-exec-7] c.p.p.p.m.c.P.selectPClassById           : ====>  Preparing: Select * from pi_product_class where id = ?
+2021-02-28 16:12:21.596 DEBUG 1852 --- [http-nio-8082-exec-7] c.p.p.p.m.c.P.selectPClassById           : ====> Parameters: 1(Integer)
+2021-02-28 16:12:21.598 DEBUG 1852 --- [http-nio-8082-exec-7] c.p.p.p.m.c.P.selectPClassById           : <====      Total: 1
+2021-02-28 16:12:21.599 DEBUG 1852 --- [http-nio-8082-exec-7] c.p.p.p.m.c.P.selectUserById             : ====>  Preparing: Select * from user where id = ?
+2021-02-28 16:12:21.599 DEBUG 1852 --- [http-nio-8082-exec-7] c.p.p.p.m.c.P.selectUserById             : ====> Parameters: 10006(Integer)
+2021-02-28 16:12:21.602 DEBUG 1852 --- [http-nio-8082-exec-7] c.p.p.p.m.c.P.selectUserById             : <====      Total: 1
+2021-02-28 16:12:21.614 DEBUG 1852 --- [http-nio-8082-exec-7] c.p.p.p.m.c.P.getAllPiProduct            : <==      Total: 10
+2021-02-28 16:12:27.347 DEBUG 1852 --- [http-nio-8082-exec-2] c.p.p.p.m.c.P.setPiProductStatus         : ==>  Preparing: update pi_product set status = ? where id = ?
+2021-02-28 16:12:27.348 DEBUG 1852 --- [http-nio-8082-exec-2] c.p.p.p.m.c.P.setPiProductStatus         : ==> Parameters: false(Boolean), 6(String)
+2021-02-28 16:12:27.350 DEBUG 1852 --- [http-nio-8082-exec-2] c.p.p.p.m.c.P.setPiProductStatus         : <==    Updates: 1
+2021-02-28 16:12:28.825 DEBUG 1852 --- [http-nio-8082-exec-3] c.p.p.p.m.c.P.findAllPiProductClass      : ==>  Preparing: select * from pi_product_class
+2021-02-28 16:12:28.826 DEBUG 1852 --- [http-nio-8082-exec-3] c.p.p.p.m.c.P.findAllPiProductClass      : ==> Parameters: 
+2021-02-28 16:12:28.831 DEBUG 1852 --- [http-nio-8082-exec-3] c.p.p.p.m.c.P.findAllPiProductClass      : <==      Total: 5
+2021-02-28 16:12:28.835 DEBUG 1852 --- [http-nio-8082-exec-3] c.p.p.p.m.c.P.getAllPiProduct_mpCount    : ==>  Preparing: SELECT COUNT(*) FROM pi_product WHERE price IS NOT NULL AND freight IS NOT NULL
+2021-02-28 16:12:28.836 DEBUG 1852 --- [http-nio-8082-exec-3] c.p.p.p.m.c.P.getAllPiProduct_mpCount    : ==> Parameters: 
+2021-02-28 16:12:28.840 DEBUG 1852 --- [http-nio-8082-exec-3] c.p.p.p.m.c.P.getAllPiProduct_mpCount    : <==      Total: 1
+2021-02-28 16:12:28.841 DEBUG 1852 --- [http-nio-8082-exec-3] c.p.p.p.m.c.P.getAllPiProduct            : ==>  Preparing: select * from pi_product where price is not null and freight is not null LIMIT ?
+2021-02-28 16:12:28.842 DEBUG 1852 --- [http-nio-8082-exec-3] c.p.p.p.m.c.P.getAllPiProduct            : ==> Parameters: 10(Long)
+2021-02-28 16:12:28.845 DEBUG 1852 --- [http-nio-8082-exec-3] c.p.p.p.m.c.P.selectPClassById           : ====>  Preparing: Select * from pi_product_class where id = ?
+2021-02-28 16:12:28.846 DEBUG 1852 --- [http-nio-8082-exec-3] c.p.p.p.m.c.P.selectPClassById           : ====> Parameters: 1(Integer)
+2021-02-28 16:12:28.849 DEBUG 1852 --- [http-nio-8082-exec-3] c.p.p.p.m.c.P.selectPClassById           : <====      Total: 1
+2021-02-28 16:12:28.850 DEBUG 1852 --- [http-nio-8082-exec-3] c.p.p.p.m.c.P.selectUserById             : ====>  Preparing: Select * from user where id = ?
+2021-02-28 16:12:28.850 DEBUG 1852 --- [http-nio-8082-exec-3] c.p.p.p.m.c.P.selectUserById             : ====> Parameters: 10006(Integer)
+2021-02-28 16:12:28.852 DEBUG 1852 --- [http-nio-8082-exec-3] c.p.p.p.m.c.P.selectUserById             : <====      Total: 1
+2021-02-28 16:12:28.859 DEBUG 1852 --- [http-nio-8082-exec-3] c.p.p.p.m.c.P.getAllPiProduct            : <==      Total: 10
+2021-02-28 16:12:31.739 DEBUG 1852 --- [http-nio-8082-exec-9] c.p.p.p.m.c.P.setPiProductStatus         : ==>  Preparing: update pi_product set status = ? where id = ?
+2021-02-28 16:12:31.740 DEBUG 1852 --- [http-nio-8082-exec-9] c.p.p.p.m.c.P.setPiProductStatus         : ==> Parameters: true(Boolean), 6(String)
+2021-02-28 16:12:31.741 DEBUG 1852 --- [http-nio-8082-exec-9] c.p.p.p.m.c.P.setPiProductStatus         : <==    Updates: 1
+2021-02-28 16:12:59.089  INFO 1852 --- [Thread-18] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-02-28 16:12:59.096  INFO 1852 --- [Thread-18] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2021-02-28 16:12:59.352  INFO 1852 --- [restartedMain] c.p.p.p.PiyuBackgroundApplication        : Starting PiyuBackgroundApplication using Java 1.8.0_191 on IBM with PID 1852 (D:\Projects\PiYU\piyu\piyu-background\target\classes started by pipihao in D:\Projects\PiYU\piyu)
+2021-02-28 16:12:59.352  INFO 1852 --- [restartedMain] c.p.p.p.PiyuBackgroundApplication        : No active profile set, falling back to default profiles: default
+2021-02-28 16:12:59.936  WARN 1852 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'roleMapper' and 'com.pipihao.piyu.piyubackground.mapper.RoleMapper' mapperInterface. Bean already defined with the same name!
+2021-02-28 16:12:59.937  WARN 1852 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'userMapper' and 'com.pipihao.piyu.piyubackground.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
+2021-02-28 16:12:59.937  WARN 1852 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'cpUserMapper' and 'com.pipihao.piyu.piyubackground.mapper.common.CpUserMapper' mapperInterface. Bean already defined with the same name!
+2021-02-28 16:12:59.937  WARN 1852 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'cpWalletMapper' and 'com.pipihao.piyu.piyubackground.mapper.common.CpWalletMapper' mapperInterface. Bean already defined with the same name!
+2021-02-28 16:12:59.937  WARN 1852 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'piProductClassMapper' and 'com.pipihao.piyu.piyubackground.mapper.common.PiProductClassMapper' mapperInterface. Bean already defined with the same name!
+2021-02-28 16:12:59.937  WARN 1852 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'piProductMapper' and 'com.pipihao.piyu.piyubackground.mapper.common.PiProductMapper' mapperInterface. Bean already defined with the same name!
+2021-02-28 16:12:59.937  WARN 1852 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'piUserMapper' and 'com.pipihao.piyu.piyubackground.mapper.common.PiUserMapper' mapperInterface. Bean already defined with the same name!
+2021-02-28 16:12:59.937  WARN 1852 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.pipihao.piyu.piyubackground.mapper]' package. Please check your configuration.
+2021-02-28 16:13:00.304  INFO 1852 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2021-02-28 16:13:00.308  INFO 1852 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-02-28 16:13:00.309  INFO 1852 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-28 16:13:00.342  INFO 1852 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-02-28 16:13:00.343  INFO 1852 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 980 ms
+2021-02-28 16:13:00.421  INFO 1852 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2021-02-28 16:13:00.472  INFO 1852 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-2} inited
+2021-02-28 16:13:02.007  INFO 1852 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-28 16:13:02.074  INFO 1852 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-02-28 16:13:02.133  WARN 1852 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+2021-02-28 16:13:02.148  INFO 1852 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2021-02-28 16:13:02.149  INFO 1852 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2021-02-28 16:13:02.150  INFO 1852 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2021-02-28 16:13:02.152  INFO 1852 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
+2021-02-28 16:13:02.264  INFO 1852 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/js/**'] with []
+2021-02-28 16:13:02.265  INFO 1852 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/css/**'] with []
+2021-02-28 16:13:02.265  INFO 1852 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/fonts/**'] with []
+2021-02-28 16:13:02.265  INFO 1852 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/images/**'] with []
+2021-02-28 16:13:02.265  INFO 1852 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/lib/**'] with []
+2021-02-28 16:13:02.282  INFO 1852 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6d6459d7, org.springframework.security.web.context.SecurityContextPersistenceFilter@56af3a27, org.springframework.security.web.header.HeaderWriterFilter@190afd6, org.springframework.security.web.csrf.CsrfFilter@55fbedb4, org.springframework.security.web.authentication.logout.LogoutFilter@4378b, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@442041a9, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@681df462, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6cf718a8, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@6376a58f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1fa6bf49, org.springframework.security.web.session.SessionManagementFilter@5c33ea58, org.springframework.security.web.access.ExceptionTranslationFilter@4e4e0858, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@a2f03f9]
+2021-02-28 16:13:02.306  INFO 1852 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-02-28 16:13:02.354  INFO 1852 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2021-02-28 16:13:02.366  INFO 1852 --- [restartedMain] c.p.p.p.PiyuBackgroundApplication        : Started PiyuBackgroundApplication in 3.054 seconds (JVM running for 85.049)
+2021-02-28 16:13:02.370  INFO 1852 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-02-28 16:13:12.981  INFO 1852 --- [http-nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-28 16:13:12.982  INFO 1852 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-02-28 16:13:12.983  INFO 1852 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-02-28 16:13:13.367 DEBUG 1852 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.findAllPiProductClass      : ==>  Preparing: select * from pi_product_class
+2021-02-28 16:13:13.367 DEBUG 1852 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.findAllPiProductClass      : ==> Parameters: 
+2021-02-28 16:13:13.370 DEBUG 1852 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.findAllPiProductClass      : <==      Total: 5
+2021-02-28 16:13:13.376 DEBUG 1852 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.getAllPiProduct_mpCount    : ==>  Preparing: SELECT COUNT(*) FROM pi_product WHERE price IS NOT NULL AND freight IS NOT NULL
+2021-02-28 16:13:13.376 DEBUG 1852 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.getAllPiProduct_mpCount    : ==> Parameters: 
+2021-02-28 16:13:13.378 DEBUG 1852 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.getAllPiProduct_mpCount    : <==      Total: 1
+2021-02-28 16:13:13.379 DEBUG 1852 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.getAllPiProduct            : ==>  Preparing: select * from pi_product where price is not null and freight is not null order by create_date desc LIMIT ?
+2021-02-28 16:13:13.381 DEBUG 1852 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.getAllPiProduct            : ==> Parameters: 10(Long)
+2021-02-28 16:13:13.384 DEBUG 1852 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.selectPClassById           : ====>  Preparing: Select * from pi_product_class where id = ?
+2021-02-28 16:13:13.385 DEBUG 1852 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.selectPClassById           : ====> Parameters: 3(Integer)
+2021-02-28 16:13:13.386 DEBUG 1852 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.selectPClassById           : <====      Total: 1
+2021-02-28 16:13:13.387 DEBUG 1852 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.selectUserById             : ====>  Preparing: Select * from user where id = ?
+2021-02-28 16:13:13.387 DEBUG 1852 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.selectUserById             : ====> Parameters: 10006(Integer)
+2021-02-28 16:13:13.390 DEBUG 1852 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.selectUserById             : <====      Total: 1
+2021-02-28 16:13:13.397 DEBUG 1852 --- [http-nio-8082-exec-1] c.p.p.p.m.c.P.getAllPiProduct            : <==      Total: 10
+2021-02-28 16:13:18.322 DEBUG 1852 --- [http-nio-8082-exec-2] c.p.p.p.m.c.P.setPiProductStatus         : ==>  Preparing: update pi_product set status = ? where id = ?
+2021-02-28 16:13:18.322 DEBUG 1852 --- [http-nio-8082-exec-2] c.p.p.p.m.c.P.setPiProductStatus         : ==> Parameters: false(Boolean), dc42bfb4c5074a01(String)
+2021-02-28 16:13:18.324 DEBUG 1852 --- [http-nio-8082-exec-2] c.p.p.p.m.c.P.setPiProductStatus         : <==    Updates: 1
+2021-02-28 16:13:20.141 DEBUG 1852 --- [http-nio-8082-exec-9] c.p.p.p.m.c.P.findAllPiProductClass      : ==>  Preparing: select * from pi_product_class
+2021-02-28 16:13:20.142 DEBUG 1852 --- [http-nio-8082-exec-9] c.p.p.p.m.c.P.findAllPiProductClass      : ==> Parameters: 
+2021-02-28 16:13:20.144 DEBUG 1852 --- [http-nio-8082-exec-9] c.p.p.p.m.c.P.findAllPiProductClass      : <==      Total: 5
+2021-02-28 16:13:20.146 DEBUG 1852 --- [http-nio-8082-exec-9] c.p.p.p.m.c.P.getAllPiProduct_mpCount    : ==>  Preparing: SELECT COUNT(*) FROM pi_product WHERE price IS NOT NULL AND freight IS NOT NULL
+2021-02-28 16:13:20.147 DEBUG 1852 --- [http-nio-8082-exec-9] c.p.p.p.m.c.P.getAllPiProduct_mpCount    : ==> Parameters: 
+2021-02-28 16:13:20.148 DEBUG 1852 --- [http-nio-8082-exec-9] c.p.p.p.m.c.P.getAllPiProduct_mpCount    : <==      Total: 1
+2021-02-28 16:13:20.150 DEBUG 1852 --- [http-nio-8082-exec-9] c.p.p.p.m.c.P.getAllPiProduct            : ==>  Preparing: select * from pi_product where price is not null and freight is not null order by create_date desc LIMIT ?
+2021-02-28 16:13:20.150 DEBUG 1852 --- [http-nio-8082-exec-9] c.p.p.p.m.c.P.getAllPiProduct            : ==> Parameters: 10(Long)
+2021-02-28 16:13:20.154 DEBUG 1852 --- [http-nio-8082-exec-9] c.p.p.p.m.c.P.selectPClassById           : ====>  Preparing: Select * from pi_product_class where id = ?
+2021-02-28 16:13:20.154 DEBUG 1852 --- [http-nio-8082-exec-9] c.p.p.p.m.c.P.selectPClassById           : ====> Parameters: 3(Integer)
+2021-02-28 16:13:20.156 DEBUG 1852 --- [http-nio-8082-exec-9] c.p.p.p.m.c.P.selectPClassById           : <====      Total: 1
+2021-02-28 16:13:20.156 DEBUG 1852 --- [http-nio-8082-exec-9] c.p.p.p.m.c.P.selectUserById             : ====>  Preparing: Select * from user where id = ?
+2021-02-28 16:13:20.157 DEBUG 1852 --- [http-nio-8082-exec-9] c.p.p.p.m.c.P.selectUserById             : ====> Parameters: 10006(Integer)
+2021-02-28 16:13:20.158 DEBUG 1852 --- [http-nio-8082-exec-9] c.p.p.p.m.c.P.selectUserById             : <====      Total: 1
+2021-02-28 16:13:20.164 DEBUG 1852 --- [http-nio-8082-exec-9] c.p.p.p.m.c.P.getAllPiProduct            : <==      Total: 10

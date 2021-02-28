@@ -1,15 +1,14 @@
 package com.pipihao.piyu.piyubackground.controller.common;
 
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import com.pipihao.piyu.piyubackground.common.R;
 import com.pipihao.piyu.piyubackground.service.common.PiClassService;
 import com.pipihao.piyu.piyubackground.service.common.PiProductService;
 import com.pipihao.piyu.piyubackground.pojo.PiProduct;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -51,4 +50,16 @@ public class PiProductController {
         model.addAttribute("s",map); //s means search
         return "plist";
     }
+
+    /**
+     * 设置皮物状态
+     * @param piProduct
+     * @return
+     */
+    @ResponseBody
+    @PostMapping("banPiProduct")
+    public R banPiProduct(@RequestBody PiProduct piProduct){
+        return this.piProductService.setPiProductStatus(piProduct);
+    }
+
 }
