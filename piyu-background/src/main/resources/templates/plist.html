@@ -65,7 +65,7 @@
                                 <thead>
                                     <tr>
                                         <th>
-                                            <input type="checkbox" name="" lay-skin="primary">
+                                            <input type="checkbox" lay-filter="checkall" name="" lay-skin="primary">
                                         </th>
                                         <th>皮物ID</th>
                                         <th>用户名|ID</th>
@@ -93,11 +93,11 @@
                                         <td class="td-status">
                                             <span th:if="${p.status}" class="layui-btn layui-btn-normal layui-btn-mini">已启用</span>
                                             <span th:if="${!p.status}" class="layui-btn layui-btn-normal layui-btn-mini layui-btn-disabled">已停用</span></td>
-                                        <td class="td-manage">
-                                            <a th:id="${'a'+p.id}" th:onclick="member_stop(this,[[${p.id}]])" href="javascript:;"  th:title="${p.status ? '停用':'启用'}">
+                                        <td th:id="${'a'+p.id}" class="td-manage">
+                                            <a  th:onclick="member_stop(this,[[${p.id}]])" href="javascript:;"  th:title="${p.status ? '停用':'启用'}">
                                                 <i class="layui-icon">&#xe601;</i>
                                             </a>
-                                            <a title="删除" onclick="member_del(this,'要删除的id')" href="javascript:;">
+                                            <a title="删除" th:onclick="member_del(this,[[${p.id}]])" href="javascript:;">
                                                 <i class="layui-icon">&#xe640;</i></a>
                                         </td>
                                     </tr>
@@ -156,6 +156,16 @@
                 elem: '#end' //指定元素
             });
 
+
+            // 监听全选
+            form.on('checkbox(checkall)', function(data){
+                if(data.elem.checked){
+                    $('tbody input').prop('checked',true);
+                }else{
+                    $('tbody input').prop('checked',false);
+                }
+                form.render('checkbox');
+            });
 
             form.on('submit(search)',(data)=>{
                 // console.log(data.field);
@@ -227,26 +237,66 @@
             layer.confirm('确认要删除吗？',
             function(index) {
                 //发异步删除数据
-                $(obj).parents("tr").remove();
-                layer.msg('已删除!', {
-                    icon: 1,
-                    time: 1000
+                $.ajax({
+                    type:"POST",
+                    url:`/pi/delPiProduct/${id}?`+[[${_csrf.parameterName}]]+'='+[[${_csrf.token}]],
+                    success(data){
+                        if(data.state){
+                            $(obj).parents("tr").remove();
+                            layer.msg('已删除!', {
+                                icon: 1,
+                                time: 1000
+                            });
+                        }else{
+                            layer.msg(data.msg,{icon:5,time:1000});
+                        }
+                    }
                 });
             });
         }
 
-        function delAll(argument) {
 
-            var data = tableCheck.getData();
+        /*批量禁用*/
+        function  delAll(argument) {
+            var ids = [];
 
-            layer.confirm('确认要删除吗？' + data,
-            function(index) {
-                //捉到所有被选中的，发异步进行删除
-                layer.msg('删除成功', {
-                    icon: 1
-                });
-                $(".layui-form-checked").not('.header').parents('tr').remove();
+            // 获取选中的id
+            $('tbody input').each(function(index, el) {
+                if($(this).prop('checked')){
+                    ids.push($(this).val())
+                }
             });
-        }</script>
+            console.log(ids);
+
+            layer.confirm('确认要删除吗？'+ids.toString(),function(index){
+                //捉到所有被选中的，发异步进行删除
+                $.ajax({
+                    type:"POST",
+                    dataType:"json",
+                    contentType:"application/json",
+                    url:"/pi/deleteByIds?"+[[${_csrf.parameterName}]]+'='+[[${_csrf.token}]],
+                    data:JSON.stringify(ids),
+                    success(data){
+                        if(data.state){
+                            layer.msg(data.msg, {icon: 1});
+                            removeByIds(ids);
+                            layer.msg('已删除!', {
+                                icon: 1,
+                                time: 1000
+                            });
+                        }else{
+                            layer.msg(data.msg, {icon: 5});
+                        }
+                    }
+                });
+            });
+        }
+
+        function removeByIds(ids){
+            for(var a of ids){
+                $('#a'+a).parents("tr").remove();
+            }
+        }
+    </script>
 
 </html>

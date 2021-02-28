@@ -47,7 +47,16 @@ public interface PiProductMapper {
      * @param pid
      * @return
      */
-    boolean deletePiProductById(Integer pid);
+    @Delete("delete from pi_product where id = #{pid}")
+    boolean deletePiProductById(String pid);
+
+    /**
+     * 根据ids删除皮物
+     * @param  map
+     * @return
+     */
+    @Delete("delete from pi_product where id in ${pid}")
+    boolean deleteByIds(String pid);
 
     /**
      * 设置皮物状态

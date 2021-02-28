@@ -11,6 +11,7 @@ import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -60,6 +61,28 @@ public class PiProductController {
     @PostMapping("banPiProduct")
     public R banPiProduct(@RequestBody PiProduct piProduct){
         return this.piProductService.setPiProductStatus(piProduct);
+    }
+
+    /**
+     * 删除皮物
+     * @param id
+     * @return
+     */
+    @ResponseBody
+    @PostMapping("delPiProduct/{id}")
+    public R delPiProduct(@PathVariable("id") String id){
+        return this.piProductService.deletePiProductById(id);
+    }
+
+    /**
+     * 删除多个皮物
+     * @param pids
+     * @return
+     */
+    @ResponseBody
+    @PostMapping("deleteByIds")
+    public R deleteByIds(@RequestBody List<String> pids){
+        return this.piProductService.deleteByIds(pids);
     }
 
 }

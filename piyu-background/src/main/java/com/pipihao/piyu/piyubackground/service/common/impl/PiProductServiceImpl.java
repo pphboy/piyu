@@ -8,7 +8,9 @@ import com.pipihao.piyu.piyubackground.pojo.PiProduct;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
 import java.util.Map;
+import java.util.UUID;
 
 /**
  * @author pipihao
@@ -40,5 +42,35 @@ public class PiProductServiceImpl implements PiProductService {
     @Override
     public R setPiProductStatus(PiProduct piProduct) {
         return new R().getR(this.piProductMapper.setPiProductStatus(piProduct),"修改成功","修改失败");
+    }
+
+    /**
+     * 删除皮物
+     * @param id
+     * @return
+     */
+    @Override
+    public R deletePiProductById(String id) {
+        return new R().getR(this.piProductMapper.deletePiProductById(id),"删除成功","删除失败");
+    }
+
+    /**
+     * 删除多个皮物
+     * @param pids
+     * @return
+     */
+    @Override
+    public R deleteByIds(List<String> pids) {
+        StringBuffer sb = new StringBuffer();
+        sb.append("(");
+        for(int i = 0; i < pids.size() ; i++){
+            if(i == pids.size()-1){
+                sb.append("'"+pids.get(i)+"')");
+                break;
+            }
+            sb.append("'"+pids.get(i)+"',");
+        }
+        /*数据在前端拼接好的*/
+        return new R().getR(this.piProductMapper.deleteByIds(sb.toString()),"删除成功","删除失败");
     }
 }
